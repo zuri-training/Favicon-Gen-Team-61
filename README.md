@@ -8,11 +8,8 @@ Links to research documentation used in this project:
 
 | Links                           | Applications                                                                                               |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
-|  <a href="https://bit.ly/3BsPGKo" target="_blank">General Research </a>    | `Google Doc`                                                                   |
-|  <a href="https://bit.ly/3bh761P" target="_blank">Design Board </a>         | `Figma`                                                          |
-|   <a href="https://bit.ly/3bh761P" target="_blank">Code/Database Schema </a> | `Google DOc`                                                                              |
-| <a href="https://bit.ly/3zScYs1" target="_blank">Presentation Slides</a>   | `Google Slide`                                                                     |
-
+|  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">General Research </a>    | `Google Doc`                                                                   |
+|  <a href="https://www.figma.com/files/project/62098340/FAVICON-GEN_PROJ_61---FIGMA-BOARD?fuid=996049322941876989" target="_blank">Figma Board </a>         | `Figma` 
 
 ## Author's :page_with_curl:
 ---
