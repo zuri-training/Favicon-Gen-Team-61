@@ -11,7 +11,7 @@ Links to research documentation used in this project:
 |  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">General Research </a>    | `Google Doc`                                                                   |
 |  <a href="https://www.figma.com/files/project/62098340/FAVICON-GEN_PROJ_61---FIGMA-BOARD?fuid=996049322941876989" target="_blank">Figma Board </a>         | `Figma` 
 |  <a href="https://docs.google.com/document/d/1iPOrgBsVoZLxWLDlNoKJTO68XdPQKQkox_z0x3UbDsI/edit?usp=sharing" target="_blank">Research Plan </a>         | `Google Doc` 
-|  <a href="[https://docs.google.com/document/d/1iPOrgBsVoZLxWLDlNoKJTO68XdPQKQkox_z0x3UbDsI/edit?usp=sharing](https://docs.google.com/document/d/1jYRDjfemjcdwbSf-1EUHfGZfJd5w4qwP_8_4cwW6_eQ/edit?usp=sharing)" target="_blank">Code/Database Schema </a>         | `Google Doc` 
+|  <a href="https://docs.google.com/document/d/1jYRDjfemjcdwbSf-1EUHfGZfJd5w4qwP_8_4cwW6_eQ/edit?usp=sharing" target="_blank">Code/Database Schema </a>         | `Google Doc` 
 ## Author's :page_with_curl:
 ---
 <p align="center">
