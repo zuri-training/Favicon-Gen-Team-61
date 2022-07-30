@@ -14,7 +14,7 @@ Links to research documentation used in this project:
 |  <a href="https://docs.google.com/document/d/1jYRDjfemjcdwbSf-1EUHfGZfJd5w4qwP_8_4cwW6_eQ/edit?usp=sharing" target="_blank">Code/Database Schema </a>         | `Google Doc`
 |  <a href="https://docs.google.com/document/d/1h7ol75ae1TyfFx5nAH65R7BK88G9XE1cAjl5Egf4zXs/edit?usp=sharing" target="_blank">Documentation </a>         | `Google Doc`
 |  <a href="https://docs.google.com/document/d/1MY5n5dAGVdFSj9oF6cmsuklzIqamOuMOgozWDF0N4Ok/edit?usp=sharing" target="_blank">Tasks Assigned </a> | `Google Doc`
-|  <a href="link" target="_blank">Presentation Slides </a>         | `Google Drive`
+|  <a href="https://drive.google.com/file/d/1EHw0ChnoGrhGo51LGniFGDzbhbM3v28K/view?usp=sharing" target="_blank">Presentation Slides </a>         | `Google Drive`
 |  <a href="link" target="_blank">Presentation Video </a>         | `Google Drive`
 
 ## Author's :page_with_curl:
