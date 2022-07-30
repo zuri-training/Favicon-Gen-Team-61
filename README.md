@@ -8,7 +8,7 @@ Links to research documentation used in this project:
 
 | Links                           | Applications                                                                                               |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
-|  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">General Research </a>    | `Google Doc`
+|  <a href="https://docs.google.com/document/d/1iPOrgBsVoZLxWLDlNoKJTO68XdPQKQkox_z0x3UbDsI/edit?usp=sharing" target="_blank">General Research </a>    | `Google Doc`
 |  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">Research Plan </a>         | `Google Doc` |
 |  <a href="https://www.figma.com/file/GXumf5kE5GpBzONYjwI777/Team-61_FaviconGen_Figma-Board(Sketches%2C-Design-Process-and-Wireframes)?node-id=0%3A1">Figma Board(Sketches/Design process and Wireframes </a> | `Figma` 
 |  <a href="https://docs.google.com/document/d/1jYRDjfemjcdwbSf-1EUHfGZfJd5w4qwP_8_4cwW6_eQ/edit?usp=sharing" target="_blank">Code/Database Schema </a>         | `Google Doc`
