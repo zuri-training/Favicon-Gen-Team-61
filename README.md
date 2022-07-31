@@ -30,7 +30,7 @@ Links to research documentation used in this project:
 All work contained in this project was completed as part of the curriculum for
 Zuri Training in Partnership with Ingresive For Good. Zuri Training is an online program that prepares students for careers in the tech industry
 using project-based peer learning. For more information, visit
-[this link](https://www.zuriboard.com//).
+[this link](https://training.zuri.team///).
 
 <p align="center">
   <img src="https://res.cloudinary.com/zuri-team/image/upload/zuriboard/tenant-logo/wmqxdxt4skv05wsvc21o.png"
