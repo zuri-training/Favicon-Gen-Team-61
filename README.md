@@ -17,6 +17,15 @@ Links to research documentation used in this project:
 |  <a href="https://drive.google.com/file/d/1EHw0ChnoGrhGo51LGniFGDzbhbM3v28K/view?usp=sharing" target="_blank">Presentation Slides </a>         | `Google Drive`
 |  <a href="https://drive.google.com/file/d/1oJzJf6lRNcGvbvgNWwDg2kLB0uYJw-l0/view?usp=sharing" target="_blank">Presentation Video </a>         | `Google Drive`
 
+
+#To-do list for frontend dev: Fork the repo and save a copy to your personal repo and them clone it to your local machine. Thereafter, open up a new terminal in the project directory and #Run: npm run dev to be sure that everything is working fine. Make changes and create a new branch develop. Commit changes and make  pull requests and push. Open your github account, find the project and compere for a pull.
+hint: You should see a message of this format:: Server running at http://localhost:51215 ✨ Built in 669ms after running npm run dev on the terminal. 
+
+This will be a proof that everything is working well
+![image](https://user-images.githubusercontent.com/52868184/182035776-71176e0c-014d-44c3-acb9-40ba6efc1a9e.png)
+
+
+
 ## Author's :page_with_curl:
 ---
 <p align="center">
