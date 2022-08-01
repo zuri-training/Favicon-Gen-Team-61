@@ -22,12 +22,13 @@ Links to research documentation used in this project:
 hint: You should see a message of this format:: Server running at http://localhost:51215 ✨ Built in 669ms after running npm run dev on the terminal. 
 
 This will be a proof that everything is working well
+
 ![image](https://user-images.githubusercontent.com/52868184/182035776-71176e0c-014d-44c3-acb9-40ba6efc1a9e.png)
 
 
 
 ## Author's :page_with_curl:
----
+
 <p align="center">
 <img src="https://github.com/Izimartin/Zuriboard_Internship/blob/main/favicon-logo-removebg-preview.png?raw=true"
        alt="Favicon-Gen Logo"
@@ -35,7 +36,7 @@ This will be a proof that everything is working well
 </p>
 
 ## Acknowledgements :pray:
----
+
 All work contained in this project was completed as part of the curriculum for
 Zuri Training in Partnership with Ingresive For Good. Zuri Training is an online program that prepares students for careers in the tech industry
 using project-based peer learning. For more information, visit
