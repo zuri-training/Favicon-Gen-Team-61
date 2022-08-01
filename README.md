@@ -29,7 +29,7 @@ This will be a proof that everything is working well
 
 ## Author's :page_with_curl:
 
-<p align="center">
+<p align="left">
 <img src="https://github.com/Izimartin/Zuriboard_Internship/blob/main/favicon-logo-removebg-preview.png?raw=true"
        alt="Favicon-Gen Logo"
   >
