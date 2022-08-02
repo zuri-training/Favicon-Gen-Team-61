@@ -1,0 +1,396 @@
+ul{
+    list-style-type: none;
+}
+#drop{
+    width: 100px;
+    /* left: 20px !important; */
+    background-color: rgb(185, 185, 185);
+}
+#drop a{
+    text-decoration: none;
+    color: #000;
+}
+#drop a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.profile_header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.color_toggle_container{
+    width: 30px;
+    height: 15px;
+    border-radius: 5rem;
+    border: 1px solid #000;
+    margin-right: 2rem;
+    padding: .1rem;
+    cursor: pointer;
+}
+
+.toggle{
+    width: 15px;
+    height: 100%;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.profile_img{
+    width: 30px;
+    height: 30px;
+    padding: .2rem;
+    margin-bottom: .3rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.profile_info{
+    text-align: center;
+}
+.fa-user{
+    width: 100%;
+    height: 100%;
+}
+
+.profile_con{
+    display: flex;
+}
+
+.mobile_col{
+    display: none;
+}
+.hambuger_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+
+    display: none;
+}
+
+.fa-bars{
+    font-size: 1.5rem;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.search_save_icons{
+    padding: .3rem;
+    padding-left: 1.8rem;
+    outline: none;
+    border-radius: 2rem;
+    border: 1px solid #000;
+}
+.search_save_icons:focus{
+    border: 1px solid #000;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trash_container .top{
+    justify-content: flex-end;
+}
+
+.search_icon{
+    position: relative;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    bottom: 30%;
+    left: 15px;
+    transform: translateX(-30%);
+}
+.list-group-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    padding-left: 4rem;
+}
+
+.fa-cubes-stacked{
+    margin-right: .8rem;
+}
+
+.fa-ellipsis-vertical{
+    margin: 0 2rem; 
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.icon_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date_created{
+    margin: 0;
+    padding: 0;
+}
+.save_icon_title{
+    padding: 0;
+}
+.bar{
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.trash_container .top{
+    margin: 2rem 0;
+    margin-top: 3rem;
+}
+
+.trash_title{
+    margin-top: 2rem;
+}
+
+.main_footer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../images/bgfooter.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    padding: 4rem 0 1rem 0;
+    margin-top: 4rem;
+    font-size: .8rem;
+}
+
+.footer_top{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+
+}
+
+.footer_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_info p{
+    padding: 0;
+    margin: 0;
+}
+.line_through{
+    margin: .2rem !important;
+    margin-top: .1rem;
+}
+* + hr, * + .uk-hr {
+    margin-top: .2rem;
+}
+.query{
+    width: 100%;
+    overflow: hidden;
+}
+.fa-circle-question{
+    float: right;
+}
+.main_footer .email,
+.main_footer .phone_contact{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.footer_top p{
+    line-height: 1.4;
+    margin: .5rem;
+}
+
+.footer_top h6{
+    margin-bottom: .5rem;
+}  
+
+.footer_top li{
+    margin-bottom: .5rem;
+}
+
+.contact_info .social_media_icons .fa-brands{
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.mobile_social_media_icons{
+    display: none;
+}
+
+.footer_col_1 p{
+    padding: 0;
+    margin-left: 0;
+}
+.colums h6{
+    text-decoration: underline;
+}
+
+
+/* Profile Responsiveness */
+@media screen and (max-width: 675px) {
+    .list-group-item{
+        padding: 0 1.5rem ;
+    
+    }
+    .fa-ellipsis-vertical{
+        margin-right: 0;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 464px) {
+    .footer_top{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search_icon_trash{
+        display: none;
+    }
+    .main_footer ul{
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .main_footer{
+        background: unset;
+        padding-left: 2rem ;
+        padding-right: 2rem ;
+    }
+    .contact_info{
+        display: none;
+    }
+
+    .footer_col_1 {
+        grid-column: 1/-1;
+    }
+    .mobile_social_media_icons{
+        display: block;
+    }
+
+    .mobile_social_media_icons h5{
+        margin-top: 1.5rem;
+    }
+    .query{
+        display: none;
+    }
+    .line_through{
+        display: none;
+    }
+    .footer_info{
+        flex-direction: column;
+        margin-top: 2rem;
+        line-height: 1.4;
+    }
+    .main_footer .logo{
+        font-weight: 800;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 375px) {
+
+    .toggle_wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile_info{
+        display: none;
+    }
+    .hambuger_icon{
+        display: block;
+        width: 10%;
+        cursor: pointer;
+    }
+    .logo{
+        width: 70%;
+    }
+    .profile_img.desktop{
+        display: none;
+    }
+    .color_toggle_container{
+        margin-right: 0;
+    }
+    .mobile_col{
+        display: block;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 50%;
+        padding: 1rem;
+        z-index: 10;
+        background-color: rgb(122, 122, 122);
+        cursor: pointer;
+    }
+    .mobile_col.show_menu{
+        visibility: visible ;
+    }
+    .close_menu{
+        width: 100%;
+        margin: 3rem .5rem 1rem 4rem;
+    }
+    .image_rapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .image_rapper .username{
+        margin: 0;
+        margin-left: .1rem;
+    }
+    .profile_setting{
+        padding-left: 0;
+    }
+    .profile_setting li{
+        padding-bottom: .5rem;
+    }
+
+    .top{
+        flex-direction: column;
+    }
+
+    .list-group-item{
+        padding: .5rem;
+        margin: 0;
+        font-size: .8rem;
+    }
+
+    .fa-ellipsis-vertical{
+        padding: 0 .2rem 0 .5rem;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 274px) {
+    .fa-braille{
+        display: none;
+    }
+}
