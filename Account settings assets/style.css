@@ -1,0 +1,21 @@
+body{
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: black !important;
+    color: white !important;
+}
+
+.dark-mode .navbar{
+    background-color: black !important;
+    color: white !important;
+}
+
+.dark-mode .navbar img{
+    filter: invert(1);
+}
+
+.dark-mode .navbar a {
+    color: white;
+}
