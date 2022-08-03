@@ -1,0 +1,674 @@
+
+*{
+    box-sizing: border-box;
+
+}
+body {
+  
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #000000;
+    /* overflow: hidden; Hide scrollbars */
+}
+
+
+.gen_nav> ul{
+    list-style-type:none;
+    margin-left: 20%;   
+}
+
+a:link { text-decoration: none; }
+
+li{
+    display: inline-block;
+    padding-left: 5rem;
+    padding-top: 4rem;
+    font-weight: 700;
+    font-size: 1.3vw;
+    line-height: 1vw;
+    text-align: center;
+
+}
+.gen_wrapper{
+    position: absolute;
+    width: 58%;
+    height: 149vh;
+    left: 20%;
+    top: 23%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+    /* column-gap: 2%;
+    margin: 0 -7px; */
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+.gen_from{
+    width: 60%;
+    height: 29vh;
+    margin-top: -15px;
+    margin-left: -15rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+
+}
+.gen_from_upload> .gen_container, .aside{
+    
+    flex: auto;
+}
+
+.gen_container{
+    position: absolute;
+    width: 37%;
+    height: 56%;
+    left: 2rem;
+    top:4rem;
+    /* margin: 0 5px; */
+    /* margin-left: 500px; */
+    /* margin-top: -16%; */
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.img{
+    /* ant-design:file-image-filled */
+    position: absolute;
+    width: 40%;
+    height: 35%;
+    left: 30%;
+    top: 26%;
+    justify-content: center;
+    background: #CFCDCD;
+    
+}
+img { 
+    display:block;
+    margin: auto;
+    margin-top: 2.5rem;
+    width: 70%;
+    /* background-image: url("../images/img_logo.png"); */
+
+}
+
+.upload_text{
+    position: absolute;
+    width: 95%;
+    height: 7vh;
+    left: 2%;
+    top: 70%;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 0.5vw;
+    /* or 150% */  
+    text-align: center;
+    }
+
+.upload_by_image{
+    position: absolute; 
+    background: #F9F2F2;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+
+}
+
+.upload_btn{
+    width: 25%;
+    height: 6vh;
+    left: 37%;
+    top: 102%;
+    
+}
+
+.upload_btn2{
+    width: 76%;
+    height: 6vh;
+    left: 7%;
+    top: 115%;
+}
+
+.upload_btn3{
+    width: 76%;
+    height: 6vh;
+    left: 7%;
+    top: 126%; 
+        }
+
+.share_btn{
+    width:23%;
+    height: 6vh;
+    left: 60%;
+    top: 135%;
+
+    }
+
+
+.howto{
+    width: 105%;
+    margin-bottom: -1%;
+    margin-left: -2%;
+    font-weight: 700;
+    font-size: 2.5vw;
+    text-align: center;
+
+}
+
+.procedure{
+    /* width: 90%; */
+    height: 10vh;
+    /* padding: 3%; */
+    /* margin-left: 4%; */
+    
+}
+
+
+
+/* Steps for installation */
+
+.split{
+    float: right;
+    margin-top: -9%;
+    
+    
+}
+
+
+/* Step */
+.step1{
+    width:55%;
+    height: 1vh;
+    float: left;
+    padding-left: 5%;
+    font-weight: 700;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.step2{
+    width:65%;
+    height:2vh;
+    float: left;
+    padding-left: 4%;
+    padding-top: 9%;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 1vh;
+    text-align: center;
+}
+
+.one{
+    width: 79%;
+    height: 2vh;
+    margin-left: -7%;
+    margin-top: 14%;
+    float: left;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 1rem;
+    text-align: center
+}
+
+.two{
+    width: 10%;
+    height: 2vh;
+    float: left;
+    margin-left: 37%;
+    margin-top: 12%;
+    font-weight: 700;
+    font-size: 2vw;
+    
+}
+.step3{
+    width:55%;
+    height: 1vh;
+    float: left;
+    padding-left: 5%;
+    font-weight: 700;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.three{
+    width: 79%;
+    height: 2vh;
+    margin-left: -7%;
+    margin-top: 14%;
+    float: left;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 1rem;
+    text-align: center
+}
+
+
+
+.p1{
+    width: 68%;
+    height: 4vh;
+    float:right;
+    margin-top: -1.5em;
+    margin-bottom: 6%;
+    /* margin-left: 0.2em; */
+    padding-right: 34%;
+    padding-left: 1em;
+    font-weight: 15;
+    font-size: 1.5vw;
+    line-height: 2vw;
+
+}
+
+.p2{
+    width: 63%;
+    height: 3vh;
+    float:right;
+    margin-top: -1.3em;
+    margin-left: 2rem;
+    margin-bottom: 4em;
+    padding-right: 37%;
+    padding-bottom: -9em;
+    padding-left: 2vw;
+    /* padding-bottom: -2rem; */
+    font-weight: 15;
+    font-size: 1.5vw;
+    line-height: 2vw;
+
+/* Inside auto layout */
+
+   
+}
+
+
+.aside{
+    position: absolute;
+    width: 95%;
+    height: 30%;
+    left: 9em;
+    top: 10%;
+    margin-top: -2%;
+    /* margin: 1rem; */
+}
+
+.aside_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 2em;
+    margin-top: 8%;
+    position: absolute;
+    width:42%;
+    height: 8%;
+    left: 25%;
+    top: 200%;
+    font-weight: 500;
+    font-size: 1.3vw;
+    background: #EFE9E9;
+    border-radius: 10px;
+}
+
+.cop_btn{
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start; */
+    /* padding: 1rem; */
+    /* gap: 32px; */
+    position: absolute;
+    text-overflow: ellipsis;
+    width: 10%;
+    height: 7vh;
+    left: 40%;
+    top: 289%;
+    text-align: center;
+    background: #D4D4D4;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* @media only screen and (max-width: 600px) and (min-width: 400px) {
+   
+    
+} */
+
+@media only screen and (min-width: 320px) and (max-width:600px){
+    
+    .gen_wrapper{
+        position: absolute;
+        width: 70%;
+        height: 72vh;
+        left: 10%;
+        top: 23%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        /* column-gap: 2%;
+        margin: 0 -7px; */
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        
+    }
+    
+    .gen_container{
+        position: absolute;
+        width: 65%;
+        height: 75%;
+        left: 3.5rem;
+        top:3.5rem;
+        justify-content: center;
+        /* margin: 0 5px; */
+        /* margin-left: 500px; */
+        /* margin-top: -16%; */
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+    }
+    
+    .img{
+        /* ant-design:file-image-filled */
+        position: absolute;
+        width: 47%;
+        height: 51%;
+        left: 26%;
+        top: 17%;
+        justify-content: center;
+        background: #CFCDCD;
+        
+    }
+    
+    img{
+        
+        justify-content: center;
+        margin-top: 1;
+        width: 74%;
+        
+
+        
+    }
+
+    .upload_text{
+        position: absolute;
+        width: 98%;
+        height: 7vh;
+        left: 2%;
+        top: 68%;
+        font-weight: 700;
+        font-size: 2.2vw;
+        line-height: 1.3vw;
+    
+        }
+
+
+    .aside{
+        position: absolute;
+        width: 110%;
+        height: 30%;
+        left: -5em;
+        top: 145%;
+        margin-top: -1%;
+        /* margin: 1rem; */
+    }
+
+
+    
+
+    .gen_from{
+        width: 80%;
+        height: 29vh;
+        margin-left: 1em;
+        margin-top: -226px;
+        font-weight: 0.3vw;
+        font-size: 14px;
+
+    }
+
+
+
+    .upload_btn{
+        width: 30%;
+        height: 7vh;
+        font-size: 3vw;
+        left:35%;
+        top: 83%;
+            
+    }
+    .upload_btn2{
+        
+        width: 125%;
+        height: 7vh;
+        left: -12%;
+        top: 119%;
+        font-size: 3vw;
+    }
+
+    .upload_btn3{
+        position: absolute;
+        width: 125%;
+        height: 7vh;
+        left: -12%;
+        top: 133%;
+        font-size: 3vw;
+        
+            }
+
+    .share_btn{
+        position: absolute;
+        width: 45%;
+        height: 7vh;
+        left:25%;
+        top: 154%;
+        font-size: 3vw;
+        
+    }
+
+    .howto{
+        width: 115%;
+        margin-bottom: 1%;
+        font-weight: 600;
+        margin-left: 10%;
+        font-size: 7vw;
+        text-align: center;
+    
+    }
+
+    .aside_card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4em 2em;
+        margin-top: 1%;
+        position: absolute;
+        width:60%;
+        height: 85%;
+        left: 33%;
+        top: 340%;
+        font-weight: 700;
+        font-size: 80%;
+        background: #EFE9E9;
+        border-radius: 10px;
+        
+    }
+
+    .cop_btn{
+        top: 445%;
+        width: 15%;
+        height: 6vh;
+        left: 53%;       
+    }
+     
+
+
+    .p1{
+        width: 100%;
+        height: 12vh;
+        margin-top: -2.8em;
+        margin-left: 0.2em;
+        margin-bottom: -30%;
+        padding-right: 1rem;
+        padding-left: 13em;
+        font-weight: 600;
+        font-size: 2.5vw;
+        line-height: 3vh;
+        }
+      
+        
+    .p2{
+        width: 82%;
+        height: 4vh;
+        margin-top: -4em;
+        margin-left: 1%;
+        margin-bottom: 1.3rem;
+        padding-right: 2rem;
+        padding-left: 34%;
+        font-weight: 600;
+        font-size: 2.5vw;
+        line-height: 3vh;
+        
+        }
+        
+    /* .procedure{
+        
+        width: 100%;
+        font-weight: 700;
+        
+    } */
+    .step1{
+        width:55%;
+        height: 2vh;
+        float: left;
+        margin-top: 3%;
+        font-size: 4vw;  
+    }
+
+    .step2{
+        width:65%;
+        height:2vh;
+        float: left;
+        padding-left: 15%;
+        font-size: 4vw; 
+        
+    }    
+
+    .one{
+        width: 79%;
+        height: 2vh;
+        margin-left: -3%;
+        margin-top: 16%;
+        float: left;
+        font-weight: 700;
+        font-size: 7vw;
+        text-align: center
+    }
+    
+    .two{
+        width: 48%;
+        height: 6vh;
+        float: left;
+        margin-left: 44%;
+        margin-top: 13%;
+        font-weight: 700;
+        font-size: 7vw;
+
+    }
+    
+
+
+    li{ 
+        font-size: 1.7vw;
+    }
+    .gen_nav> ul{
+        
+        margin-left: 13%;   
+    }
+
+    li{
+        display: inline-block;
+        padding-left: 1rem;
+        padding-top: 5rem;
+        font-weight: 700;
+        font-size: 2vw;
+        /* line-height: 1vw; */
+        text-align: center;
+    
+    }
+
+
+}
+
+
