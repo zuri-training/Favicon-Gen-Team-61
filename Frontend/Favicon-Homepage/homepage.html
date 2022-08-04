@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AccountPage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+    <script src="homepage.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="sidebar">
+          <div
+            style="display: none"
+            id="mySidebar"
+          >
+            <button onclick="fav_close()">
+              Close &times;
+            </button>
+            <a href="#" class="bar-item">Settings</a>
+            <a href="#" class="bar-item">Logout</a>
+            <a href="#" class="bar-item">Mode</a>
+          </div>
+          <div class="bars">
+            <button id="threeBars" onclick="fav_open()">&#9776;</button>
+          </div>
+        </div>
+        <div style="display: block; text-align: left">
+          <svg
+            style="padding-right: 5px"
+            width="48px"
+            height="48px"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.2633 4.31744C8.54649 5.51787 6.99405 6.93717 5.64639 8.53488C11.1536 8.0236 18.1502 8.85846 26.2732 12.92C34.9476 17.2571 41.9325 17.4037 46.7937 16.466C46.3526 15.1305 45.7973 13.847 45.1395 12.6269C39.5748 13.2138 32.4408 12.4369 24.1267 8.27998C18.8472 5.64021 14.1933 4.55281 10.2633 4.31744ZM41.8889 7.99998C37.4943 3.09 31.1081 0 24 0C21.9126 0 19.8872 0.266529 17.9564 0.767376C20.5714 1.4809 23.3494 2.52478 26.2732 3.98672C32.3604 7.03023 37.6157 8.01019 41.8889 7.99998ZM47.8331 21.1537C41.9603 22.3134 33.8505 22.0752 24.1267 17.2133C15.036 12.6679 7.80052 12.7251 2.92068 13.8096C2.6688 13.8655 2.42285 13.9243 2.18284 13.9855C1.54395 15.375 1.03396 16.8361 0.668043 18.3534C1.05886 18.249 1.46272 18.1497 1.87939 18.0571C7.79949 16.7415 16.1641 16.7987 26.2732 21.8533C35.3641 26.3987 42.5995 26.3414 47.4794 25.257C47.6466 25.2199 47.8113 25.1815 47.9733 25.1419C47.9911 24.7635 48 24.3828 48 24C48 23.037 47.9433 22.0872 47.8331 21.1537ZM47.1897 30.2067C41.3739 31.2235 33.5004 30.8333 24.1267 26.1465C15.036 21.6012 7.80052 21.6584 2.92068 22.7429C1.8375 22.9835 0.863087 23.2766 0.003516 23.5861C0.0011724 23.7237 0 23.8617 0 24C0 37.2548 10.7452 48 24 48C35.1085 48 44.4543 40.4531 47.1897 30.2067Z"
+              fill="black"
+              fill-opacity="0.5"
+            />
+          </svg>
+          <p style="float: right;"><b>FaviconGen</b></p>
+        </div>
+        <div id="profiler">
+          <label class="switch" style="float: left; margin-top: 6px">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <img
+            src="https://th.bing.com/th/id/OIP.fC6UGffwkwSedJg1g8DjqQHaHa?pid=ImgDet&rs=1"
+            alt="profile_pic"
+            id="profile"
+            style="
+              height: 35px;
+              width: 55px;
+              padding-left: 20px;
+              margin-right: 30px;
+            "
+          />
+        </div>
+      </div>
+      <div class="click">
+        <a href="#" class="bar-item">Settings</a>
+        <a href="#" class="bar-item">Logout</a>
+      </div>
+    </header>
+    <main id="main">
+      <div class="intro">
+        <h1>Prepare wonderful favicons, easy and simple !</h1>
+        <p>
+          Generate favicons, choose from out lists, or draw yours, join
+          thousands of users across the globe in getting an icon for your
+          website. explore our best tools, coupled with best pracices in
+          designing your favicon for your web site.
+        </p>
+      </div>
+      <div class="button">
+        <a href="#">Generate Icon</a>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="favicongen">
+          <nav class="navi0">
+            <span
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.84219 2.87829C5.69766 3.67858 4.6627 4.62478 3.76426 5.68992C7.4357 5.34906 12.1001 5.90564 17.5155 8.61335C23.2984 11.5047 27.955 11.6025 31.1958 10.9773C30.9017 10.087 30.5315 9.23135 30.093 8.41791C26.3832 8.80919 21.6272 8.29127 16.0845 5.51998C12.5648 3.76014 9.46221 3.03521 6.84219 2.87829ZM27.9259 5.33332C24.9962 2.06 20.7387 0 16 0C14.6084 0 13.2581 0.177686 11.9709 0.511584C13.7143 0.987269 15.5663 1.68319 17.5155 2.65781C21.5736 4.68682 25.0771 5.34013 27.9259 5.33332ZM31.8887 14.1025C27.9735 14.8756 22.567 14.7168 16.0845 11.4755C10.024 8.44527 5.20035 8.48343 1.94712 9.20639C1.7792 9.24367 1.61523 9.28287 1.45522 9.32367C1.0293 10.25 0.689308 11.2241 0.445362 12.2356C0.705909 12.166 0.975145 12.0998 1.25293 12.0381C5.19966 11.161 10.7761 11.1991 17.5155 14.5689C23.5761 17.5991 28.3997 17.561 31.6529 16.838C31.7644 16.8133 31.8742 16.7877 31.9822 16.7613C31.9941 16.509 32 16.2552 32 16C32 15.358 31.9622 14.7248 31.8887 14.1025ZM31.4598 20.1378C27.5826 20.8157 22.3336 20.5555 16.0845 17.431C10.024 14.4008 5.20035 14.439 1.94712 15.1619C1.225 15.3223 0.575392 15.5178 0.002344 15.7241C0.000781601 15.8158 0 15.9078 0 16C0 24.8366 7.16344 32 16 32C23.4057 32 29.6362 26.9687 31.4598 20.1378Z"
+                  fill="black"
+                  fill-opacity="0.5"
+                />
+              </svg>
+              <b>FaviconGen</b></span
+            >
+            <p style="padding: 10px 0px">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <h5>Connect with us.</h5>
+            <div class="stayconnected">
+              <h5 class="follow"><b>Follow us</b></h5>
+              <i
+                class="fa fa-facebook-square"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 5%;
+                  padding-top: 6%;
+                "
+              ></i>
+              <i
+                class="fa fa-instagram"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 5%;
+                  padding-top: 6%;
+                "
+              ></i>
+              <i
+                class="fa fa-twitter-square"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 5%;
+                  padding-top: 6%;
+                "
+              ></i>
+              <i
+                class="fa fa-linkedin-square"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 5%;
+                  padding-top: 6%;
+                "
+              ></i>
+            </div>
+            <br />
+            <span class="span"
+              ><i
+                class="fa fa-envelope"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 10px;
+                "
+              ></i
+              >LoremIpsum@examplemail.com</span
+            ><br />
+            <span class="span"
+              ><i
+                class="fa fa-phone"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 10px;
+                "
+              ></i
+              >+234-0023456</span
+            >
+          </nav>
+        </div>
+        <div class="developer">
+          <h4 style="padding-bottom: 10px">
+            Developer
+          </h4>
+          <nav class="navi1">
+            <a href="#">Frontend </a>
+            <a href="#">Backend </a>
+            <a href="#">Design </a>
+            <a href="#">Graphics </a>
+          </nav>
+        </div>
+        <div class="resources">
+          <h4 style="padding-bottom: 10px">
+            Resources
+          </h4>
+          <nav class="navi2">
+            <a href="#">Generate icon from Image</a>
+            <a href="#">Generate icon from Text</a>
+            <a href="#">Convert</a>
+            <a href="#">Features</a>
+            <a href="#">FAQs</a>
+          </nav>
+        </div>
+        <div class="company">
+          <h4 style="padding-bottom: 10px">
+            Company
+          </h4>
+          <nav class="navi3">
+            <a href="#">About Us</a>
+            <a href="#"> Zuri Team</a>
+            <a href="#">Ingressive For Good</a>
+          </nav>
+        </div>
+
+        <div class="follow">
+          <h4><b>Follow us</b></h4>
+          <i
+            class="fa fa-facebook-square"
+            style="
+              font-size: 24px;
+              color: rgba(84, 84, 84, 1);
+              padding-right: 5%;
+              padding-top: 6%;
+            "
+          ></i>
+          <i
+            class="fa fa-instagram"
+            style="
+              font-size: 24px;
+              color: rgba(84, 84, 84, 1);
+              padding-right: 5%;
+              padding-top: 6%;
+            "
+          ></i>
+          <i
+            class="fa fa-twitter-square"
+            style="
+              font-size: 24px;
+              color: rgba(84, 84, 84, 1);
+              padding-right: 5%;
+              padding-top: 6%;
+            "
+          ></i>
+          <i
+            class="fa fa-linkedin-square"
+            style="
+              font-size: 24px;
+              color: rgba(84, 84, 84, 1);
+              padding-right: 5%;
+              padding-top: 6%;
+            "
+          ></i>
+        </div>
+        <div class="copy2">
+          <div><p>&copy;2022 Zuri|All rights reservered.</p></div>
+          <div>
+            <p><a href="#">Terms & Conditions</a>|<a href="#">Privacy Policy</a></p>
+          </div>
+          </div>
+      </div>
+      <br>
+      <div class="horizontal">
+        <i class="fa fa-question-circle" style="font-size:32px;color:rgba(84, 84, 84, 1); float: right;  clear:both; margin-right: 15%; padding: 5px;"></i>
+      <hr style="height:1px;border-width:0;color:gray;background-color:gray; margin: auto; margin-left: 8%; width: 85%;">
+      <div class="copy">
+      <div><p>&copy;2022 Zuri|All rights reservered.</p></div>
+      <div>
+        <p><a href="#">Terms & Conditions</a>|<a href="#">Privacy Policy</a></p>
+      </div>
+      </div>
+      </div>
+     
+
+      <div class="container">
+        <svg
+          class="svgfoot"
+          width="100"
+          height="626"
+          viewBox="0 0 1440 626"
+          fill="none"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1440 180.711C1440 180.711 1353.76 8.17394 1085.01 0.471399C816.268 -7.23114 531.476 82.1184 336.936 74.4158C142.395 66.7133 184.513 26.6601 0 0.471399V637H703.955H1440V180.711Z"
+            fill="#D9D9D9"
+          />
+        </svg>
+      </div>
+    </footer>
+  </body>
+</html>

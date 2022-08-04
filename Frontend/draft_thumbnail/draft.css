@@ -140,10 +140,6 @@ body {
   padding: 1rem;
 }
 
-
-
-
-
 /* LIST VIEW
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .list-view li + li {
@@ -180,19 +176,6 @@ i{
   padding: 0 1.5rem;
   text-align: right;
   color: #1a1a1a;
-}
-
-/* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-footer {
-  font-size: 1rem;
-  padding: 0 1.5rem;
-  text-align: right;
-  background: url(http://www.w3.org/2000/svg);
-}
-
-footer span {
-  color: #e31b23;
 }
 
 /* MQ
