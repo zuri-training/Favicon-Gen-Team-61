@@ -176,6 +176,7 @@ padding: 0 0 0 50px;
     float: left;
 
     border-radius: 50%;
+    margin-left: 5%;
     color: white;
 
     margin-top: 30px;
@@ -275,7 +276,7 @@ padding: 0 0 0 50px;
     padding-bottom: 5px;
     position: relative;
     color: #ffffff;
-
+    font-weight: bold;
 }
 
 .free::after {
@@ -287,7 +288,7 @@ padding: 0 0 0 50px;
     top: 75%;
     bottom: 0;
     background-repeat: no-repeat;
-    background-image: url(/Frontend/src/assets/images/Horizontal.png);
+    background-image: url(../images/Horizontal.png);
 }
 
 .start-btn {
@@ -348,11 +349,107 @@ path {
 .fifth-section {
     margin: 33px 0 55px 0;
     padding: 55px 0;
+    background-color: $gray;
+}
+
+@media screen and (min-width: 1000px) { 
+    .desktop-log{
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 1000px) {
   
+//django
+.nav-link {
+        font-size: 16px;
+        font-weight: normal;
+        margin: auto 2px;
+        color: rgb(0, 0, 0);
+        margin: auto 19px;
+    }
+    .end-btn {
+        justify-content: flex-end !important;
+        padding: 33px;
+        // margin: auto 3px 0 10%;
+    }
 
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: inherit;
+    }
+
+    .login-mobile {
+        float: left;
+        flex-direction: inherit !important;
+
+    }
+
+    .log-mobile {
+        border: none;
+        padding: 0 13px !important;
+        border-radius: 3px;
+        margin: 22px 22px;
+        background-color: $lightBlue;
+    }
+
+    .first-section {
+        text-align: center;
+        margin-bottom: 83px;
+        padding-top: 88px;
+        padding-bottom: 198px;
+        background-color: #265872;
+        color: white;
+    }
+
+    .sign-mobile {
+        display: none;
+    }
+
+    .square-bx {
+        position: relative;
+        line-height: 30px;
+        width: 70%;
+        margin: auto;
+    }
+
+    .triangle {
+        position: absolute;
+        left: 5%;
+        top: 5px;
+    }
+
+    .center {
+        width: -webkit-fit-content !important;
+        width: -moz-fit-content !important;
+        width: 90% !important;
+    }
+
+    .square-shape {
+        left: 80%;
+        top: 100%;
+    }
+
+    .first-section header {
+        font-size: 34px;
+        padding-top: 83px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .square-bx br {
+        display: none;
+    }
+
+    //django
   
 }
 
@@ -362,13 +459,13 @@ path {
             
         }
 
-  .free-btn a {
-      border: none;
-      text-decoration: none;
-      color: black;
-      font-size: 10px !important;
-      font-weight: 700;
-  }
+                .free-btn a {
+                    border: none;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 10px !important;
+                    font-weight: 700;
+                }
 }
 
 @media screen and (max-width: 990px) {
@@ -993,6 +1090,9 @@ input:checked+.slider:before {
 }
 
 //About Us Page
+.fw-semibold span{
+    color: $mediumblue;
+}
 
 .third-section{
     justify-content: center;
@@ -1097,7 +1197,7 @@ main {
 }
 
 footer {
-    background-image: url(../images/Vectorlight.png);
+    background-image: url(../images/Vectorlighng);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1115,6 +1215,7 @@ footer {
     width: 100%;
     left: 0;
     bottom: 0;
+    display: inline-block;
 }
 
 .footer a {
@@ -1207,12 +1308,6 @@ footer {
     background-color: rgb(244 250 254);
 }
 
-.rights-res{
-    display: block;
-    margin: auto;
-        width: 80%;
-}
-
 .last-section h3:last-child {
     text-align: right;
 
@@ -1236,80 +1331,11 @@ hr {
 
 @media screen and (max-width: 1000px) {
 
-    //django
-.end-btn {
-        justify-content: flex-end !important;
-        padding: 33px;
-        // margin: auto 3px 0 10%;
-    }
-.navbar>.container-fluid,
-.navbar>.container-lg,
-.navbar>.container-md,
-.navbar>.container-sm,
-.navbar>.container-xl,
-.navbar>.container-xxl {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content:inherit;
-}
-.login-mobile{
-    float: left;
-        flex-direction: inherit !important;
-
-}
-.log-mobile{
-    border: none;
-        padding: 0 13px !important;
-        border-radius: 3px;
-            margin:22px 22px;
-        background-color: $lightBlue;
-}
-
-.first-section {
-    text-align: center;
-    margin-bottom: 83px;
-        padding-top: 88px;
-    padding-bottom: 198px;
-    background-color: #265872;
-    color: white;
-}
-
-.sign-mobile{
-    display: none;
-}
-
-        .square-bx {
-            position: relative;
-            line-height: 30px;
-            width: 70%;
-            margin: auto;
-        }
     .triangle {
             position: absolute;
-            left: 5%;
-            top: 5px;
+            left: 35%;
+            top: 55px;
         }
-           .center {
-               width: -webkit-fit-content !important;
-               width: -moz-fit-content !important;
-               width: 90% !important;
-           }
-
-                .square-shape {
-                    left: 80%;
-                    top: 100%;
-                }
-  .first-section header {
-    font-size: 34px;
-    padding-top: 83px;
-    position: relative;
-    display: inline-block;
-}
-.square-bx br{
-    display: none;
-}
-    //django
 
 .footer-svg svg {
         width: 240px;
