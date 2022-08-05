@@ -15,8 +15,10 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   /> -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DMsans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
    
     <title>Account Setting</title>
 </head>
@@ -26,7 +28,7 @@
         <header class="navbar bg-light fw-semibold navbar-expand-md">
             <h1 class="visually-hidden">Favicon Account settings page</h1>
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./images/site-logo.png" alt=""> FaviconGen</a>
+              <a class="navbar-brand" href="#"><img src="./images/Vector (2).png" alt=""> FaviconGen</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -37,15 +39,16 @@
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 justify-content-md-end">
-                    <li class="nav-item">
-                      <a class="nav-link active text-capitalize" aria-current="page" href="#">john doe <img src="./images/healthicons_ui-user-profile (1).png" alt=""></a>
-                    </li>
-
                     <li class="form-check form-switch align-self-md-center" id="darkmode">
                         <input class="form-check-input" type="checkbox" role="switch" >
                         <label class="form-check-label" for="darkmodeswitch" ></label>
                          
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-capitalize" aria-current="page" href="#">john doe  <img src="./images/Avatar.png" alt=""></a>
+                    </li>
+
+                    
                   </ul>
                   
                 </div>
@@ -61,39 +64,40 @@
                 <form action="" >
 
                     <header>
-                        <img src="./images/healthicons_ui-user-profile.png" alt="User Avatar">
+                          <img src="./images/healthicons_ui-user-profile (3).png" alt="User Avatar">
                     </header>
                     
 
                     <div class="row border-bottom py-4 ">
                         <div class="col-md-6 px-5">
-                            <div class="mb-3">
-                                <label for="usermail" class="form-label fs-4">Email</label>
-                                <input type="email" name="" id="usermail" class="form-control p-3" placeholder="existingemail@gmail.com">
+                            <div class="mb-3"><br>
+                                <h2 class="fs-4">Email</h2>
+                            
+                                <h6>existing email@gmail.com</h6>
                             </div>
                             <div class="mb-3">
-                                <label for="username" class="form-label fs-4">Username</label>
-                                <input type="email" name="" id="useranme" class="form-control p-3" placeholder="existing name">
+                                <label for="username">Username</label>
+                                <input type="text" name="" id="useranme" class="form-control p-3" placeholder="Peter Grey">
                             </div>
                         </div>
                         <div class="col-md-6 px-5">
                             <fieldset>
-                                <legend>Password</legend>
+                                <h2 class="fs-4">Password</h2>
                                 <div class="mb-3">
-                                    <label for="currentpassword" class="form-label">Password</label>
-                                    <input type="email" name="" id="currentpassword" class="form-control p-3" placeholder="">
+                                    <label for="currentpassword" class="form-label">Current Password</label>
+                                    <input type="password" name="" id="currentpassword" class="form-control p-3" placeholder="">
                                 </div>
                                 <div class="mb-3">
                                     <label for="newpassword">New password</label>
-                                    <input type="email" name="" id="newpassword" class="form-control p-3" placeholder="">
+                                    <input type="password" name="" id="newpassword" class="form-control p-3" placeholder="">
                                 </div>
                                 <div class="mb-3">
                                     <label for="confirmpassword">Confirm new password</label>
-                                    <input type="email" name="" id="confirmpassword" class="form-control p-3" placeholder="">
+                                    <input type="password" name="" id="confirmpassword" class="form-control p-3" placeholder="">
                                 </div>
                             </fieldset>
                             <div>
-                                <button class="btn btn-secondary px-4 text-black" role="button">Update profile</button>
+                                <button class="btn btn-primary px-4 text-white" role="button">Update profile</button>
                             </div>
                         </div>
                     </div>
@@ -105,201 +109,9 @@
 
             <section class="container my-5">
                 <h2 class="fs-4">Delete Account</h2>
-                <p>This will immediately delete all of your data including saved icons and more. This can’t be undone.</p>
-                <button class="btn btn-outline-danger px-4" role="button">Delete Account</button>
+                <p>This will immediately delete all of your data including saved icons and <br> more. This can’t be undone.</p>
+                <button class="btn btn-danger px-4 text-white" role="button"> Delete Account</button>
             </section>
-
-
-        </main>
-
-
-        <div class="my-5" style="background-image: url('./images/footer-background.svg'); background-size: cover;">
-            <footer class="container my-5 mx-auto" id="global-footer">
-                <div class="py-5 row gy-5 border-bottom border-dark position-relative">
-                    <div class="col-12 col-md-4">
-                        <!-- footer header -->
-                        <header class="mb-4 mb-md-0">
-                        <h5 class="navbar-brand fs-4 fw-semibold" href="#" aria-label="Favicon logo"><img src="./images/site-logo.png" alt=""> FaviconGen</h5>
-                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quasi?</p>
-                        </header>
-    
-                        <!-- contact us -->
-                        <div class="d-none d-md-block">
-                            <div>
-                                <h5 class="">Contact us</h5>
-                                <div>
-                                    <ul class="list-unstyled list-inline-item d-inline-flex my-4" role="list">
-    
-                                        <!-- contact us --facebook -->
-                                        <li class="nav-item"><a class="nav-link" href="/">
-                                                <img class="me-2" src="./images/facebook-logo-2019.svg" width="30" height="30" alt aria-hidden="true" />
-                                                <span class="visually-hidden">Favicon Facebook page</span></a>
-                                        </li>
-    
-                                        <!-- contact us --github -->
-                                        <li class="nav-item"><a class="nav-link me-2" href="/">
-                                                <img class="" src="./images/instagram.svg" width="30" height="30" alt aria-hidden="true" />
-                                                <span class="visually-hidden">Favicon Instagram page</span></a>
-                                        </li>
-    
-                                        <!-- contact us --twitter -->
-                                        <li class="nav-item"><a class="nav-link me-2" href="/">
-                                                <img class="" src="./images/twitter.svg" width="30" height="30" alt aria-hidden="true" />
-                                                <span class="visually-hidden">Favicon Twitter page</span></a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link me-2" href="/">
-                                            <img class="" src="./images/linkedin.svg" width="30" height="30" alt aria-hidden="true" />
-                                            <span class="visually-hidden">Favicon Linkedin page</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <ul class="list-unstyled list-inline-item d-flex flex-column" role="list">
-    
-                                <!-- contact us --email -->
-                                <li class="nav-item mb-2">
-                                    <a class="nav-link" href="mailto:">
-                                        <img class="me-3" src="./images/mail.svg" width="30" height="30" alt aria-hidden="true" /><span class="text-black">lorem@loremmail.com</span>
-                                        <span class="visually-hidden">FaviconGen email account</span>
-                                    </a>
-                                </li>
-    
-                                <!-- contact us --telephone -->
-                                <li class="nav-item mb-2">
-                                    <a class="nav-link" href="tel:+">
-                                        <img class="me-3" src="./images/phone.svg" width="30" height="30" alt aria-hidden="true" /><span class="text-black">+12345345</span>
-                                        <span class="visually-hidden">FaviconGen telephone</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-    
-                    <!--our developers -->
-                    <div class="col-6 col-md-2">
-                        <h5 class="text-decoration-underline">Developer</h5>
-                        <ul class="nav flex-column">
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem</a></li>
-                        </ul>
-                    </div>
-    
-                    <!--our resources  -->
-                    <div class="col-6 col-md-3 ">
-                        <h5 class="text-decoration-underline">Resources</h5>
-                        <ul class="nav flex-column">
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem, ipsum dolor.</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem ipsum dolor sit.</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Convert</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Favicons</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        </ul>
-                    </div>
-    
-                    <!-- our company -->
-                    <div class="col-6 col-md-2">
-                        <h5 class="text-decoration-underline">Company</h5>
-                        <ul class="nav flex-column">
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About us</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Zuri Team</a></li>
-                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem ipsum dolor sit.</a></li>
-                        </ul>
-                    </div>
-    
-                    <!-- empty grid column for spacing -->
-                    <div class="d-none d-md-block col-1"></div>
-    
-                    
-    
-                        <!-- contact us -->
-                        <div class="col-6 d-md-none">
-                            <div>
-                                <h5 class="">Contact us</h5>
-                                <div>
-                                    <ul class="list-unstyled list-inline-item d-inline-flex" role="list">
-                                        <li class="nav-item"><a class="nav-link" href="/">
-                                                <img class="me-2" src="./images/facebook-logo-2019.svg" width="30" height="30" alt aria-hidden="true" />
-                                                <span class="visually-hidden">Favicon Facebook page</span></a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link me-2" href="/">
-                                                <img class="" src="./images/instagram.svg" width="30" height="30" alt aria-hidden="true" />
-                                                <span class="visually-hidden">Favicon Instagram page</span></a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link me-2" href="/">
-                                                <img class="" src="./images/twitter.svg" width="30" height="30" alt aria-hidden="true" />
-                                                <span class="visually-hidden">Favicon Twitter page</span></a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link me-2" href="/">
-                                            <img class="" src="./images/linkedin.svg" width="30" height="30" alt aria-hidden="true" />
-                                            <span class="visually-hidden">Favicon Linkedin page</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <ul class="list-unstyled list-inline-item d-flex flex-column" role="list">
-                                <li class="nav-item mb-2">
-                                    <a class="nav-link" href="mailto:">
-                                        <img class="me-3" src="./images/mail.svg" width="30" height="30" alt aria-hidden="true" /><span class="text-black">lorem@loremmail.com</span>
-                                        <span class="visually-hidden">FaviconGen email account</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a class="nav-link" href="tel:+">
-                                        <img class="me-3" src="./images/phone.svg" width="30" height="30" alt aria-hidden="true" /><span class="text-black">+12345345</span>
-                                        <span class="visually-hidden">FaviconGen telephone</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- get help -->
-                        <div class=" position-absolute bottom-0 end-0">
-                            <a class="nav-link position-absolute bottom-0 end-0 " href="/">
-                                <img class="me-2" src="./images/help.svg" width="30" height="30" alt aria-hidden="true" />
-                                <span class="visually-hidden">get help</span>
-                            </a>
-                        </div>
-                </div>
-    
-                <!-- copywright statement -->
-                <div class="text-center text-md-start p-5 d-md-flex justify-content-md-between">
-                    
-                    <p><time datetime="2022-08-20" class="border-end border-secondary pe-1">20 August,2022</time><span class="ps-1">All rights reserved</span></p>
-                    
-                    <ul class="list-unstyled list-inline-item d-inline-flex">
-                        <li class="nav-item border-end border-secondary pe-1">
-                            <a href="" class="nav-link">Terms & Conditions</a>
-                        </li>
-                        <li class="nav-item ps-1">
-                            <a href="" class="nav-link">Privacy</a>
-                        </li>
-                    </ul>
-
-                </div>  
-            </footer>
-        </div>
-
-
-        <!-- || icon attributions -->
-        <!-- <a href="https://iconscout.com/icons/mail" target="_blank">Mail Icon</a> on <a href="https://iconscout.com">IconScout</a> -->
-        <!-- <a href="https://iconscout.com/icons/phone" target="_blank">Phone Icon</a> on <a href="https://iconscout.com">IconScout</a> -->
-        <!-- <a href="https://iconscout.com/icons/instagram" target="_blank">Instagram Icon</a> by <a href="https://iconscout.com/contributors/pocike" target="_blank">Those Icons</a> -->
-        <!-- <a href="https://iconscout.com/icons/twitter" target="_blank">Twitter Icon</a> on <a href="https://iconscout.com">IconScout</a> -->
-        <!-- <a href="https://iconscout.com/icons/linkedin" target="_blank">Linkedin Icon</a> on <a href="https://iconscout.com">IconScout</a> -->
-        <!-- <a href="https://iconscout.com/icons/help" target="_blank">Help Icon</a> by <a href="https://iconscout.com/contributors/fluent">Microsoft</a> on <a href="https://iconscout.com">IconScout</a> -->
-
-
-
-
-
-
-
-
-
-
 
 
 
