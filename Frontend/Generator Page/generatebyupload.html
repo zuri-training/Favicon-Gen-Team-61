@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="upload.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <fieldset>
+        <legend><strong>Generate from upload</strong></legend>
+        <div class="container">
+        <div class="left">
+            <div class="inside">
+                <div class="bigbox">
+                    <div class="preview-img">
+                        <img src="Vector-1.png" alt="preview-img" id="canvas">
+                    </div>
+                    <p class="upico">(Upload png,svg,gif,ico to convert to ico)</p>
+                    <input type="file" class="file-input" accept="image/*" hidden >
+                    <button class="btn3">Upload </button>
+                </div>
+                <div class="buttons disable">
+                    <button class="btn1">Save</button>
+                    <button class="btn2" id="download">Generate</button>
+                </div>
+                
+            </div>
+            
+
+        </div>
+        <div class="right">
+            <div class="instructions">
+                <div class="instruction">
+                <h2>How to install</h2>
+                <h4>Step 1</h4>
+                <p class="instruct">
+                    Upload the image you want to use  as your favicon, 
+                    then click on 'Generate'.
+                </p>
+                <h4>Step 2</h4>
+                <p class="instruct">
+                    After the favicon has been converted, you can Save
+                    and then download, place downloaded files in root directory.
+                </p>
+                <h4>Step 3</h4>
+                <p class="instruct">
+                    Next, copy the following link tags and paste them into the head
+                    of your html
+                </p>
+            </div>
+                <textarea name="" id="embed" cols="30" rows="10"></textarea>
+                <button class="btn4">Download</button>
+            </div>
+           
+        </div>
+    </div>
+    </fieldset>
+    <script src="upload.js"></script>
+</body>
+</html>
