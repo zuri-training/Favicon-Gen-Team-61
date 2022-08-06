@@ -12,7 +12,7 @@ $lightBlue: #6ABCE8;
 body {
     font-family: $font ;
     color: #000;
-    background-color: white;
+    background-color: rgba(255, 253, 253, 0.267);
 }
 
 .dark-mode .bg-light,
@@ -96,7 +96,10 @@ a {
             padding-left: var(--bs-navbar-nav-link-padding-x);
         }
 }
-
+// .lead{
+//     width: 50%;
+//     margin: auto;
+// }
 
 .nav-link {
     font-size: 16px;
@@ -116,7 +119,7 @@ svg {
     border: none;
     padding: 0 13px !important;
     border-radius: 3px;
-    background-color: $lightBlue;
+    background-color: $strongBlue;
 }
 
 .container-fluid {
@@ -138,10 +141,46 @@ svg {
 padding: 0 0 0 50px;
 }
 
-.navbar{
-    background-color: $strongBlue;
+.home-nav-bg{
+    background-color: $averageBlue;
 }
 
+.nav-light-bg{
+    background-color: lightBlue;
+}
+
+.nav-text-bg{
+    color: #000;
+}
+.nav-text-bg:hover,
+.nav-text-bg:active {
+    color: $averageBlue;
+}
+// button {
+//     appearance: auto;
+ 
+   
+//     align-items: flex-start;
+//     cursor: default;
+//     box-sizing: border-box;
+//     margin: 0em;
+//     padding: 1px 6px;
+//     border-width: 77px;
+//     border-style: outset;
+//     border-color:rgba(0, 0, 0, 0.007)(0, 0, 0, 0.007);
+//     border-image: initial;
+// }
+
+// .navbar-toggler {
+//     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+//     font-size: var(--bs-navbar-toggler-font-size);
+//     line-height: 1;
+//     color: var(--bs-navbar-color);
+//     background-color: transparent;
+//     border: none !important;
+//     border-radius: var(--bs-navbar-toggler-border-radius);
+//     transition: var(--bs-navbar-toggler-transition);
+// }
 /* navbar */
 
 // generate favicons from images
@@ -169,17 +208,12 @@ padding: 0 0 0 50px;
 
 .col30 {
 
-    width: 30.25%;
+    width: 30%;
 
-    padding: 38px 10px;
 
     float: left;
 
-    border-radius: 50%;
-    margin-left: 5%;
-    color: white;
 
-    margin-top: 30px;
 
 }
 
@@ -229,7 +263,7 @@ padding: 0 0 0 50px;
     text-align: center;
     margin-bottom: 53px;
     padding-bottom: 98px;
-    background-color: $strongBlue;
+    background-color: $averageBlue;
     color: white;
 }
 
@@ -294,7 +328,7 @@ padding: 0 0 0 50px;
 .start-btn {
     border: none;
     margin-top: 22px;
-    background-color: $lightBlue;
+    background-color: $strongBlue;
     border-radius: 4px;
     opacity: 1;
     padding: 14px 42px !important;
@@ -356,24 +390,43 @@ path {
     .desktop-log{
         display: none;
     }
+       
     
 }
 
 @media screen and (max-width: 1000px) {
   
 //django
+.desktop-log .log-mobile{
+    margin-top: 22px !important;
+}
+.p-5 {
+        padding: 3rem 5px !important;
+        margin: auto;
+    }
+.continue {
+        font-size: 20px !important;
+    }
 .nav-link {
         font-size: 16px;
         font-weight: normal;
         margin: auto 2px;
         color: rgb(0, 0, 0);
-        margin: auto 19px;
+        margin: auto 0;
     }
     .end-btn {
         justify-content: flex-end !important;
-        padding: 33px;
+        padding:0 43px;
         // margin: auto 3px 0 10%;
     }
+
+        .navbar-toggler {
+           
+            background-color: transparent;
+            border:transparent;
+            border-radius: var(--bs-navbar-toggler-border-radius);
+            transition: var(--bs-navbar-toggler-transition);
+        }
 
     .navbar>.container-fluid,
     .navbar>.container-lg,
@@ -384,13 +437,14 @@ path {
         display: flex;
         flex-wrap: inherit;
         align-items: center;
-        justify-content: inherit;
+        justify-content:center;
     }
 
     .login-mobile {
         float: left;
-        flex-direction: inherit !important;
-
+        flex-direction:inherit !important;
+    flex-wrap: nowrap;
+        justify-content: flex-end;
     }
 
     .log-mobile {
@@ -406,7 +460,6 @@ path {
         margin-bottom: 83px;
         padding-top: 88px;
         padding-bottom: 198px;
-        background-color: #265872;
         color: white;
     }
 
@@ -501,9 +554,7 @@ path {
         padding: 20px 0;
 
     }
-.switch {
-  margin-top: 22px !important;
-}
+
     .nav-btn {
         padding: auto !important;
         margin: auto 22px;
@@ -760,7 +811,7 @@ iframe{
 
     width: 70%;
     margin:55px auto ;
-    border: solid 1px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
     padding-bottom: 52px;
  
 }
@@ -844,6 +895,10 @@ iframe{
     width: 70%;
     float: left;
 }
+.col100{
+    width: 100%;
+        float: left;
+}
 
 .col30 {
     width: 30%;
@@ -861,7 +916,8 @@ iframe{
     .col60,
     .col70,
     .col80,
-    .col90
+    .col90,
+    .col100
     {
         width: 100%;
     }
@@ -884,28 +940,65 @@ iframe{
         margin: auto;
     }
 
-    .col50 {
+    .col50,
+    .col30,
+    .col20,
+    .col25 {
         float: left;
         width: 100% !important;
         padding: 20px;
     }
 
+        .dev-des {
+            width: 100%;
+            display: block !important;
+            margin: 30px auto !important;
+        }
+.dev-des .col20 li {
+    text-align: center !important;
+}
 }
 
 .eight-section {
     margin: 123px auto;
 }
 
-.Contact-style {
-    background-color: rgb(142, 142, 142);
-    padding: 19px 23px;
-    text-align: center;
-    margin-right: -99px;
-    margin-top: 99px;
-    position: relative;
-    bottom: 0px;
+.form-style header {
+    font-size: 44px;
+    font-weight: 700;
+    width: 50%;
+    margin: auto;
 }
 
+.form-style h3 {
+    font-size: 19px;
+    font-weight: 300;
+    width: 50%;
+    margin: auto;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+.Contact-style {
+    background-color: $strongBlue;
+    padding: 53px 13px;
+    right: -126px;
+    bottom: -13px;
+    text-align: center;
+   border-right-style: 0px;
+    position: absolute;
+    bottom: 50px;
+}
+.form-style {
+    padding: 93px 0;
+    width: 70% !important;
+    margin: auto;
+    position: relative;
+    background-color: rgba(173, 216, 230, 0.412);
+}
 .Contact-style li a {
     color: white;
     font-size: 16px;
@@ -923,7 +1016,7 @@ iframe{
 }
 
 .Contact-style header {
-    font-size: 30px;
+    font-size: 20px !important;
     font-weight: 600;
     color: white;
 }
@@ -970,29 +1063,7 @@ input[type=submit]:hover {
     background-color: #202020;
 }
 
-.form-style header {
-    font-size: 44px;
-    font-weight: 700;
-    width: 50%;
-    margin: auto;
-}
 
-.form-style h3 {
-    font-size: 24px;
-    font-weight: 300;
-    width: 50%;
-    margin: auto;
-}
-
-form {
-    width: 50%;
-    margin: auto;
-}
-
-.form-style {
-    padding: 33px 0;
-    background-color: rgb(181, 181, 181);
-}
 
 
 
@@ -1090,57 +1161,80 @@ input:checked+.slider:before {
 }
 
 //About Us Page
+
+.journey-about{
+    font-size: 20px;
+}
+.about-icons img{
+
+    width: 70px;
+    padding: 12px;
+}
+.about-icons h5 {
+font-size: 30px;
+font-weight: bold;
+color: #46535F;
+text-transform: capitalize;
+   
+}
+.amico img{
+    width: 100%;
+}
+.amico  {
+    width: 100%;
+}
+
+.our{
+    font-size: 50px !important;
+    font-weight: bold;
+}
+
+.our span{
+color: $strongBlue;}
+.about-icons .col-12 {
+   padding: 43px;
+
+}
+.about-icons p {
+    font-size: 16px;
+    color: black;
+
+}
+.about-shape{
+position: absolute;
+
+}
+.fav-about{
+    position: relative;
+    margin: 119px auto;
+}
+
+.about-shapes{
+    position: absolute;
+    right: 0;
+    
+}
+
+.about-svg svg{
+    
+            fill: none;
+            height: 72;
+            width: inherit !important;
+        
+}
 .fw-semibold span{
     color: $mediumblue;
 }
 
-.third-section{
-    justify-content: center;
-}
-
-.third-section h1{
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-.third-section  span {
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
-    color: #4a4a4a ;
-}
-
-.third-section ul {
-   padding: 10px 0 !important;
-}
-.third-section li{
-    color: rgb(63, 63, 63);
-    text-align:center;
-  
-    font-size: 14px;
-    font-weight:bold;
-    line-height: 42px;
-}
-
-.third-section header {
-    text-align: center;
-    font-size: 21px;
-    font-weight: 800;
-}
-.team {
-    width: 100%;
-    margin: 23px auto;
-}
-
-.team .col30:first-child{
-    margin:  auto 33px;
-    text-align: center;
-}
 
 //forth-section Our value
+.value{
+    width: 60%;
+}
+
 .forth-section svg{
-width: 88px;
+width: 80%;
+margin:0 auto 73px auto !important;
 }
 
 .value-p{
@@ -1153,13 +1247,64 @@ width: 88px;
  .value-p  h1,
  .value-x h1,
  .value-y h1 {
-    font-size: 19px;
+    font-size: 29px;
      font-weight: 700;
      margin: 22px auto 0 auto auto;
  }
-  
+
+  .value-p p,
+  .value-x p,
+  .value-y p {
+      font-size: 19px;
+      font-weight: 400;
+      margin: 22px auto 0 auto auto;
+  }
+  .about-ptext{
+    width: 60%;
+    margin: auto;
+  }
 
 @media screen and (max-width: 1000px){
+
+    .Contact-style {
+            background-color: #265872;
+            padding: 23px 13px;
+            right: 0;
+            bottom: -13px;
+            text-align: center;
+            border-right-style: 0px;
+            position:unset;
+            bottom: -50px;
+            width: 80% !important;
+            margin: 0 10% !important;
+        }
+
+                .form-style {
+                    padding: 83px 0 222px 0 !important;
+                    width: 90% !important;
+                    margin: auto;
+                    bottom: 99px;
+                    position: unset;
+                    background-color: rgba(173, 216, 230, 0.412);
+                }
+
+                  .form-style header {
+                    font-size: 30px;
+                }
+.form-style h3 {
+    padding-bottom: 74px;
+    margin: auto;
+}
+
+.about-shape {
+        position: absolute;
+        top: -52px;
+        
+    }
+    .col-sm-6 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
     .value-p,
     .value-x,
     .value-y {
@@ -1215,7 +1360,6 @@ footer {
     width: 100%;
     left: 0;
     bottom: 0;
-    display: inline-block;
 }
 
 .footer a {
@@ -1287,6 +1431,10 @@ footer {
     width: 25%;
     float: left;
 }
+.col40{
+    width: 39.99%;
+    float: left;
+}
 
 .footer .col25,
 .footer .col25,
@@ -1330,7 +1478,18 @@ hr {
 }
 
 @media screen and (max-width: 1000px) {
+.switch-bg
 
+{margin: auto 22px !important;
+margin-bottom: 22px !important; }
+
+    .offcanvas.offcanvas-end {
+    top: 0;
+    right:0;
+    width: var(--bs-offcanvas-width);
+    border-left: var(--bs-offcanvas-border-width) solid rgb(233 15 15 / 18%);
+    transform: translateX(100%);
+}
     .triangle {
             position: absolute;
             left: 35%;
@@ -1402,4 +1561,233 @@ hr {
     h1 br {
         display: none;
     }
+}
+
+//ourteam third
+
+.dev-des  {
+   width: 100%;
+   display:inline-flex;
+    margin: 30px auto !important;}
+.dev-des header{
+ font-size: 35px !important;
+ color: $strongBlue;
+ padding: 0 !important;
+}
+
+.dev-des header .col30 {
+   
+    padding: 0 !important;
+}
+
+.col30{
+    float: left;
+}
+
+.dev-des .col30{
+    margin: 0 !important;
+}
+
+.dev-des .col20 li{
+    text-align: left;
+  
+}
+
+.dev-des ul li {
+    text-align: left;
+    font-size: 18px !important;
+    padding-bottom: 22px;
+
+}
+
+.col15{
+    width: 10%;
+    float: left;
+}
+
+.third-section {
+    justify-content: center;
+}
+
+.third-section h1 {
+    text-align: center;
+    font-weight: bold;
+    margin: 55px auto 38px auto;
+    font-size: 52px;}
+
+.third-section span {
+    text-align: center;
+    font-weight: bold;
+    color: $strongBlue;
+}
+
+.third-section ul {
+    padding: 10px 0 !important;
+}
+
+.third-section li {
+    color: rgb(63, 63, 63);
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 42px;
+}
+
+.third-section header {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.team {
+    width: 100%;
+    margin: 23px auto;
+}
+
+.team .col30:first-child {
+    margin: auto 33px;
+    text-align: center;
+}
+
+//about page 4th
+.value-mg {
+    margin: auto;
+}
+
+.value-4th-text h1{
+    text-align: center;
+    font-size: 45px !important;
+}
+
+.value-4th-text span{
+    color: $strongBlue !important;
+}
+
+@media screen and (max-width: 580px) {
+   
+.navbar-brand svg{
+    width: 83px !important;
+
+}
+.login-mobile {
+    justify-content: flex-end !important;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 0;
+    bottom: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+ 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin: auto 2px;
+}
+
+.value {
+    width: 100%;
+}
+.seventh-section .accordion {
+    background-color: transparent;
+    padding: 3px !important;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 4px;
+}
+.seventh-section {
+    width: 90%;
+    margin: 55px auto;
+    border: solid 1px;
+    padding-bottom: 52px;
+}
+
+}
+
+@media screen and (max-width: 434px) {
+  .login-mobile > .log-mobile{
+    display: none;
+  }
+   
+
+   
+
+}
+
+@media screen and (max-width: 337px) {
+    .login-mobile>.log-mobile {
+        display: none;
+    }
+
+.end-btn {
+    justify-content: flex-end !important;
+    padding: 0 3px;
+}
+.navbar-brand svg {
+    width: 83px !important;
+
+}
+.first-section header {
+    font-size: 24px;
+    
+}
+ .square-shape {
+    left: 80%;
+    top: 150%;
+}
+
+.login-mobile {
+    justify-content: flex-end !important;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 0;
+    bottom: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 19px;
+    margin: auto 2px;
+}
+
+.navbar-nav {
+    padding-left: 0;
+}
+.value {
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width: 387px) {
+.footer-svg svg {
+        width: 140px;
+        height: 48px;
+        fill: none;
+        filter: none !important;
+    }
+           h1 {
+               
+               font-size: 31px;
+            line-height:normal;
+           }
+
+   
+
 }

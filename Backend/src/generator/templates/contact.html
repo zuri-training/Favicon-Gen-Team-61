@@ -1,19 +1,18 @@
 {% load static %}
+{% load livereload_tags %}
+
 <!DOCTYPE html>
 
 <html>
+  {% load livereload_tags %}
+
     <head>
-{% load livereload_tags %}
-
-
-
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <title>Favicon generator</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-<link rel="stylesheet" type='text/css' href="{% static 'css/mainstyle.css' %}">
+<link rel="stylesheet" type='text/css' href="{% static '../static/css/mainstyle.css' %}">
 
 
     
@@ -36,9 +35,9 @@
     
     </head>
     <body>
-       <main>
+      
     <!-- navbar -->
-<nav class="navbar navbar-expand-lg home-nav-bg sticky-top">
+<nav class="navbar nav-light-bg navbar-expand-lg  sticky-top">
   <div class="container-fluid center  ">
          <button class="navbar-toggler end-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
                     <span class="navbar-toggler-icon"></span>
@@ -54,7 +53,7 @@
 
     </a>
 
-                <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+                <div class="offcanvas offcanvas-start w-60" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
                     <div class="offcanvas-header justify-content-end">
                         <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FaviconGen</h5> -->
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -64,17 +63,17 @@
       <ul class="navbar-nav    ">
     
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">Generate</a>
+          <a class="nav-link nav-text-bg " aria-current="page" href="{% url 'home' %}">Generate</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./about">About Us</a>
+          <a class="nav-link nav-text-bg " aria-current="page" href="{% url 'about' %}">About Us</a>
         </li>
         
              <li class="nav-item">
-          <a class="nav-link" href="./faq">FAQ</a>
+          <a class="nav-link nav-text-bg" href="./faw">FAQ</a>
         </li>
              <li class="nav-item">
-          <a class="nav-link" href="./contact">Contact</a>
+          <a class="nav-link nav-text-bg" href="./contact"> Contact</a>
         </li>
         
        
@@ -83,18 +82,18 @@
            <ul class="navbar-nav  desktop-log">
     
 
-         <label class="switch">
+         <label class="switch switch-bg">
   <input type="checkbox">
   <span class="slider round" id=""></span>
 </label>
           
           <li class="nav-item login log-mobile">
-          <a class="nav-link" href="./Auth/Login.html">Login</a>
+          <a class="nav-link nav-text-bg" href="./Auth/Login.html">Login</a>
         </li>
                 <button class="nav-btn sign-mobile">    
           
           <li class="nav-item ">
-          <a class="nav-link" href="./Auth/signup.html">Sign-Up</a>
+          <a class="nav-link nav-text-bg" href="./Auth/signup.html">Sign-Up</a>
         </li></button>
     
 
@@ -115,12 +114,12 @@
 </label>
           
           <li class="nav-item login log-mobile">
-          <a class="nav-link" href="./Auth/Login.html">Login</a>
+          <a class="nav-link nav-text-bg" href="./Auth/Login.html">Login</a>
         </li>
                 <button class="nav-btn sign-mobile">    
           
           <li class="nav-item ">
-          <a class="nav-link" href="./Auth/signup.html">Sign-Up</a>
+          <a class="nav-link nav-text-bg" href="./Auth/signup.html">Sign-Up</a>
         </li></button>
     
 
@@ -134,262 +133,50 @@
 
     <!-- navbar -->
 
-    <!-- first section -->
-<div class="first-section">
+    <main>
 
-    <header> 
-        <div class="triangle">
-  <svg width="52" height="62" viewBox="0 0 52 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="5.5" cy="56.5" r="5" stroke="#F4FAFE"/>
-<path d="M44.8127 2.25529L51.2984 26.4604C51.5973 27.5757 50.5766 28.5963 49.4613 28.2975L25.2562 21.8117C24.1409 21.5129 23.7673 20.1187 24.5838 19.3022L42.3031 1.58286C43.1196 0.766361 44.5138 1.13993 44.8127 2.25529Z" stroke="#F4FAFE"/>
-</svg>
+        <!-- contact section -->
 
-
-    
-  </div>
-Generate, Save & Share your <br> Favicon for <span class="free">FREE!</span>
-
-    </header>
-
-   
-    <h5 class="square-bx">
-      Convert files up to 2mb into SVGs, PNGs and JPGs, <br>
-    on any device, at anytime. 
-  
-  <span>
-        <div class="square-shape">
-      <svg width="50" height="60" viewBox="0 0 50 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="22.1856" y="25.6768" width="27.7841" height="27.7841" rx="1.5" transform="rotate(15 22.1856 25.6768)" stroke="#F4FAFE"/>
-<rect x="2.91605" y="0.612372" width="8.89782" height="8.89782" rx="1.5" transform="rotate(15 2.91605 0.612372)" stroke="#F4FAFE"/>
-</svg>
-
-    </div>
-  </span></h5>
-    
- 
-    <button class="start-btn"> <a href="/#"> Get Started </a> </button>
-
-</div>
-        <!-- first section -->
- <section class="">
-
-        <!-- generate favicons from images -->
-        <div class="my-2">
-            <div class="container text-center text-sm-start p-5 d-sm-flex">
-                <div class=" w-auto me-sm-5">
-                    <h2 class="text-wrap continue text-capitalize fw-semibold fs-4">Continue from where <br> you stopped</h2>
-                    <p class="lead ">
-                     With our draft feature you can always nsequat nunc amet sodales porttitor tempus. Vehiculan sequat nunc amet sodales porttitor tempus  
-
-                    </p>
-                        <button class="start-btn"> <a href="/#"> Get Started <i class="bi bi-chevron-right"></i></a> </button>
-
-                </div>
-                <!-- div for image -->
-                <div class="container p-5 ">
-                  <img src="{% static 'images/NEW HOME PAGE (6) 1.png' %}" alt=" image" />
-
-                </div>
-            </div>
-        </div>
-
-        <!-- generate favicons from text -->
-        <div class=" my-2">
-            <div class="container p-5 text-center text-sm-start d-sm-flex flex-sm-row-reverse">
-                <div class=" w-auto ms-sm-5">
-                    <h2 class="text-wrap continue text-capitalize fw-semibold fs-4">compatible with all browsers and platforms</h2>
-                    <p class="lead ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maiores, dolore expedita id magni dignissimos. Magnam vero dolores temporibus omnis eius corrupti quae?
-                    </p>
-                                            <button class="start-btn"> <a href="/#"> Get Started <i class="bi bi-chevron-right"></i></a> </button>
-
-                </div>
-                <!-- div for image -->
-                <div class="container p-5 ">
-                                    <img src="{% static 'images/laptop.png' %}" alt=" image" />
-
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- generate favicons from our icon pack -->
-
-        <div class=" my-2">
-            <div class="container text-center text-sm-start p-5 d-sm-flex">
-                <div class=" w-auto me-sm-5">
-                    <h2 class="text-wrap continue text-capitalize fw-semibold fs-4">convert files up to 2mb in few clicks <span class="text-uppercase">(spg,png,jpg)</span></h2>
-                    <p class="lead ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maiores, dolore expedita id magni dignissimos. Magnam vero dolores temporibus omnis eius corrupti quae?
-                    </p>
-                                                                <button class="start-btn"> <a href="/#"> Get Started <i class="bi bi-chevron-right"></i></a> </button>
-
-                </div>
-                <!-- div for image -->
-                <div class="container p-5 ">
-                                    <img src="{% static 'images/convert.png' %}" alt=" image" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-
-        <!-- fifth section -->
-
-        <div class="fifth-section">
-        
+<div class="eight-section">
+    <div class="rowX container">
        
-<!-- counter -->
+          <div class="col100">
+<div class="form-style">
+    <header>Get in Touch</header>
+    <h3>
 
-<div class="counter-box">
+        Do you need to ask us any question? 
+Kindly get in touch with us, We’d love to hear you.
+You can also request for the Demo.
+    </h3>
+    <div class="col30 Contact-style">
+            <header>Contact Us</header>
 
-	<div class="container rowX">
+            <ul>
+                                <li> <a href="/#"> <i class="bi bi-envelope"></i> info@favivon.com</a></li>
 
+                                            <li> <a href="/#"> <i class="bi bi-telephone-fill"></i> info@favivon.com</a></li>
 
-		<div class="counter-item col30">
-      <svg width="47" height="45" viewBox="0 0 47 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M33.9994 0C29.9394 0 26.0427 1.89 23.4994 4.87667C20.956 1.89 17.0594 0 12.9993 0C5.81268 0 0.166016 5.64667 0.166016 12.8333C0.166016 21.6533 8.09935 28.84 20.116 39.76L23.4994 42.8167L26.8827 39.7367C38.8994 28.84 46.8327 21.6533 46.8327 12.8333C46.8327 5.64667 41.186 0 33.9994 0ZM23.7327 36.2833L23.4994 36.5167L23.266 36.2833C12.1593 26.2267 4.83268 19.5767 4.83268 12.8333C4.83268 8.16667 8.33268 4.66667 12.9993 4.66667C16.5927 4.66667 20.0927 6.97667 21.3293 10.1733H25.6927C26.906 6.97667 30.406 4.66667 33.9994 4.66667C38.666 4.66667 42.166 8.16667 42.166 12.8333C42.166 19.5767 34.8394 26.2267 23.7327 36.2833Z" fill="#21313F"/>
-</svg>
-
-
-			<div data-count="89,000" class="counter">0</div>
-
-			<span>Generated Favicons</span>
-
-		</div>
-
-		
-
-		<div class="counter-item col30">
-<svg width="47" height="45" viewBox="0 0 42 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 0.666016C18.6926 0.666016 16.4369 1.35025 14.5183 2.6322C12.5998 3.91415 11.1044 5.73624 10.2214 7.86804C9.33838 9.99985 9.10734 12.3456 9.5575 14.6087C10.0077 16.8718 11.1188 18.9506 12.7504 20.5823C14.382 22.2139 16.4608 23.325 18.7239 23.7752C20.9871 24.2253 23.3328 23.9943 25.4646 23.1113C27.5964 22.2283 29.4185 20.7329 30.7005 18.8143C31.9824 16.8958 32.6667 14.6401 32.6667 12.3327C32.6667 9.23849 31.4375 6.27103 29.2496 4.0831C27.0617 1.89518 24.0942 0.666016 21 0.666016ZM21 19.3327C19.6155 19.3327 18.2622 18.9221 17.111 18.153C15.9599 17.3838 15.0627 16.2905 14.5328 15.0115C14.003 13.7324 13.8644 12.3249 14.1345 10.967C14.4046 9.60918 15.0713 8.3619 16.0503 7.38294C17.0292 6.40397 18.2765 5.73728 19.6344 5.46719C20.9922 5.19709 22.3997 5.33571 23.6788 5.86553C24.9579 6.39534 26.0511 7.29255 26.8203 8.44369C27.5895 9.59483 28 10.9482 28 12.3327C28 14.1892 27.2625 15.9697 25.9497 17.2824C24.637 18.5952 22.8565 19.3327 21 19.3327ZM42 44.9993V42.666C42 38.3341 40.2792 34.1797 37.2161 31.1166C34.153 28.0535 29.9985 26.3327 25.6667 26.3327H16.3333C12.0015 26.3327 7.84702 28.0535 4.78392 31.1166C1.72083 34.1797 0 38.3341 0 42.666V44.9993H4.66667V42.666C4.66667 39.5718 5.89583 36.6044 8.08375 34.4164C10.2717 32.2285 13.2391 30.9993 16.3333 30.9993H25.6667C28.7609 30.9993 31.7283 32.2285 33.9162 34.4164C36.1042 36.6044 37.3333 39.5718 37.3333 42.666V44.9993H42Z" fill="#21313F"/>
-</svg>
-
-			<div data-count="12,000" class="counter">0</div>
-
-			<span>Registered Users</span>
-
-		</div>
-
-		
-
-		<div class="counter-item col30 arrow-up">
-<svg width="47" height="45" viewBox="0 0 49 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M46.6478 1.44667C46.411 0.876518 45.958 0.423441 45.3878 0.186666C45.1073 0.0671042 44.8061 0.00368664 44.5012 0H32.8345C32.2157 0 31.6222 0.245833 31.1846 0.683418C30.747 1.121 30.5012 1.71449 30.5012 2.33333C30.5012 2.95217 30.747 3.54566 31.1846 3.98325C31.6222 4.42083 32.2157 4.66667 32.8345 4.66667H38.8778L25.8345 17.71L18.1578 10.01C17.9409 9.7913 17.6828 9.61771 17.3985 9.49925C17.1142 9.38079 16.8092 9.3198 16.5012 9.3198C16.1931 9.3198 15.8882 9.38079 15.6038 9.49925C15.3195 9.61771 15.0614 9.7913 14.8445 10.01L0.844493 24.01C0.625793 24.2269 0.452207 24.485 0.333746 24.7693C0.215286 25.0537 0.154297 25.3586 0.154297 25.6667C0.154297 25.9747 0.215286 26.2797 0.333746 26.564C0.452207 26.8484 0.625793 27.1064 0.844493 27.3233C1.06141 27.542 1.31948 27.7156 1.60381 27.8341C1.88815 27.9525 2.19313 28.0135 2.50116 28.0135C2.80919 28.0135 3.11417 27.9525 3.3985 27.8341C3.68284 27.7156 3.94091 27.542 4.15783 27.3233L16.5012 14.9567L24.1778 22.6567C24.3947 22.8754 24.6528 23.049 24.9371 23.1674C25.2215 23.2859 25.5265 23.3469 25.8345 23.3469C26.1425 23.3469 26.4475 23.2859 26.7318 23.1674C27.0162 23.049 27.2742 22.8754 27.4912 22.6567L42.1678 7.95667V14C42.1678 14.6188 42.4137 15.2123 42.8512 15.6499C43.2888 16.0875 43.8823 16.3333 44.5012 16.3333C45.12 16.3333 45.7135 16.0875 46.1511 15.6499C46.5887 15.2123 46.8345 14.6188 46.8345 14V2.33333C46.8308 2.02842 46.7674 1.72719 46.6478 1.44667Z" fill="#21313F"/>
-</svg>
-
-			<div data-count="6000" class="counter">0</div>
-
-			<span>Visitors Per Day </span>
-
-		</div>
-
-		
-
-
-		<div style="clear: both;"></div>
-
-	</div>
-
-</div>
+            </ul>
+            
+            <!-- <ul class="icon-style">
+                <li><i class="bi bi-linkedin"></i></li>
+                <li><i class="bi bi-twitter"></i></li>
+                <li><i class="bi bi-github"></i></li>
+            </ul> -->
 
         </div>
-                <!-- fifth section -->
-
-  <!-- sixth section -->
-<div class="sixth-section ">
- <div class=" my-2">
-            <div class="container p-5 text-center text-sm-start d-sm-flex flex-sm-row-reverse">
-                <div class=" w-auto ms-sm-5">
-                                    <img src="{% static 'images/folder.png' %}" alt=" image" />
-
-             </div>
-                <!-- div for image -->
-                <div class="container p-5 ">
-
-
-                                       <h2 class="text-wrap continue text-capitalize fw-semibold fs-4">Now You Can Archive <br>
-                                      Your Own Favicons</h2>
-                    <p class="lead ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maiores, dolore expedita id magni dignissimos. Magnam vero dolores temporibus omnis eius corrupti quae?
-                    </p>
-                                            <button class="start-btn"> <a href="/#"> Get Started <i class="bi bi-chevron-right"></i></a> </button>
-
-                
-                </div>
-            </div>
+</div>
         </div>
-</div>
- <!-- sixth section -->  
- 
- <!-- seventh section -->
+      
 
-<div class="seventh-section container">
-    <header>Frequently Asked Questions</header>
-     <div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-    </div>
-  </div>
-   <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-        Accordion Item #5
-      </button>
-    </h2>
-    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-    </div>
-  </div>
-    <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingFive">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-        Accordion Item #5
-      </button>
-    </h2>
-    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-    </div>
-  </div>
-</div>
-<div class="seventh-sec">
-
-<section class="container"> More Questions? visit our <span>help center</span></section>
-
 </div>
 
+<!-- contact section -->
 
-</div>
- <!-- seventh section -->
- 
+                <!-- footer-->
+
  <div class="footer-bg">
    <footer class="">   
       <div class=" rowX footer container">
@@ -461,7 +248,12 @@ Generate, Save & Share your <br> Favicon for <span class="free">FREE!</span>
      </div>
     </footer>
  </div>
+
 </main>
+
+ 
+
+
  
 
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
