@@ -7,6 +7,8 @@ $strongBlue: #265872;
 $mediumblue: #337597;
 $averageBlue: #3F92BD;
 $lightBlue: #6ABCE8;
+$darkmode: #16212A;
+$darkgrad: linear-gradient(180deg, #21313F 0%, rgba(33, 49, 63, 0.95) 59.26%);
 
 
 body {
@@ -14,16 +16,52 @@ body {
     color: #000;
     background-color: rgba(255, 253, 253, 0.267);
 }
+.dark-mode .home-nav-bg,
+.dark-mode .first-section,
+.dark-mode .nav-light-bg{
+    background-color: #21313f;
+    
+}
 
 .dark-mode .bg-light,
-        .dark-mode .offcanvas
+        .dark-mode .offcanvas,
+        .dark-mode .last-section,
+        .dark-mode .last-section h3
 {
-    background-color: black !important;
+    background-color: #21313f !important;
     color: white !important;
 }
 
+.dark-mode .accordion-button {
+    background-color: $darkmode !important;
+}
+.dark-mode .seventh-section {
+  
+    box-shadow: 0px 0px 15px 3px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .fifth-section {
+  
+    background: $darkgrad !important;
+}
+.dark-mode .accordion-button {
+   
+    color: #ffffff;
+  
+}
+
+.dark-mode .accordion-button::after {
+    filter: invert(1) !important;
+    opacity: 1;
+}
+
+.dark-mode .accordion-item {
+    color: #000000;
+    background-color: white;
+    border: solid rgba(255, 255, 255, 0);
+    border-width: 1px;
+}
 .dark-mode .btn-close {
-    box-sizing: content-box;
     width: 2em;
     height: 2em;
     padding: 0.25em 0.25em;
@@ -38,44 +76,57 @@ background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg
 background-image: url(../images/Vectordark.png);
 }
 
+.dark-mode .form-style{
+    background-color: #21313F;
+}
 
 .dark-mode .nav-link,
 .dark-mode .intro h1,
-.dark-mode .intro p {
+.dark-mode .intro p,
+.dark-mode .footer a,
+.dark-mode .footer .col25 h4,
+.dark-mode .fa,
+.dark-mode .footer-svg p,
+.dark-mode .footer-svg h5,
+.dark-mode .fw-semibold,
+.dark-mode .about-ptext,
+.dark-mode .about-icons h5,
+.dark-mode .about-icons p,
+.dark-mode .journey-about,
+.dark-mode .dev-des .col20 li
+ {
    
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
 
 }
-
-.dark-mode .nav-btn .nav-link {
-
-    color: rgb(0, 0, 0);
-
+.dark-mode .footer-svg svg,
+.dark-mode .about-shape,
+.dark-mode .about-shapes {
+    filter: invert(1) !important;
+}
+.dark-mode .about-icons  .fil{
+    filter: invert(1) !important;
 }
 
-.dark-mode svg {
+// .dark-mode svg {
 
        
-        filter: invert(1);
+//         filter: invert(1);
      
     
-}
+// }
 
 
 
 .dark-mode .navbar-toggler {
-    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-    font-size: var(--bs-navbar-toggler-font-size);
-    line-height: 1;
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
-    border: var(--bs-border-width) solid rgb(0 126 255);
-    border-radius: var(--bs-navbar-toggler-border-radius);
-    transition: var(--bs-navbar-toggler-transition);
+    
+    color: rgb(255, 255, 255);
+    filter: invert(1);
+    opacity: 1;
 }
 
 .dark-mode {
-    background-color: black !important;
+    background-color: $darkmode !important;
     color: white !important;
 }
 
@@ -83,10 +134,21 @@ background-image: url(../images/Vectordark.png);
     background-color: black !important;
     color: white;
 }
-
+.dark-mode .fil-svg {
+    filter: none;
+}
+.d-text{
+    color: white !important;
+}
+.fw-semibold{
+    color: #000;
+}
 a {
     text-decoration: none !important;
 
+}
+.fil-svg{
+    filter: invert(1);
 }
 
 /* navbar */
@@ -196,7 +258,6 @@ padding: 0 0 0 50px;
 
 .counter-box {
 
-    background-color: $mediumblue;
 
     padding: 40px 0;
 
@@ -383,8 +444,7 @@ path {
 .fifth-section {
     margin: 33px 0 55px 0;
     padding: 55px 0;
-    background-color: $gray;
-}
+    background-color: $mediumblue;}
 
 @media screen and (min-width: 1000px) { 
     .desktop-log{
@@ -1285,7 +1345,6 @@ margin:0 auto 73px auto !important;
                     margin: auto;
                     bottom: 99px;
                     position: unset;
-                    background-color: rgba(173, 216, 230, 0.412);
                 }
 
                   .form-style header {
@@ -1448,7 +1507,6 @@ footer {
 .footer-svg svg {
             height: 48px;
             fill: none;
-    filter: none !important;
 }
 
 .last-section {
@@ -1500,7 +1558,6 @@ margin-bottom: 22px !important; }
         width: 240px;
         height: 48px;
         fill: none;
-        filter: none !important;
     }
 
     .footer .col25,
