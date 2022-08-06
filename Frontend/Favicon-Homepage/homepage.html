@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AccountPage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+    <script src="homepage.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="sidebar">
+          <div style="display: none" id="mySidebar">
+            <button onclick="fav_close()"> &times;</button>
+            <a href="#" class="bar-item">Settings</a>
+            <a href="#" class="bar-item">Logout</a>
+          </div>
+          <div class="bars">
+            <button id="threeBars" onclick="fav_open()">&#9776;</button>
+          </div>
+        </div>
+        <div class="logo" style="display: block; text-align: left">
+          <svg
+            style="padding-right: 5px"
+            width="48px"
+            height="48px"
+            viewBox="0 0 31 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+            id="svgheader"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6.99035 3.13216C5.92428 3.87759 4.96027 4.75893 4.12341 5.75106C7.54318 5.43357 11.8879 5.95199 16.932 8.47409C22.3185 11.1673 26.6559 11.2583 29.6746 10.676C29.4007 9.84675 29.0558 9.04972 28.6474 8.29204C25.1918 8.6565 20.7619 8.17408 15.5991 5.59277C12.3207 3.95356 9.43078 3.27832 6.99035 3.13216ZM26.6288 5.4189C23.9 2.36996 19.9343 0.451172 15.5204 0.451172C14.2242 0.451172 12.9665 0.616678 11.7675 0.927688C13.3914 1.37076 15.1164 2.01898 16.932 2.9268C20.7119 4.81672 23.9753 5.42524 26.6288 5.4189ZM30.32 13.5869C26.6732 14.3071 21.6373 14.1591 15.5991 11.1401C9.95403 8.31753 5.46106 8.35307 2.43084 9.02647C2.27443 9.0612 2.1217 9.09771 1.97266 9.13572C1.57593 9.99854 1.25924 10.9058 1.03202 11.848C1.27471 11.7832 1.52549 11.7216 1.78423 11.664C5.46042 10.8471 10.6546 10.8826 16.932 14.0214C22.5771 16.8439 27.0701 16.8083 30.1004 16.1349C30.2042 16.1119 30.3065 16.0881 30.4071 16.0635C30.4181 15.8285 30.4236 15.5921 30.4236 15.3544C30.4236 14.7564 30.3885 14.1666 30.32 13.5869ZM29.9205 19.2086C26.3091 19.84 21.4198 19.5976 15.5991 16.6873C9.95403 13.8648 5.46106 13.9004 2.43084 14.5738C1.75822 14.7232 1.15314 14.9052 0.619371 15.0974C0.617916 15.1829 0.617188 15.2685 0.617188 15.3544C0.617188 23.5852 7.28958 30.2576 15.5204 30.2576C22.4184 30.2576 28.2219 25.5712 29.9205 19.2086Z"
+              fill="#303335"
+            />
+          </svg>
+          <p style="float: right"><b>FaviconGen</b></p>
+        </div>
+        <div id="profiler">
+          <label
+            class="switch"
+            for="darkmode"
+            style="float: left; margin-top: 6px"
+          >
+            <input type="checkbox" id="darkmode" onclick="function()" />
+            <span class="slider round"></span>
+          </label>
+          <p>John Doe</p>
+          <img
+            src="https://autorescuesolutions.com/about-us/img/about/position1.png"
+            alt="profile_pic"
+            id="profile"
+            style="
+              height: 35px;
+              width: 50px;
+              padding-left: 10px;
+              margin-right: 25px;
+            "
+          />
+        </div>
+      </div>
+      <div class="click">
+        <a href="#" class="bar-item">Settings</a>
+        <a href="#" class="bar-item">Logout</a>
+      </div>
+    </header>
+    <main id="main">
+      <div class="intro">
+        <h1>Prepare wonderful favicons, easy and simple !</h1>
+        <p>
+          Generate favicons, choose from out lists, or draw yours, join
+          thousands of users across the globe in getting an icon for your
+          website. explore our best tools, coupled with best pracices in
+          designing your favicon for your web site.
+        </p>
+      </div>
+      <div class="button">
+        <a href="#">Generate Icon</a>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="favicongen">
+          <nav class="navi0">
+            <span
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.84219 2.87829C5.69766 3.67858 4.6627 4.62478 3.76426 5.68992C7.4357 5.34906 12.1001 5.90564 17.5155 8.61335C23.2984 11.5047 27.955 11.6025 31.1958 10.9773C30.9017 10.087 30.5315 9.23135 30.093 8.41791C26.3832 8.80919 21.6272 8.29127 16.0845 5.51998C12.5648 3.76014 9.46221 3.03521 6.84219 2.87829ZM27.9259 5.33332C24.9962 2.06 20.7387 0 16 0C14.6084 0 13.2581 0.177686 11.9709 0.511584C13.7143 0.987269 15.5663 1.68319 17.5155 2.65781C21.5736 4.68682 25.0771 5.34013 27.9259 5.33332ZM31.8887 14.1025C27.9735 14.8756 22.567 14.7168 16.0845 11.4755C10.024 8.44527 5.20035 8.48343 1.94712 9.20639C1.7792 9.24367 1.61523 9.28287 1.45522 9.32367C1.0293 10.25 0.689308 11.2241 0.445362 12.2356C0.705909 12.166 0.975145 12.0998 1.25293 12.0381C5.19966 11.161 10.7761 11.1991 17.5155 14.5689C23.5761 17.5991 28.3997 17.561 31.6529 16.838C31.7644 16.8133 31.8742 16.7877 31.9822 16.7613C31.9941 16.509 32 16.2552 32 16C32 15.358 31.9622 14.7248 31.8887 14.1025ZM31.4598 20.1378C27.5826 20.8157 22.3336 20.5555 16.0845 17.431C10.024 14.4008 5.20035 14.439 1.94712 15.1619C1.225 15.3223 0.575392 15.5178 0.002344 15.7241C0.000781601 15.8158 0 15.9078 0 16C0 24.8366 7.16344 32 16 32C23.4057 32 29.6362 26.9687 31.4598 20.1378Z"
+                  fill="black"
+                  fill-opacity="0.5"
+                />
+              </svg>
+              <b>FaviconGen</b></span
+            >
+            <p style="padding: 10px 0px">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <h5>Connect with us.</h5>
+            <div class="stayconnected">
+              <h5 class="follow"><b>Follow us</b></h5>
+              <i
+                class="fa fa-facebook-square"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 5%;
+                  padding-top: 6%;
+                "
+              ></i>
+              <i
+                class="fa fa-instagram"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 5%;
+                  padding-top: 6%;
+                "
+              ></i>
+              <i
+                class="fa fa-twitter-square"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 5%;
+                  padding-top: 6%;
+                "
+              ></i>
+              <i
+                class="fa fa-linkedin-square"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 5%;
+                  padding-top: 6%;
+                "
+              ></i>
+            </div>
+            <br />
+            <span class="span"
+              ><i
+                class="fa fa-envelope"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 10px;
+                "
+              ></i
+              >LoremIpsum@examplemail.com</span
+            ><br />
+            <span class="span"
+              ><i
+                class="fa fa-phone"
+                style="
+                  font-size: 24px;
+                  color: rgba(84, 84, 84, 1);
+                  padding-right: 10px;
+                "
+              ></i
+              >+234-0023456</span
+            >
+          </nav>
+        </div>
+        <div class="developer">
+          <h4 style="padding-bottom: 10px">Developer</h4>
+          <nav class="navi1">
+            <a href="#">Frontend </a>
+            <a href="#">Backend </a>
+            <a href="#">Design </a>
+            <a href="#">Graphics </a>
+          </nav>
+        </div>
+        <div class="resources">
+          <h4 style="padding-bottom: 10px">Resources</h4>
+          <nav class="navi2">
+            <a href="#">Generate icon from Image</a>
+            <a href="#">Generate icon from Text</a>
+            <a href="#">Convert</a>
+            <a href="#">Features</a>
+            <a href="#">FAQs</a>
+          </nav>
+        </div>
+        <div class="company">
+          <h4 style="padding-bottom: 10px">Company</h4>
+          <nav class="navi3">
+            <a href="#">About Us</a>
+            <a href="#"> Zuri Team</a>
+            <a href="#">Ingressive For Good</a>
+          </nav>
+        </div>
+
+        <div class="follow">
+          <h4><b>Follow us</b></h4>
+          <i
+            class="fa fa-facebook-square"
+            style="
+              font-size: 24px;
+              color: rgba(84, 84, 84, 1);
+              padding-right: 5%;
+              padding-top: 6%;
+            "
+          ></i>
+          <i
+            class="fa fa-instagram"
+            style="
+              font-size: 24px;
+              color: rgba(84, 84, 84, 1);
+              padding-right: 5%;
+              padding-top: 6%;
+            "
+          ></i>
+          <i
+            class="fa fa-twitter-square"
+            style="
+              font-size: 24px;
+              color: rgba(84, 84, 84, 1);
+              padding-right: 5%;
+              padding-top: 6%;
+            "
+          ></i>
+          <i
+            class="fa fa-linkedin-square"
+            style="
+              font-size: 24px;
+              color: rgba(84, 84, 84, 1);
+              padding-right: 5%;
+              padding-top: 6%;
+            "
+          ></i>
+        </div>
+        <div class="copy2">
+          <div><p>&copy;2022 Zuri|All rights reservered.</p></div>
+          <div>
+            <p>
+              <a href="#">Terms & Conditions</a>|<a href="#">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="horizontal">
+        <i
+          class="fa fa-question-circle"
+          style="
+            font-size: 32px;
+            color: rgba(84, 84, 84, 1);
+            float: right;
+            clear: both;
+            margin-right: 15%;
+            padding: 5px;
+          "
+        ></i>
+        <hr
+          style="
+            height: 1px;
+            border-width: 0;
+            color: gray;
+            background-color: gray;
+            margin: auto;
+            margin-left: 8%;
+            width: 85%;
+          "
+        />
+        <div class="copy">
+          <div><p>&copy;2022 Zuri|All rights reservered.</p></div>
+          <div>
+            <p>
+              <a href="#">Terms & Conditions</a>|<a href="#">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <svg
+          class="svgfoot"
+          width="100"
+          height="626"
+          viewBox="0 0 1440 626"
+          fill="none"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1440 180.711C1440 180.711 1353.76 8.17394 1085.01 0.471399C816.268 -7.23114 531.476 82.1184 336.936 74.4158C142.395 66.7133 184.513 26.6601 0 0.471399V637H703.955H1440V180.711Z"
+            fill="#D9D9D9"
+          />
+        </svg>
+      </div>
+    </footer>
+
+    <script>
+      var darkmode = document.getElementById("darkmode");
+      darkmode.onclick = function () {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+          var circle1 = document.getElementById("svgheader");
+          circle1.style.fill = "white";
+        } else {
+         var circle1 = document.getElementById("svgheader");
+          circle1.style.fill = "rgba(48, 51, 53, 1)";
+        }
+      };
+    </script>
+  </body>
+</html>
