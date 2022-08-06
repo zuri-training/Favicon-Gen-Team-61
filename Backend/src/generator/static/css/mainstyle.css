@@ -31,8 +31,14 @@ body {
   background: linear-gradient(180deg, #21313F 0%, rgba(33, 49, 63, 0.95) 59.26%) !important;
 }
 
-.dark-mode .accordion-button {
-  color: #ffffff;
+.dark-mode .accordion-button,
+.dark-mode .terms-link a,
+.dark-mode .privacy-link a,
+.dark-mode .terms-of-use,
+.dark-mode .terms li h3,
+.dark-mode .col70 ol li,
+.dark-mode .col70 ol li p {
+  color: #ffffff !important;
 }
 
 .dark-mode .accordion-button::after {
@@ -866,7 +872,6 @@ iframe {
 }
 
 form {
-  width: 50%;
   margin: auto;
 }
 
@@ -1587,5 +1592,83 @@ hr {
   h1 {
     font-size: 31px;
     line-height: normal;
+  }
+}
+.img-drop img {
+  width: 50px !important;
+}
+
+.user p {
+  font-size: 24px;
+  justify-content: center;
+}
+
+.profile-img {
+  margin-top: 88px;
+}
+
+@media screen and (max-width: 1000px) {
+  .profile-padding {
+    padding-bottom: 33px;
+    --bs-nav-link-padding-y: 3.5rem;
+  }
+  .profile-switch {
+    margin: 0;
+  }
+}
+.terms-bg {
+  padding-top: 127px;
+  margin-bottom: 74px;
+}
+
+.terms-of-use {
+  color: #000;
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.terms h3 {
+  color: #000;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.terms p {
+  color: #000;
+  font-size: 23px;
+}
+
+.col70 ol li {
+  list-style: decimal;
+  font-weight: bold;
+  color: #000 !important;
+  font-size: 25px;
+  padding-top: 44px;
+}
+
+.col70 ol li p {
+  color: #000 !important;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.terms-link a,
+.privacy-link a {
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+}
+
+.terms-link a:hover,
+.privacy-link a:hover {
+  font-size: 22px;
+  text-decoration: none;
+  color: #337597;
+}
+
+@media screen and (max-width: 1000px) {
+  .terms-bg .col30 {
+    padding: 22px 0;
+    margin: auto;
   }
 }/*# sourceMappingURL=mainstyle.css.map */

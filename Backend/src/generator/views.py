@@ -12,4 +12,11 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html')
 
+def privacyPolicy(request):
+    return render(request, 'privacyPolicy.html')
+
+
+def termsOfUse(request):
+    return render(request, 'termsOfUse.html')
+
 
