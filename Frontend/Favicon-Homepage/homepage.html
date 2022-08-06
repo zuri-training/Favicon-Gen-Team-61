@@ -20,54 +20,53 @@
     <header>
       <div class="top">
         <div class="sidebar">
-          <div
-            style="display: none"
-            id="mySidebar"
-          >
-            <button onclick="fav_close()">
-              Close &times;
-            </button>
+          <div style="display: none" id="mySidebar">
+            <button onclick="fav_close()"> &times;</button>
             <a href="#" class="bar-item">Settings</a>
             <a href="#" class="bar-item">Logout</a>
-            <a href="#" class="bar-item">Mode</a>
           </div>
           <div class="bars">
             <button id="threeBars" onclick="fav_open()">&#9776;</button>
           </div>
         </div>
-        <div style="display: block; text-align: left">
+        <div class="logo" style="display: block; text-align: left">
           <svg
             style="padding-right: 5px"
             width="48px"
             height="48px"
-            viewBox="0 0 48 48"
+            viewBox="0 0 31 31"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
+            id="svgheader"
               fill-rule="evenodd"
               clip-rule="evenodd"
-              d="M10.2633 4.31744C8.54649 5.51787 6.99405 6.93717 5.64639 8.53488C11.1536 8.0236 18.1502 8.85846 26.2732 12.92C34.9476 17.2571 41.9325 17.4037 46.7937 16.466C46.3526 15.1305 45.7973 13.847 45.1395 12.6269C39.5748 13.2138 32.4408 12.4369 24.1267 8.27998C18.8472 5.64021 14.1933 4.55281 10.2633 4.31744ZM41.8889 7.99998C37.4943 3.09 31.1081 0 24 0C21.9126 0 19.8872 0.266529 17.9564 0.767376C20.5714 1.4809 23.3494 2.52478 26.2732 3.98672C32.3604 7.03023 37.6157 8.01019 41.8889 7.99998ZM47.8331 21.1537C41.9603 22.3134 33.8505 22.0752 24.1267 17.2133C15.036 12.6679 7.80052 12.7251 2.92068 13.8096C2.6688 13.8655 2.42285 13.9243 2.18284 13.9855C1.54395 15.375 1.03396 16.8361 0.668043 18.3534C1.05886 18.249 1.46272 18.1497 1.87939 18.0571C7.79949 16.7415 16.1641 16.7987 26.2732 21.8533C35.3641 26.3987 42.5995 26.3414 47.4794 25.257C47.6466 25.2199 47.8113 25.1815 47.9733 25.1419C47.9911 24.7635 48 24.3828 48 24C48 23.037 47.9433 22.0872 47.8331 21.1537ZM47.1897 30.2067C41.3739 31.2235 33.5004 30.8333 24.1267 26.1465C15.036 21.6012 7.80052 21.6584 2.92068 22.7429C1.8375 22.9835 0.863087 23.2766 0.003516 23.5861C0.0011724 23.7237 0 23.8617 0 24C0 37.2548 10.7452 48 24 48C35.1085 48 44.4543 40.4531 47.1897 30.2067Z"
-              fill="black"
-              fill-opacity="0.5"
+              d="M6.99035 3.13216C5.92428 3.87759 4.96027 4.75893 4.12341 5.75106C7.54318 5.43357 11.8879 5.95199 16.932 8.47409C22.3185 11.1673 26.6559 11.2583 29.6746 10.676C29.4007 9.84675 29.0558 9.04972 28.6474 8.29204C25.1918 8.6565 20.7619 8.17408 15.5991 5.59277C12.3207 3.95356 9.43078 3.27832 6.99035 3.13216ZM26.6288 5.4189C23.9 2.36996 19.9343 0.451172 15.5204 0.451172C14.2242 0.451172 12.9665 0.616678 11.7675 0.927688C13.3914 1.37076 15.1164 2.01898 16.932 2.9268C20.7119 4.81672 23.9753 5.42524 26.6288 5.4189ZM30.32 13.5869C26.6732 14.3071 21.6373 14.1591 15.5991 11.1401C9.95403 8.31753 5.46106 8.35307 2.43084 9.02647C2.27443 9.0612 2.1217 9.09771 1.97266 9.13572C1.57593 9.99854 1.25924 10.9058 1.03202 11.848C1.27471 11.7832 1.52549 11.7216 1.78423 11.664C5.46042 10.8471 10.6546 10.8826 16.932 14.0214C22.5771 16.8439 27.0701 16.8083 30.1004 16.1349C30.2042 16.1119 30.3065 16.0881 30.4071 16.0635C30.4181 15.8285 30.4236 15.5921 30.4236 15.3544C30.4236 14.7564 30.3885 14.1666 30.32 13.5869ZM29.9205 19.2086C26.3091 19.84 21.4198 19.5976 15.5991 16.6873C9.95403 13.8648 5.46106 13.9004 2.43084 14.5738C1.75822 14.7232 1.15314 14.9052 0.619371 15.0974C0.617916 15.1829 0.617188 15.2685 0.617188 15.3544C0.617188 23.5852 7.28958 30.2576 15.5204 30.2576C22.4184 30.2576 28.2219 25.5712 29.9205 19.2086Z"
+              fill="#303335"
             />
           </svg>
-          <p style="float: right;"><b>FaviconGen</b></p>
+          <p style="float: right"><b>FaviconGen</b></p>
         </div>
         <div id="profiler">
-          <label class="switch" style="float: left; margin-top: 6px">
-            <input type="checkbox" />
+          <label
+            class="switch"
+            for="darkmode"
+            style="float: left; margin-top: 6px"
+          >
+            <input type="checkbox" id="darkmode" onclick="function()" />
             <span class="slider round"></span>
           </label>
+          <p>John Doe</p>
           <img
-            src="https://th.bing.com/th/id/OIP.fC6UGffwkwSedJg1g8DjqQHaHa?pid=ImgDet&rs=1"
+            src="https://autorescuesolutions.com/about-us/img/about/position1.png"
             alt="profile_pic"
             id="profile"
             style="
               height: 35px;
-              width: 55px;
-              padding-left: 20px;
-              margin-right: 30px;
+              width: 50px;
+              padding-left: 10px;
+              margin-right: 25px;
             "
           />
         </div>
@@ -182,9 +181,7 @@
           </nav>
         </div>
         <div class="developer">
-          <h4 style="padding-bottom: 10px">
-            Developer
-          </h4>
+          <h4 style="padding-bottom: 10px">Developer</h4>
           <nav class="navi1">
             <a href="#">Frontend </a>
             <a href="#">Backend </a>
@@ -193,9 +190,7 @@
           </nav>
         </div>
         <div class="resources">
-          <h4 style="padding-bottom: 10px">
-            Resources
-          </h4>
+          <h4 style="padding-bottom: 10px">Resources</h4>
           <nav class="navi2">
             <a href="#">Generate icon from Image</a>
             <a href="#">Generate icon from Text</a>
@@ -205,9 +200,7 @@
           </nav>
         </div>
         <div class="company">
-          <h4 style="padding-bottom: 10px">
-            Company
-          </h4>
+          <h4 style="padding-bottom: 10px">Company</h4>
           <nav class="navi3">
             <a href="#">About Us</a>
             <a href="#"> Zuri Team</a>
@@ -257,22 +250,45 @@
         <div class="copy2">
           <div><p>&copy;2022 Zuri|All rights reservered.</p></div>
           <div>
-            <p><a href="#">Terms & Conditions</a>|<a href="#">Privacy Policy</a></p>
+            <p>
+              <a href="#">Terms & Conditions</a>|<a href="#">Privacy Policy</a>
+            </p>
           </div>
-          </div>
+        </div>
       </div>
-      <br>
+      <br />
       <div class="horizontal">
-        <i class="fa fa-question-circle" style="font-size:32px;color:rgba(84, 84, 84, 1); float: right;  clear:both; margin-right: 15%; padding: 5px;"></i>
-      <hr style="height:1px;border-width:0;color:gray;background-color:gray; margin: auto; margin-left: 8%; width: 85%;">
-      <div class="copy">
-      <div><p>&copy;2022 Zuri|All rights reservered.</p></div>
-      <div>
-        <p><a href="#">Terms & Conditions</a>|<a href="#">Privacy Policy</a></p>
+        <i
+          class="fa fa-question-circle"
+          style="
+            font-size: 32px;
+            color: rgba(84, 84, 84, 1);
+            float: right;
+            clear: both;
+            margin-right: 15%;
+            padding: 5px;
+          "
+        ></i>
+        <hr
+          style="
+            height: 1px;
+            border-width: 0;
+            color: gray;
+            background-color: gray;
+            margin: auto;
+            margin-left: 8%;
+            width: 85%;
+          "
+        />
+        <div class="copy">
+          <div><p>&copy;2022 Zuri|All rights reservered.</p></div>
+          <div>
+            <p>
+              <a href="#">Terms & Conditions</a>|<a href="#">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-     
 
       <div class="container">
         <svg
@@ -291,5 +307,19 @@
         </svg>
       </div>
     </footer>
+
+    <script>
+      var darkmode = document.getElementById("darkmode");
+      darkmode.onclick = function () {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+          var circle1 = document.getElementById("svgheader");
+          circle1.style.fill = "white";
+        } else {
+         var circle1 = document.getElementById("svgheader");
+          circle1.style.fill = "rgba(48, 51, 53, 1)";
+        }
+      };
+    </script>
   </body>
 </html>
