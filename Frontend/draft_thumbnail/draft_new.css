@@ -517,11 +517,13 @@ body{
 
 .wrimagecard .fa{
 	position: relative;
-    font-size: 40px;
+    font-size: 70px;
+    
 }
 .wrimagecard-topimage_header{
 padding: 10px;
 }
+
 
 .wrimagecard-topimage a {
     width: 100%;
