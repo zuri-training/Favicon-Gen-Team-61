@@ -1,6 +1,6 @@
 from django.template import loader
 
-# Create your views here.
+#template views 
 from django.shortcuts import render
 
 def home(request):
@@ -19,4 +19,16 @@ def privacyPolicy(request):
 def termsOfUse(request):
     return render(request, 'termsOfUse.html')
 
+
+def faq(request):
+    return render(request, 'faq.html')
+
+def login(request):
+    return render(request, 'login.html')
+
+def signUp(request):
+     return render(request, 'signUp.html')    
+
+def forgetPassword(request):
+    return render(request, 'forgetPassword.html')
 

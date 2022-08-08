@@ -76,7 +76,7 @@
         </li>
         
              <li class="nav-item">
-          <a class="nav-link nav-text-bg" href="./faq">FAQ</a>
+          <a class="nav-link nav-text-bg" href="{% url 'faq' %}">FAQ</a>
         </li>
              <li class="nav-item">
           <a class="nav-link nav-text-bg" href="{% url 'contact' %}"> Contact</a>
@@ -94,12 +94,12 @@
 </label>
           
           <li class="nav-item login log-mobile">
-          <a class="nav-link nav-text-bg " href="./Auth/Login.html">Login</a>
+          <a class="nav-link nav-text-bg " href="{% url 'login' %}">Login</a>
         </li>
                 <button class="nav-btn sign-mobile">    
           
           <li class="nav-item ">
-          <a class="nav-link nav-text-bg d-text d-text" href="./Auth/signup.html">Sign-Up</a>
+          <a class="nav-link nav-text-bg d-text d-text" href="{% url 'signUp' %}">Sign-Up</a>
         </li></button>
     
 
@@ -120,12 +120,12 @@
 </label>
           
           <li class="nav-item login log-mobile">
-          <a class="nav-link nav-text-bg" href="./Auth/Login.html">Login</a>
+          <a class="nav-link nav-text-bg" href="{% url 'login' %}">Login</a>
         </li>
                 <button class="nav-btn sign-mobile">    
           
           <li class="nav-item ">
-          <a class="nav-link nav-text-bg d-text" href="./Auth/signup.html">Sign-Up</a>
+          <a class="nav-link nav-text-bg d-text" href="{% url 'signUp' %}">Sign-Up</a>
         </li></button>
     
 

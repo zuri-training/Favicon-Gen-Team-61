@@ -1,0 +1,312 @@
+
+
+$font: 'DM Sans', 'sans-serif';
+$gray: #eeeeee;
+$strongBlue: #16212A;
+$mediumblue: #337597;
+$averageBlue: #3F92BD;
+$lightBlue: #6ABCE8;
+$darkmode: #16212A;
+$darkgrad: linear-gradient(180deg, #21313F 0%, rgba(33, 49, 63, 0.95) 59.26%);
+
+
+//darkmode
+.dark-mode {
+    background-image: url(../images/HIFI\ Sign\ in\ desktop\ \(Light\ mode\).png);    color: white !important;
+}
+
+
+.dark-mode .auth-nav {
+    background-color: transparent !important;
+    color: white !important;
+}
+.dark-mode .auth-hr {
+   
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+.dark-mode .navbar img {
+    filter: invert(1);
+}
+.dark-mode form{
+    background-color: $strongBlue;
+    color: white !important;
+}
+
+.dark-mode .navbar a {
+    color: white;
+}
+
+//login styles
+
+body {
+background-image: url(../images/Reset\ password\ page.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.auth-nav{
+    background-color: transparent !important;
+}
+.head {
+    margin-top: -25px;
+}
+
+.sign {
+    text-align: center;
+    font-weight: bold;
+}
+
+//forms
+.form-mg{
+    width: 70%;
+right: 43px;
+    position: absolute;
+}
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3f92bd;
+    color: white !important;
+
+}
+
+
+
+
+
+@media screen and (max-width: 520px) {
+
+    .form-style header {
+        width: 80%;
+        margin: auto;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .form-style h3 {
+        width: 80%;
+        margin: auto;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    form {
+        width: 80%;
+        margin: auto;
+    }
+
+    form {
+        text-align: left !important;
+    }
+
+
+}
+
+
+.continue {
+    background-color: transparent;
+border: 2px solid !important;
+font-size: 19px !important;
+    color: #3f92bd !important;
+}
+
+.line {
+
+    margin-top: -14px;
+}
+
+// .container {
+//     margin-left: 300px;
+// }
+
+
+
+form {
+    padding: 61px;
+    width: 50%;
+    margin: 62px auto;
+    background-color: white;
+    box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.1);
+}
+
+.find {
+    text-align: center;
+    font-family: DM sans;
+    text-decoration-color: #303335;
+
+}
+
+
+
+
+
+.Login {
+    text-align: center;
+    padding-top: 41px;
+    width: 50%;
+    margin: auto;
+    font-size: 21px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Login {
+    width: 100%;
+    background-color: #3f92bd !important;
+    color: white;
+    padding: 14px 20px 44px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Login:hover {
+    background-color: #3f92bd;
+    transition: 0.4s;
+}
+
+.Continue {
+    width: 100%;
+    background-color: white;
+    color: #3f92bd;
+    padding: 44px 20px 0 ;
+    margin: 44px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Continue:hover {
+    background-color: #3f92bd;
+    transition: 0.4s;
+}
+
+.dont {
+
+    padding-top: 21px;
+    color: #606060;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.forget {
+    text-align: center;
+}
+
+h5 a,
+span a {
+    text-decoration: none;
+    color: #3f92bd;
+}
+//Or
+.ot {
+    text-align: center;
+    color: white;
+    height: 32px;
+        width: 32px;
+        font-size: 20px;
+        background-color: #3f92bd;
+        border-radius: 50%;
+    left: 39%;
+    right: 39%;
+        margin: auto;
+        position: absolute;
+}
+.dot h6{
+    margin: 0 !important;
+        margin-block-start: auto !important;
+            margin-block-end: auto !important;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+}
+
+// .dot {
+//     height: 50px;
+//     width: 50px;
+//     background-color: #3f92bd;
+//     border-radius: 50%;
+
+//     margin-left: auto;
+// position: absolute;
+// }
+
+//horizontal line
+.hr-bg{
+}
+.auth-hr{
+    margin: 17px 0;
+    height: 2px;
+    border-width:0;
+    color: gray;
+        background-color: gray;
+        width:"100%";
+}
+
+@media screen and (max-width : 1000px) {
+    form {
+        width: 100%;
+    }
+
+}
+
+.auth-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between !important;
+}
+
+@media screen and (max-width: 500px) {
+.form-mg {
+        width: 90%;
+        right: 0px;
+        margin: auto;
+        position: inherit;
+    }
+}
