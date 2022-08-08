@@ -32,3 +32,8 @@ def signUp(request):
 def forgetPassword(request):
     return render(request, 'forgetPassword.html')
 
+def documentation(request):
+    return render(request, 'documentation.html')
+
+
+

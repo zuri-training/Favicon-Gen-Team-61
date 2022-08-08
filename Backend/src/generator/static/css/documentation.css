@@ -1,0 +1,82 @@
+body {
+  font-family: "DM Sans", "sans-serif";
+}
+
+.heading h1 {
+  padding-top: 94px;
+  text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.heading p {
+  text-align: center;
+}
+
+.document-links {
+  text-align: center;
+}
+
+ul li {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #16212A;
+}
+
+.generate {
+  color: black;
+}
+
+h3, p, ol {
+  color: black;
+  font-size: 18px;
+}
+
+.ForDev li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+.ForDown a {
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+.document-links a {
+  text-decoration: underline !important;
+  text-align: center;
+  font-size: 21px;
+  padding: 0 3px !important;
+}
+
+.introduction h2,
+.WhFa h2,
+.ForDown h2,
+.How2Use h2,
+.Features h2,
+.Generator h2,
+.ForDev h2,
+.Drafts h2 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 22px;
+  color: #337597;
+  text-transform: capitalize;
+}
+
+.introduction li,
+.WhFa li,
+.ForDown li,
+.How2Use li,
+.Features li,
+.ForDev li,
+.Drafts li {
+  list-style: disc;
+  font-size: 18px;
+}/*# sourceMappingURL=documentation.css.map */
