@@ -923,8 +923,8 @@ li {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 24px;
   margin: auto 22px;
 }
 
@@ -932,6 +932,7 @@ li {
   opacity: 0;
   width: 0;
   height: 0;
+  background-color: white;
 }
 
 .slider {
@@ -941,15 +942,15 @@ li {
   left: 4px;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: white;
   transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   left: 0;
   bottom: 4px;
   background-color: rgb(0, 0, 0);
@@ -1615,4 +1616,20 @@ hr {
     padding: 22px 0;
     margin: auto;
   }
+}
+.intro {
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.square-bx {
+  color: #000;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.auth-home {
+  background-color: white;
 }/*# sourceMappingURL=mainstyle.css.map */

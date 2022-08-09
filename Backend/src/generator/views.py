@@ -23,6 +23,12 @@ def termsOfUse(request):
 def faq(request):
     return render(request, 'faq.html')
 
+
+def documentation(request):
+    return render(request, 'documentation.html')
+#  auth Pages
+
+
 def login(request):
     return render(request, 'login.html')
 
@@ -32,8 +38,28 @@ def signUp(request):
 def forgetPassword(request):
     return render(request, 'forgetPassword.html')
 
-def documentation(request):
-    return render(request, 'documentation.html')
+
+#  Restricted Pages
+
+
+def homePage(request):
+     return render(request, 'homePage.html')  
+
+
+def drafts(request):
+     return render(request, 'drafts.html')  
+
+
+def settings(request):
+     return render(request, 'settings.html')  
+
+
+def generatorByUpload(request):
+    return render(request, 'generatorByUpload.html')
+
+
+def generateByText(request):
+    return render(request, 'generateByText.html')
 
 
 

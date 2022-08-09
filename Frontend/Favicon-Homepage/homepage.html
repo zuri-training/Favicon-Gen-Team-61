@@ -21,12 +21,12 @@
       <div class="top">
         <div class="sidebar">
           <div style="display: none" id="mySidebar">
-            <button onclick="fav_close()"> &times;</button>
+            <button > &times;</button>
             <a href="#" class="bar-item">Settings</a>
             <a href="#" class="bar-item">Logout</a>
           </div>
           <div class="bars">
-            <button id="threeBars" onclick="fav_open()">&#9776;</button>
+            <button id="threeBars" ></button>
           </div>
         </div>
         <div class="logo" style="display: block; text-align: left">
@@ -54,7 +54,7 @@
             for="darkmode"
             style="float: left; margin-top: 6px"
           >
-            <input type="checkbox" id="darkmode" onclick="function()" />
+            <input type="checkbox" id="darkmode"  />
             <span class="slider round"></span>
           </label>
           <p>John Doe</p>
@@ -308,18 +308,5 @@
       </div>
     </footer>
 
-    <script>
-      var darkmode = document.getElementById("darkmode");
-      darkmode.onclick = function () {
-        document.body.classList.toggle("dark-mode");
-        if (document.body.classList.contains("dark-mode")) {
-          var circle1 = document.getElementById("svgheader");
-          circle1.style.fill = "white";
-        } else {
-         var circle1 = document.getElementById("svgheader");
-          circle1.style.fill = "rgba(48, 51, 53, 1)";
-        }
-      };
-    </script>
   </body>
 </html>

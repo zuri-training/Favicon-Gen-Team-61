@@ -13,6 +13,14 @@ urlpatterns = [
                          path('signUp/', views.signUp, name='signUp'),
                             path('forgetPassword/', views.forgetPassword, name='forgetPassword'),
                                 path('documentation/', views.documentation, name='documentation'),
+                                  #restricted
+                                     path('homePage/', views.homePage, name='homePage'),
+                                        path('drafts/', views.drafts, name='drafts'),
+                                            path('settings/', views.settings, name='settings'),
+                                                path('generatorByUpload/', views.generatorByUpload, name='generatorByUpload'),
+                                                    path('generateByText/', views.generateByText, name='generateByText'),
+
+
 
 
 

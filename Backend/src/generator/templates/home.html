@@ -73,7 +73,7 @@
         </li>
         
              <li class="nav-item">
-          <a class="nav-link " href="{% url 'faq' %}">FAQ</a>
+          <a class="nav-link " href="{% url 'termsOfUse' %}">Terms Of Use</a>
         </li>
              <li class="nav-item">
           <a class="nav-link " href="{% url 'contact' %}"> Contact</a>
@@ -423,28 +423,25 @@ Generate, Save & Share your <br> Favicon for <span class="free">FREE!</span>
             <nav class="navi1">
             <a href="{% url 'termsOfUse' %}">Terms Of Use </a>
             <a href="{% url 'privacyPolicy' %}">Privacy Policy </a>
-            <a href="#">Lorem ipsum </a>
-            <a href="#">Lorem ipsum </a>
+        
             </nav>
 
         </div>
         <div class="resources col25">
             <h4 style="text-decoration: underline;">Resources</h4>
             <nav class="navi2">
-            <a href="#">Generate icon from Image</a>
-            <a href="#">Generate icon from Text</a>
-            <a href="#">Convert</a>
-            <a href="#">Features</a>
-            <a href="#">FAQs</a>
+            <a href="{% url 'generatorByUpload' %}">Generate icon from Image</a>
+            <a href="{% url 'generateByText' %}">Generate icon from Text</a>
+            <a href="{% url 'documentation' %}">Documentation</a>
             </nav>
 
         </div>
         <div class="company col25">
             <h4 style="text-decoration: underline;">Company</h4>
             <nav class="navi3">
-            <a href="#">About Us</a>
-            <a href="#"> Zuri Team</a>
-            <a href="#">Ingressive For Good</a>
+            <a href="{% url 'drafts' %}">Drafts</a>
+            <a href="{% url 'contact' %}">    Contact</a>
+            <a href="https://training.zuri.team/" target="_blank">Ingressive For Good</a>
             </nav>
         </div>
       </div>
