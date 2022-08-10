@@ -1,1 +1,8 @@
-
+| Links                           | What I did and how I solved it                                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+|  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing">General Research </a>    | `I was assigned to make a research about the best practices of designing favicons.`
+|  <a href="https://www.figma.com/file/dqDGOnT4aTSK6WVuBoX6Us/Contact-Page-Low-Fidelity-Wireframe?node-id=2%3A254">Contact Page Low Fidelity </a>    | `I was assigned with a team member to come up with a contact page for the website.`
+|  <a href="https://www.figma.com/file/s90ZUYsIi10qlXOKC1f5Zl/Contact-Page-Tablet-screen?node-id=0%3A1">Contact Page Tablet Screen </a>    | `I was tasked to create a tablet a screen for the contact page for the website.`
+|  <a href="https://www.figma.com/file/BlqwC7A0v2qIIHN2zSNco1/Contact-Page-High-Fidelity-Wireframe?node-id=7%3A835 ">Contact Page High Fidelity </a>    | `I and a team member were assigned to create an high fidelity for the contact page.`
+|  <a href="https://www.figma.com/file/k1hIHMg6YaMqMTiiiIFLMA/PAGES?node-id=0%3A1">Pages </a>    | `I was designated to list out pages a website should have and their components.`
+|  <a href="https://www.figma.com/file/k1hIHMg6YaMqMTiiiIFLMA/PAGES?node-id=0%3A1">Brainstorming/Ideation </a>    | `I and some team members were tasked to brain storm and priorize necessary ideas gathered.`
