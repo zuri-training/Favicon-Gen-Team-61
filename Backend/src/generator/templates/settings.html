@@ -1,0 +1,173 @@
+{% load static %}
+{% load livereload_tags %}
+
+<!DOCTYPE html>
+
+<html>
+  {% load livereload_tags %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="accountsettings.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="accountsettings.css"> -->
+                    <link rel="icon" type="image/x-icon" href="../static/images/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  /> -->
+  <link rel="stylesheet" href="../static/css/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=DMsans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Account Setting</title>
+</head>
+<body>
+    
+
+  <nav class="navbar nav-light-bg navbar-expand-lg  sticky-top">
+  <div class="container-fluid container  ">
+         <button class="navbar-toggler end-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <a class="navbar-brand nav justify-content-start fil-svg" href="{% url 'homePage' %}">
+<svg width="153" height="32" viewBox="0 0 153 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.84219 2.87829C5.69766 3.67858 4.6627 4.62478 3.76426 5.68992C7.4357 5.34906 12.1001 5.90564 17.5155 8.61335C23.2984 11.5047 27.955 11.6025 31.1958 10.9773C30.9018 10.087 30.5315 9.23135 30.093 8.41791C26.3832 8.80919 21.6272 8.29127 16.0845 5.51998C12.5648 3.76014 9.46221 3.03521 6.84219 2.87829ZM27.9259 5.33332C24.9962 2.06 20.7387 0 16 0C14.6084 0 13.2581 0.177686 11.9709 0.511584C13.7143 0.987269 15.5663 1.68319 17.5155 2.65781C21.5736 4.68682 25.0771 5.34013 27.9259 5.33332ZM31.8887 14.1025C27.9735 14.8756 22.567 14.7168 16.0845 11.4755C10.024 8.44527 5.20035 8.48343 1.94712 9.20639C1.7792 9.24367 1.61523 9.28287 1.45523 9.32367C1.0293 10.25 0.689308 11.2241 0.445362 12.2356C0.705909 12.166 0.975145 12.0998 1.25293 12.0381C5.19966 11.161 10.7761 11.1991 17.5155 14.5689C23.5761 17.5991 28.3997 17.561 31.653 16.838C31.7644 16.8133 31.8742 16.7877 31.9822 16.7613C31.9941 16.509 32 16.2552 32 16C32 15.358 31.9622 14.7248 31.8887 14.1025ZM31.4598 20.1378C27.5826 20.8157 22.3336 20.5555 16.0845 17.431C10.024 14.4008 5.20035 14.439 1.94712 15.1619C1.225 15.3223 0.575392 15.5178 0.002344 15.7241C0.000781601 15.8158 0 15.9078 0 16C0 24.8366 7.16344 32 16 32C23.4057 32 29.6362 26.9687 31.4598 20.1378Z" fill="white"/>
+<path d="M41.36 23V9H50.4V11.06H43.92V14.98H49.16V17H43.92V23H41.36ZM54.8958 23.24C54.0424 23.24 53.3424 23.1067 52.7958 22.84C52.2491 22.56 51.8424 22.1933 51.5758 21.74C51.3091 21.2867 51.1758 20.7867 51.1758 20.24C51.1758 19.32 51.5358 18.5733 52.2558 18C52.9758 17.4267 54.0558 17.14 55.4958 17.14H58.0158V16.9C58.0158 16.22 57.8224 15.72 57.4358 15.4C57.0491 15.08 56.5691 14.92 55.9958 14.92C55.4758 14.92 55.0224 15.0467 54.6358 15.3C54.2491 15.54 54.0091 15.9 53.9158 16.38H51.4158C51.4824 15.66 51.7224 15.0333 52.1358 14.5C52.5624 13.9667 53.1091 13.56 53.7758 13.28C54.4424 12.9867 55.1891 12.84 56.0158 12.84C57.4291 12.84 58.5424 13.1933 59.3558 13.9C60.1691 14.6067 60.5758 15.6067 60.5758 16.9V23H58.3958L58.1558 21.4C57.8624 21.9333 57.4491 22.3733 56.9158 22.72C56.3958 23.0667 55.7224 23.24 54.8958 23.24ZM55.4758 21.24C56.2091 21.24 56.7758 21 57.1758 20.52C57.5891 20.04 57.8491 19.4467 57.9558 18.74H55.7758C55.0958 18.74 54.6091 18.8667 54.3158 19.12C54.0224 19.36 53.8758 19.66 53.8758 20.02C53.8758 20.4067 54.0224 20.7067 54.3158 20.92C54.6091 21.1333 54.9958 21.24 55.4758 21.24ZM65.4058 23L61.7658 13.08H64.4458L66.9658 20.58L69.4858 13.08H72.1658L68.5058 23H65.4058ZM75.1605 11.54C74.6938 11.54 74.3071 11.4 74.0005 11.12C73.7071 10.84 73.5605 10.4867 73.5605 10.06C73.5605 9.63333 73.7071 9.28667 74.0005 9.02C74.3071 8.74 74.6938 8.6 75.1605 8.6C75.6271 8.6 76.0071 8.74 76.3005 9.02C76.6071 9.28667 76.7605 9.63333 76.7605 10.06C76.7605 10.4867 76.6071 10.84 76.3005 11.12C76.0071 11.4 75.6271 11.54 75.1605 11.54ZM73.8805 23V13.08H76.4405V23H73.8805ZM83.9725 23.24C82.9592 23.24 82.0658 23.02 81.2925 22.58C80.5192 22.14 79.9058 21.5267 79.4525 20.74C79.0125 19.9533 78.7925 19.0533 78.7925 18.04C78.7925 17.0267 79.0125 16.1267 79.4525 15.34C79.9058 14.5533 80.5192 13.94 81.2925 13.5C82.0658 13.06 82.9592 12.84 83.9725 12.84C85.2392 12.84 86.3058 13.1733 87.1725 13.84C88.0392 14.4933 88.5925 15.4 88.8325 16.56H86.1325C85.9992 16.08 85.7325 15.7067 85.3325 15.44C84.9458 15.16 84.4858 15.02 83.9525 15.02C83.2458 15.02 82.6458 15.2867 82.1525 15.82C81.6592 16.3533 81.4125 17.0933 81.4125 18.04C81.4125 18.9867 81.6592 19.7267 82.1525 20.26C82.6458 20.7933 83.2458 21.06 83.9525 21.06C84.4858 21.06 84.9458 20.9267 85.3325 20.66C85.7325 20.3933 85.9992 20.0133 86.1325 19.52H88.8325C88.5925 20.64 88.0392 21.54 87.1725 22.22C86.3058 22.9 85.2392 23.24 83.9725 23.24ZM95.8647 23.24C94.9047 23.24 94.038 23.02 93.2647 22.58C92.5047 22.14 91.898 21.5333 91.4447 20.76C91.0047 19.9733 90.7847 19.0667 90.7847 18.04C90.7847 17.0133 91.0114 16.1133 91.4647 15.34C91.918 14.5533 92.5247 13.94 93.2847 13.5C94.058 13.06 94.9247 12.84 95.8847 12.84C96.8314 12.84 97.6847 13.06 98.4447 13.5C99.218 13.94 99.8247 14.5533 100.265 15.34C100.718 16.1133 100.945 17.0133 100.945 18.04C100.945 19.0667 100.718 19.9733 100.265 20.76C99.8247 21.5333 99.218 22.14 98.4447 22.58C97.6714 23.02 96.8114 23.24 95.8647 23.24ZM95.8647 21.02C96.5314 21.02 97.1114 20.7733 97.6047 20.28C98.098 19.7733 98.3447 19.0267 98.3447 18.04C98.3447 17.0533 98.098 16.3133 97.6047 15.82C97.1114 15.3133 96.538 15.06 95.8847 15.06C95.2047 15.06 94.618 15.3133 94.1247 15.82C93.6447 16.3133 93.4047 17.0533 93.4047 18.04C93.4047 19.0267 93.6447 19.7733 94.1247 20.28C94.618 20.7733 95.198 21.02 95.8647 21.02ZM103.234 23V13.08H105.494L105.694 14.76C106 14.1733 106.44 13.7067 107.014 13.36C107.6 13.0133 108.287 12.84 109.074 12.84C110.3 12.84 111.254 13.2267 111.934 14C112.614 14.7733 112.954 15.9067 112.954 17.4V23H110.394V17.64C110.394 16.7867 110.22 16.1333 109.874 15.68C109.527 15.2267 108.987 15 108.254 15C107.534 15 106.94 15.2533 106.474 15.76C106.02 16.2667 105.794 16.9733 105.794 17.88V23H103.234ZM121.582 23.24C120.262 23.24 119.108 22.94 118.122 22.34C117.135 21.74 116.368 20.9067 115.822 19.84C115.275 18.76 115.002 17.5067 115.002 16.08C115.002 14.64 115.282 13.3733 115.842 12.28C116.415 11.1733 117.222 10.3133 118.262 9.7C119.315 9.07333 120.562 8.76 122.002 8.76C123.642 8.76 125.002 9.15333 126.082 9.94C127.162 10.7267 127.862 11.8133 128.182 13.2H125.322C125.108 12.5467 124.722 12.04 124.162 11.68C123.602 11.3067 122.882 11.12 122.002 11.12C120.602 11.12 119.522 11.5667 118.762 12.46C118.002 13.34 117.622 14.5533 117.622 16.1C117.622 17.6467 117.995 18.8467 118.742 19.7C119.502 20.54 120.528 20.96 121.822 20.96C123.088 20.96 124.042 20.62 124.682 19.94C125.335 19.2467 125.728 18.34 125.862 17.22H122.322V15.3H128.442V23H126.082L125.882 21.16C125.428 21.8267 124.862 22.34 124.182 22.7C123.502 23.06 122.635 23.24 121.582 23.24ZM135.69 23.24C134.69 23.24 133.804 23.0267 133.03 22.6C132.257 22.1733 131.65 21.5733 131.21 20.8C130.77 20.0267 130.55 19.1333 130.55 18.12C130.55 17.0933 130.764 16.18 131.19 15.38C131.63 14.58 132.23 13.96 132.99 13.52C133.764 13.0667 134.67 12.84 135.71 12.84C136.684 12.84 137.544 13.0533 138.29 13.48C139.037 13.9067 139.617 14.4933 140.03 15.24C140.457 15.9733 140.67 16.7933 140.67 17.7C140.67 17.8467 140.664 18 140.65 18.16C140.65 18.32 140.644 18.4867 140.63 18.66H133.09C133.144 19.4333 133.41 20.04 133.89 20.48C134.384 20.92 134.977 21.14 135.67 21.14C136.19 21.14 136.624 21.0267 136.97 20.8C137.33 20.56 137.597 20.2533 137.77 19.88H140.37C140.184 20.5067 139.87 21.08 139.43 21.6C139.004 22.1067 138.47 22.5067 137.83 22.8C137.204 23.0933 136.49 23.24 135.69 23.24ZM135.71 14.92C135.084 14.92 134.53 15.1 134.05 15.46C133.57 15.8067 133.264 16.34 133.13 17.06H138.07C138.03 16.4067 137.79 15.8867 137.35 15.5C136.91 15.1133 136.364 14.92 135.71 14.92ZM142.823 23V13.08H145.083L145.283 14.76C145.59 14.1733 146.03 13.7067 146.603 13.36C147.19 13.0133 147.877 12.84 148.663 12.84C149.89 12.84 150.843 13.2267 151.523 14C152.203 14.7733 152.543 15.9067 152.543 17.4V23H149.983V17.64C149.983 16.7867 149.81 16.1333 149.463 15.68C149.117 15.2267 148.577 15 147.843 15C147.123 15 146.53 15.2533 146.063 15.76C145.61 16.2667 145.383 16.9733 145.383 17.88V23H142.823Z" fill="white"/>
+</svg>
+
+
+
+
+    </a>
+
+                <div class="offcanvas offcanvas-start w-60" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+                    <div class="offcanvas-header justify-content-end">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FaviconGen</h5> -->
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+    <div class=" justify-content-end " tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+      
+       <ul class="navbar-nav profile-padding justify-content-end ">
+    
+
+         <label class="switch profile-switch">
+  <input type="checkbox">
+  <span class="slider round" id="darkmode"></span>
+</label>
+          
+          <div class="user">
+            <p class="nav-link nav-text-bg"> John Doe</p>
+          </div>
+
+        <div class="dropdown">
+             <a  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <img src="{% static 'images/Avatar.png' %}" alt=" image" href="#"/>
+
+  </a>    
+     <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="{% url 'settings' %}">Settings</a></li>
+    <li><a class="dropdown-item" href="{% url 'home' %}">Log Out</a></li>
+  </ul>
+
+</div>
+
+     
+    
+
+
+
+
+      </ul>
+    
+ 
+       
+    </div>
+
+</nav>
+        <!-- <nav class="navbar bg-light fw-semibold navbar-expand-md"> -->
+  
+
+       <main>
+     
+        <div class="container">
+
+                <!-- edit account settings form -->
+                <form action="" >
+
+                    <header class="profile-img">
+                          <img src="{% static 'images/healthicons_ui-user-profile (3).png' %}" alt="User Avatar">
+                    </header>
+                    
+
+                    <div class="row border-bottom py-4 ">
+                        <div class="col-md-6 px-5">
+                            <div class="mb-3"><br>
+                                <h2 class="fs-4">Email</h2>
+                            
+                                <h6>existing email@gmail.com</h6>
+                            </div>
+                            <div class="mb-3">
+                                <label for="username">Username</label>
+                                <input type="text" name="" id="useranme" class="form-control p-3" placeholder="Peter Grey">
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-5">
+                            <fieldset>
+                                <h2 class="fs-4">Password</h2>
+                                <div class="mb-3">
+                                    <label for="currentpassword" class="form-label">Current Password</label>
+                                    <input type="password" name="" id="currentpassword" class="form-control p-3" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="newpassword">New password</label>
+                                    <input type="password" name="" id="newpassword" class="form-control p-3" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmpassword">Confirm new password</label>
+                                    <input type="password" name="" id="confirmpassword" class="form-control p-3" placeholder="">
+                                </div>
+                            </fieldset>
+                            <div>
+                                <button class="btn btn-primary px-4 text-white" role="button">Update profile</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </form>
+            </div>
+
+            <!-- delete account -->
+
+            <section class="container my-5">
+                <h2 class="fs-4">Delete Account</h2>
+                <p>This will immediately delete all of your data including saved icons and <br> more. This can’t be undone.</p>
+                <button class="btn btn-danger px-4 text-white" role="button"> Delete Account</button>
+            </section>
+
+       </main>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+<script src="../static/js/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

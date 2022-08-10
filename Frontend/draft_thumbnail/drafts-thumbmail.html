@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Draft</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+   rel="stylesheet">
+    <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+ />
+ <link rel="stylesheet" href="drafts-thumbmail.css" />
+
+  </head>
+  <body>
+    <header>
+      <div class="top ">
+        <div class="sidebar container">
+          <div style="display: none" id="mySidebar">
+            <button onclick="fav_close()"> &times;</button>
+            <a href="#" class="bar-item">Settings</a>
+            <a href="#" class="bar-item">Logout</a>
+          </div>
+          <div class="bars">
+            <button id="threeBars" onclick="fav_open()">&#9776;</button>
+          </div>
+        </div>
+        <div class="logo" style="display: block; text-align: left">
+          <svg
+            style="padding-right: 5px"
+            width="48px"
+            height="48px"
+            viewBox="0 0 31 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+            id="svgheader"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6.99035 3.13216C5.92428 3.87759 4.96027 4.75893 4.12341 5.75106C7.54318 5.43357 11.8879 5.95199 16.932 8.47409C22.3185 11.1673 26.6559 11.2583 29.6746 10.676C29.4007 9.84675 29.0558 9.04972 28.6474 8.29204C25.1918 8.6565 20.7619 8.17408 15.5991 5.59277C12.3207 3.95356 9.43078 3.27832 6.99035 3.13216ZM26.6288 5.4189C23.9 2.36996 19.9343 0.451172 15.5204 0.451172C14.2242 0.451172 12.9665 0.616678 11.7675 0.927688C13.3914 1.37076 15.1164 2.01898 16.932 2.9268C20.7119 4.81672 23.9753 5.42524 26.6288 5.4189ZM30.32 13.5869C26.6732 14.3071 21.6373 14.1591 15.5991 11.1401C9.95403 8.31753 5.46106 8.35307 2.43084 9.02647C2.27443 9.0612 2.1217 9.09771 1.97266 9.13572C1.57593 9.99854 1.25924 10.9058 1.03202 11.848C1.27471 11.7832 1.52549 11.7216 1.78423 11.664C5.46042 10.8471 10.6546 10.8826 16.932 14.0214C22.5771 16.8439 27.0701 16.8083 30.1004 16.1349C30.2042 16.1119 30.3065 16.0881 30.4071 16.0635C30.4181 15.8285 30.4236 15.5921 30.4236 15.3544C30.4236 14.7564 30.3885 14.1666 30.32 13.5869ZM29.9205 19.2086C26.3091 19.84 21.4198 19.5976 15.5991 16.6873C9.95403 13.8648 5.46106 13.9004 2.43084 14.5738C1.75822 14.7232 1.15314 14.9052 0.619371 15.0974C0.617916 15.1829 0.617188 15.2685 0.617188 15.3544C0.617188 23.5852 7.28958 30.2576 15.5204 30.2576C22.4184 30.2576 28.2219 25.5712 29.9205 19.2086Z"
+              fill="#303335"
+            />
+          </svg>
+          <p style="float: right"><b>FaviconGen</b></p>
+        </div>
+        <div id="profiler">
+          <label
+            class="switch"
+            for="darkmode"
+            style="float: left; margin-top: 6px"
+          >
+            <input type="checkbox" id="darkmode" onclick="function()" />
+            <span class="slider round"></span>
+          </label>
+          <p>John Doe</p>
+          <img
+            src="https://autorescuesolutions.com/about-us/img/about/position1.png"
+            alt="profile_pic"
+            id="profile"
+            style="
+              height: 35px;
+              width: 50px;
+              padding-left: 10px;
+              margin-right: 25px;
+            "
+          />
+        </div>
+      </div>
+      <div class="click">
+        <a href="#" class="bar-item">Settings</a>
+        <a href="#" class="bar-item">Logout</a>
+      </div>
+    </header>
+    <main id="main">
+    <section class="gallery">
+      <div class="container">
+        <div>
+          <h1 style="font-size: 32px">Draft</h1>
+        </div>
+        <p class="para">Recently Created</p>
+        <div class="toolbar">
+          <div class="search-wrapper">
+            <input type="search" placeholder="Search for drafts" />
+            <div class="counter">Total draft: <span>12</span></div>
+          </div>
+          <ul class="view-options">
+            <li class="zoom">
+              <input type="range" min="180" max="380" value="280" />
+            </li>
+            <li class="show-grid active">
+              <button disabled>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/grid-view.svg"
+                  alt="grid view"
+                />
+              </button>
+            </li>
+            <li class="show-list">
+              <button>
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/list-view.svg"
+                  alt="list view"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+        <ol class="image-list grid-view">
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature1.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Untitled</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >02/06/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature2.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Grove Home</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >06/04/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature3.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Untitled</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >05/05/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature4.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Grove Home</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >02/04/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature6.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Grove Home</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >22/03/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature6.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Grove Home</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >22/03/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature7.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Untitled</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >19/03/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature8.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Grove Home</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >02/02/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature9.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Grove Home</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >05/02/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature10.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Untitled</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >17/02/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature11.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Grove Home</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >25/02/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button> 
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature12.jpg"
+                alt=""
+              />
+              <figcaption>
+                <p>Untitled</p>
+                <p>
+                  Date
+                  <a href="#" target="_blank"
+                    >02/01/2022</a
+                  >
+                </p>
+                <button style="margin-left: 120px">
+                  <i class="fa fa-ellipsis-v btn"></i>
+                </button>              
+              </figcaption>
+            </figure>
+          </div>
+          </li>
+        </ol> 
+    </section>
+  
+<before-foter>
+  <div class="container">
+    <p>
+      <i class="material-icons-sharp">
+        warning_amber
+      </i> <span class="icon">Are you sure you want to delete this? you cant recover deleted files</span>
+    </p>
+    <span> <button>Yes delete files</button></span>
+  </div>
+</before-foter>
+    </main>
+    <script>
+       var darkmode = document.getElementById("darkmode");
+      darkmode.onclick = function () {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+          var circle1 = document.getElementById("svgheader");
+          circle1.style.fill = "white";
+        } else {
+         var circle1 = document.getElementById("svgheader");
+          circle1.style.fill = "rgba(48, 51, 53, 1)";
+        }
+      };
+    </script>
+     <script src="drafts-thumbmail.js" ></script>
+  </body>
+</html>

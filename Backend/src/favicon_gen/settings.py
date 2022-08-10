@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django_extensions',
+    'livereload',
         'generator.apps.GeneratorConfig'
 
 ]
@@ -52,6 +53,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+        'livereload.middleware.LiveReloadScript',
+
 ]
 
 ROOT_URLCONF = 'favicon_gen.urls'
@@ -128,8 +131,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import os # new
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+# BASE_DIR = os.path.dirname(__file__)
+
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]

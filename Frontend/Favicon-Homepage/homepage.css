@@ -2,21 +2,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: sans-serif;
 }
 :root {
   --copy2gray: rgba(0, 0, 0, 0.39);
   --footergray: rgba(0, 0, 0, 0.662);
   --black: #000000;
-  --lightgray:rgba(231, 231, 231, 1);
-  --darkgray: rgba(45, 45, 45, 1);
-  --white: rgba(255, 255, 255, 1)
+  --white: rgba(255, 255, 255, 1);
+  --darkgray:rgba(63, 146, 189, 1);
+  --lightgray:rgba(255, 255, 255, 1);
+  --header:rgba(244, 250, 254, 1);
+  --body: white;
+  --text-colour: black;
+}
+ 
+/* Dark theme */
+.dark-mode{
+  --header: rgba(33, 49, 63, 1);
+  --darkgray:rgba(63, 146, 189, 1);
+  --lightgray:rgba(38, 50, 56, 1);
+  --header:rgba(33, 49, 63, 1);
+  --body: rgba(22, 33, 42, 1);
+  --text-colour: rgba(227, 228, 228, 1);
 }
 body{
-  background-color: var(--white);
+  background-color: var(--body);
+  
 }
-.darkmode{
-  background-color: ;
+#profiler{
+  display: flex;
+  flex-direction: row;
+}
+#profiler p{
+font-size: 12px;
+text-align: center;
+padding-left: 6%;
+width: 100%;
 }
 .top {
   margin: auto;
@@ -24,10 +45,13 @@ body{
   justify-content: space-between;
   padding: 25px 60px;
   width: 100%;
+  background-color: var(--header);
 }
+
 header p{
   padding-top: 12px; 
   font-size:20px;
+  color:var(--text-colour) ;
 }
 .click{
   display: grid;
@@ -43,7 +67,7 @@ header p{
 }
 .click a{
   text-decoration: none;
-  color: var(--black);
+  color: var(--text-colour);
 }
 .click a:hover{
   text-decoration: underline;
@@ -54,11 +78,13 @@ header p{
 .switch {
   position: relative;
   display: inline-block;
-  width: 10px;
-  height: 22px;
+  width: 30px;
+  height: 20px;
+  
 }
 main {
   width: 100%;
+  height: max-content;
 }
 
 .switch input {
@@ -67,14 +93,14 @@ main {
   height: 0;
 }
 .slider {
-  border: 2px solid var(--black);
+  border: none;
   position: absolute;
   cursor: pointer;
   top: 0;
   left: -10px;
   right: -10px;
   bottom: 0;
-  background-color: var(--white);
+  background-color: rgba(227, 228, 228, 1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -82,8 +108,8 @@ main {
 .slider:before {
   position: absolute;
   content: "";
-  height: 12px;
-  width: 12px;
+  height: 15px;
+  width: 15px;
   left: 2px;
   bottom: 2px;
   background-color: var(--black);
@@ -92,7 +118,7 @@ main {
 }
 
 input:checked + .slider {
-  background-color: var(--lightgray);
+  background-color: var(--white);
 }
 
 input:focus + .slider {
@@ -100,9 +126,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  transform: translateX(10px);
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
 }
 .slider.round {
   border-radius: 64px;
@@ -118,7 +144,7 @@ h1 {
   width: 60%;
   font-size: 55px;
   line-height: 73px;
-  color: var(--black);
+  color: var(--text-colour);
   text-align: center;
 }
 
@@ -126,10 +152,10 @@ h1 {
   margin: auto;
   width: 90%;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 40px;
   text-align: center;
 
-  color: var(--black);
+  color: var(--text-colour);
 }
 .button {
   margin: auto;
@@ -266,20 +292,24 @@ main {
   header p{
     font-size: 13px;
   }
-  #profiler {
+  #profiler p, #profiler img {
     display: none;
   }
-  .top{
-    display: flex;
-    justify-content: left;
-    margin: none;
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  .top .logo{
+    margin-left: -55%;
   }
   .sidebar{
     display: inline-block;
   }
   #mySidebar a{
     text-decoration: none;
-    color: var(--black);
+    color: var(--text-colour);
     line-height: 30px;
   }
   #mySidebar a:hover{
@@ -312,7 +342,7 @@ main {
     width: 80%;
     font-size: 24px;
     line-height: 29px;
-    color: var(--black);
+    color: var(--text-colour);
     text-align: center;
   }
 
@@ -322,7 +352,7 @@ main {
     font-size: 12px;
     line-height: 21px;
     text-align: justify;
-    color: var(--black);
+    color: var(--text-colour);
   }
   .button {
     margin: auto;
