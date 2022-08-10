@@ -1,1 +1,7 @@
 
+| Links                           | What I did and how I solved it                                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+|  <a href="https://www.github.com/zuri-training/Favicon-Gen-Team-61/tree/main/Frontend/Favicon-Documentation" target="_blank">Favicon Documentation </a>    | `I was tasked with creating the main screen for the documentation page which I did using my local vscode editor.` 
+|  <a href="https://www.github.com/zuri-training/Favicon-Gen-Team-61/tree/main/Frontend/Termsofuse" target="_blank">Terms of use </a>    | `I worked in collaboration with @Hikmah to created the main page of the terms of use page and also the footer of the page. While working on this page I noticed that using the <table> made it easier to implement the design given and also made the page properly allign.` 
+|  <a href="https://www.github.com/zuri-training/Favicon-Gen-Team-61/tree/main/Frontend/draft_thumbnail" target="_blank">Draft_thumbnail </a>    | `I worked on in collaboration with many other designers to implement various features of this page.`
+|  <a href="https://www.github.com/zuri-training/Favicon-Gen-Team-61/tree/main/Frontend/Favicon-Homepage" target="_blank">Draft_thumbnail </a>    | `I worked exclusively on this page and also implemented the hi-fi, lo-fi and media responsiveness of this page.`
