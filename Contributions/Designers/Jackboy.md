@@ -1,3 +1,3 @@
 | Links                           | What I did and how I solved it                                                                                              |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
-|  <a href="https://www.figma.com/file/HLYAbHntWLXZLkDMTBlLgp/Generator-page-High-Fidelity-Wire-Frames?node-id=0%3A1" target="_blank">Generator Page High Fidelity </a>    | Blah blah
+|  <a href="https://www.figma.com/file/jqWBqvfGdXFWfqrzUSyj7e/Landing-Page-Lofi?node-id=0%3A1" target="_blank">Landing Page Lofi </a>    | I designed 
