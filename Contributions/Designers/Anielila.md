@@ -1,0 +1,15 @@
+| Links                           | What I did and how I solved it                                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+|  <a href="https://www.figma.com/file/oaP49AyCObu5Wd7EWUjQuk/Privacy-Policy-%26-Terms-of-Use-Page-HiFi?node-id=0%3A1" target="_blank">Privacy Policy Page and Terms Of Use Page HiFi </a>    | `I created the High Fidelity wireframes for both the Light Mode and Dark Mode of the Privacy Policy as well as Terms of Use Pages. I also worked on botgh the Desktop, Mobile and Tablet Views.`
+| Links                           | What I did and how I solved it                                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+|  <a href="https://www.figma.com/file/KIDqedwXWSspDgTPdQTetk/Sketches?node-id=0%3A1" target="_blank">LoFi Sketches </a>    | `I worked on the low fidelity sketches for our project with our team lead Osas. The pages I worked on are in the attached file`
+| Links                           | What I did and how I solved it                                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+|  <a href="https://docs.google.com/document/d/1h7ol75ae1TyfFx5nAH65R7BK88G9XE1cAjl5Egf4zXs/edit?usp=sharing" target="_blank">Documentation File </a>    | `I reseaarched and came up with a documentation file with the help of some other team mates. Came up with the documentation file in a google doc format which was eventually utilized to create the pages `
+| Links                           | What I did and how I solved it                                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+|  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">General Research </a>    | `I assisted in preliminary research when the project began. Research on what Favicon generator websites should have.`
+| Links                           | What I did and how I solved it                                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+|  <a href="https://www.figma.com/file/m7bJFJCSTaLcm7APr3gs9W/Style-Guides?node-id=0%3A1" target="_blank">Style Guide </a>    | `I assisted in creating buttons,text styles and input fields for the style guide along with others. Then afterwards we came to a general consensus`
