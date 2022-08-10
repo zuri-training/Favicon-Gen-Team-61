@@ -1,0 +1,3 @@
+| Links                           | What I did and how I solved it                                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+|  <a href="https://www.figma.com/file/HLYAbHntWLXZLkDMTBlLgp/Generator-page-High-Fidelity-Wire-Frames?node-id=0%3A1" target="_blank">Generator Page High Fidelity </a>    | `I implemented the features that were required for our generator page from the teams final conclusions i.e generate from image and text and designed the hifi according to our style guides for desktop, tablet and mobile screens as well as prototyped along side 1 team member ` 
