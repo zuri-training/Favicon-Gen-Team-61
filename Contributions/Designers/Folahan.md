@@ -1,4 +1,4 @@
 | Links                           | What I did and how I solved it                                                                                              |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
-|  <a href="https://www.figma.com/file/NbgJXBP7f8k0oiMXN1TTCZ/Generator-Page-Low-fidelity-Wire-Frames?node-id=0%3A1" target="_blank">Generator Page Low Fidelity </a>    | I worked on the low fidelity design of the tablet, mobile and desktop screens of the generator page.
+|  <a href="https://www.figma.com/file/40GfG3PETqCms1QYDmI3eK/Generator-Page-Lofi?node-id=0%3A1" target="_blank">Generator Page Low Fidelity </a>    | I worked on the low fidelity design of the tablet, mobile and desktop screens of the generator page.
 |  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit" target="_blank">Best Practices for Designing Favicons </a>    | I carried out research to determine the best paractices for favicon websites to inform us in our design process.
