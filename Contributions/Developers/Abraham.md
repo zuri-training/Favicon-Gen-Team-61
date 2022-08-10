@@ -1,0 +1,5 @@
+| Links                           | What I did and how I solved it                                                                                              |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+|  <a href="https://www.github.com/zuri-training/Favicon-Gen-Team-61/tree/main/Frontend/Authentication" target="_blank">Authentication </a>    | `I worked on the user authentication screen from the lo-fi stage to the hi- stage`                           
+|  <a href="https://www.github.com/zuri-training/Favicon-Gen-Team-61/tree/main/Frontend/Authentication" target="_blank">Account settings </a>    | `I worked on the account settings screen from lo-fi stage to hi-fi and also implemented dark mode`
+|  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">Features favicon generator sites should have </a>    | `I also contributed to the features a Favicon generator sites should have`
