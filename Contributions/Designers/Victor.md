@@ -1,6 +1,8 @@
 | Links                           | What I did and how I solved it                                                                                              |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
-|  <a href="https://www.figma.com/file/UD8n4zFz1JD5mZnGcDFAFU/About-us-(LOFI)?node-id=0%3A1" target="_blank">About us Low Fidelity </a>    | `Blah blah`
-|  <a href="https://www.figma.com/file/OD69NuMZckYZUXOpNTTO6i/About-us-(HIFI)?node-id=0%3A1" target="_blank">About us High Fidelity </a>    | `Blah blah`
-|  <a href="https://docs.google.com/document/d/1iPOrgBsVoZLxWLDlNoKJTO68XdPQKQkox_z0x3UbDsI/edit?usp=sharing" target="_blank">Research Plan </a>    | `Blah blah`
-|  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">General Research </a>    | `Blah blah`
+|  <a href="https://www.figma.com/file/UD8n4zFz1JD5mZnGcDFAFU/About-us-(LOFI)?node-id=0%3A1" target="_blank">About us Low Fidelity </a>    | `I designed the About us page(Lofi)wireframes for Desktop, mobile and Tablets.
+Ligh and dark mode inclusive`
+|  <a href="https://www.figma.com/file/OD69NuMZckYZUXOpNTTO6i/About-us-(HIFI)?node-id=0%3A1" target="_blank">About us High Fidelity </a>    | `I designed the About us page(Hifi)wireframes for Desktop, mobile and Tablets.
+Ligh and dark mode inclusive.`
+|  <a href="https://docs.google.com/document/d/1iPOrgBsVoZLxWLDlNoKJTO68XdPQKQkox_z0x3UbDsI/edit?usp=sharing" target="_blank">Research Plan </a>    | `Based on the idea brief we recieved from the client and the general research conducted by the team, i wrote the problem statement, the screener questions and interview scripts we used for our user interviews.`
+|  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">General Research </a>    | `I and two other teammates conducted a research in order to ascertain the what favicon generator site are user friendly`
