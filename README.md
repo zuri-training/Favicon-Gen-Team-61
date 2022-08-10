@@ -29,6 +29,38 @@ This will be a proof that everything is working well
 
 ## Author's :page_with_curl:
 
+DESIGNERS
+ISIBOR OSASUMWEN precious (TEAM LEAD)
+
+VICTOR AKO-ATULOMAH
+
+Chukwudire Princess
+
+Adefolahan Omoloju
+
+Philip Oluwatimileyin
+
+Mmenim Mathias
+
+Elizabeth Silas
+
+Adebayo Solomon
+
+Oluwatomiwa Ade-Olunusi
+
+Anielila Inetimi
+
+Cynthia Kelechi Onwujekwe
+
+OLOYEDE OYINDASOLA
+
+Osatuyi Flora
+
+Ojo Happiness Taiwo
+
+JACKBOY
+![image](https://user-images.githubusercontent.com/105444870/183971978-960746ad-af8b-4f37-86fd-39f4bd699341.png)
+
 <p align="left">
 <img src="https://github.com/Izimartin/Zuriboard_Internship/blob/main/favicon-logo-removebg-preview.png?raw=true"
        alt="Favicon-Gen Logo"
