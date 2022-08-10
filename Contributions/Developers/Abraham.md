@@ -6,5 +6,5 @@
 |  <a href="https://www.github.com/zuri-training/Favicon-Gen-Team-61/tree/main/Frontend/Termsofuse" target="_blank">Terms of use </a>    | `I worked on implementing the hi-fi of Termsofuse screen` 
 |  <a href="https://www.github.com/zuri-training/Favicon-Gen-Team-61/tree/main/Frontend/privacy" target="_blank">Privacy </a>    | `I worked on the implementing the hi-fi of privacy screen`
 |  <a href="https://www.github.com/zuri-training/Favicon-Gen-Team-61/tree/main/Frontend/draft_thumbnail" target="_blank">Draft_thumbnail </a>    | `I worked on the implementing the hi-fi of draft_thumbnail`
-|  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">Features favicon generator sites should have </a>    | `I also contributed to the features a Favicon generator sites should have`
-|  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">Features favicon generator sites should have </a>    | `I also contributed to the general research on how a favicon generator should look like`
+|  <a href="https://docs.google.com/document/d/1J7jvr_cC2xHMY3fqC1iIx4ISejJeYngvs3YTUyIvJDg/edit?usp=sharing" target="_blank">Related codes to embed for a common favicon generator </a>    | `I also contributed to the related codes to embed for a common favicon generator`
+
