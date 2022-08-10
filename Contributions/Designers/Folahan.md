@@ -1,3 +1,4 @@
 | Links                           | What I did and how I solved it                                                                                              |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
 |  <a href="https://www.figma.com/file/NbgJXBP7f8k0oiMXN1TTCZ/Generator-Page-Low-fidelity-Wire-Frames?node-id=0%3A1" target="_blank">Generator Page High Fidelity </a>    | I worked on the low fidelity design of the tablet, mobile and desktop screens of the generator page.
+|  <a href="https://www.figma.com/file/NbgJXBP7f8k0oiMXN1TTCZ/Generator-Page-Low-fidelity-Wire-Frames?node-id=0%3A1" target="_blank">Generator Page High Fidelity </a>    | I worked on the low fidelity design of the tablet, mobile and desktop screens of the generator page.
