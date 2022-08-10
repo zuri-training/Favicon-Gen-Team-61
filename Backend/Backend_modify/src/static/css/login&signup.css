@@ -1,0 +1,75 @@
+
+{% load static %}
+
+form{
+    padding: 61px ;
+    width: 50%;
+    margin: 62px auto;
+    background-color: white;
+    box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.1);
+}
+
+.find{
+    text-align: left;
+}
+.Login{
+    text-align: center;
+    padding-top: 41px;
+        width: 50%;
+        margin: auto;
+}
+input[type=text],
+input[type=password],
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: orange;
+}
+.dont{
+
+padding-top: 21px;
+color: #606060;
+font-weight: 400;
+font-size: 15px;
+line-height: 15px;
+text-align: center;
+}
+ 
+ .forget {
+    text-align: right;
+} 
+
+ h5 a,
+ span a{
+    text-decoration: none;
+    color: orange;
+ }
+
+ @media screen and (max-width : 1000px) {
+    form{
+        width: 100%;
+    }
+    
+ }
+
+ 
