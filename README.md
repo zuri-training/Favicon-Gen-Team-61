@@ -29,64 +29,6 @@ This will be a proof that everything is working well
 
 ## Author's :page_with_curl:
 
-DESIGNERS
-
-ISIBOR OSASUMWEN precious (TEAM LEAD)
-
-VICTOR AKO-ATULOMAH
-
-Chukwudire Princess
-
-Adefolahan Omoloju
-
-Philip Oluwatimileyin
-
-Mmenim Mathias
-
-Elizabeth Silas
-
-Adebayo Solomon
-
-Oluwatomiwa Ade-Olunusi
-
-Anielila Inetimi
-
-Cynthia Kelechi Onwujekwe
-
-OLOYEDE OYINDASOLA
-
-Osatuyi Flora
-
-Ojo Happiness Taiwo
-
-JACKBOY
-
-
-DEVELOPERS
-
-Aginam Abraham Somtochukwu (ASS. TEAM LEAD)
-
-Hashim Hikmah
-
-ARMSTRONG 
-
-Olalekan N. Asaaju
-
-Tobiloba Lawal
-
-Joshua Emmanuel
-
-Prince Osiohwo
-
-Charles YOMI
-
-OJE DOMINION
-
-MARTIN IZI
-
-GEORGE EKEKWE
-
-
 
 ![image](https://user-images.githubusercontent.com/105444870/183972273-70b883c3-b8db-4ad9-ae99-83de57dd3387.png)
 
