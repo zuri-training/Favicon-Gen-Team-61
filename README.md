@@ -2,7 +2,7 @@
 
 In this project, We are required to create a website that generates favicon, We have research on how this project will be done and how it will be implemented. We practiced using `Figma`, for the design  `HTML`, `CSS`, `JavaScript`, and `Python` methods for development.
 
-## Documentations:
+## Our Work:
 
 Links to research documentation used in this project:
 
