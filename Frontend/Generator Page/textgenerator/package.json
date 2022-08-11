@@ -1,0 +1,43 @@
+{
+  "name": "favicon",
+  "description": "this is a project for genersting favicons",
+  "version": "1.0.0",
+  "author": "team_61_favicon_gen",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+
+  "dependencies": {
+    "@swc/helpers": "^0.3.8"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "homepage": "",
+  "keywords": [
+    "icon",
+    "canvas",
+    "center text",
+    "favicon text",
+    "bookmark icon",
+    "favicon",
+    "favorite icon",
+    "ico",
+    "icon",
+    "shortcut icon",
+    "tab icon",
+    "url icon",
+    "website icon"
+  ],
+  "license": "MIT",
+  "main": "dist/textgenerator.js",
+  "module": "dist/textgenerator.mjs",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "scripts": {
+    "build": "parcel build",
+    "examples": "parcel examples/index.html",
+    "watch": "parcel watch"
+  },
+  "source": "src/textgenerator.js"
+}

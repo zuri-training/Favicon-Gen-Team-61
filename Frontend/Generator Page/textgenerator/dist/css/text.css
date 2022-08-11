@@ -1,0 +1,355 @@
+:root{
+    --primary-bg: #16212A;
+    --secondary-bg: #21313F;
+    --profile-drop-box: #265872;
+    --text-color: #fff;
+    --profile-color: #6EA8C6;
+    --btn-color-main: #3F92BD;
+    --white-color: #fff;
+
+}
+
+.light-mode{
+    --primary-bg: #fff;
+    --secondary-bg: rgba(106, 188, 232, 0.1);
+    --profile-drop-box: #0579b8;
+    --text-color: #000;
+    --profile-color: #6EA8C6;
+    --btn-color-main: #3F92BD;
+    --white-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+fieldset legend{
+    color: var(--text-color);
+}
+
+.generator_container{
+    width: 100%;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    font-size: 1.125rem;
+    font-family: sans-serif;
+    padding: 3rem;
+}
+
+.wrapper fieldset{
+    padding: 2rem;
+}
+
+.main_wrapper{
+    width: 60%;
+    border: 1px solid salmon;
+}
+
+.navigation_links{
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation_links a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navigation_links a:hover{
+    border-bottom: 2px solid var(--btn-color-main);
+}
+
+.text_container{
+    display: flex;
+    justify-content: space-between;
+}
+.color-input{
+    display: block;
+    width: 60%;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+.input_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    /* grid-auto-rows: 50px; */
+}
+
+
+.input_container label,
+.main-content small{
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+.input_container{
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 1.5rem;
+}
+.input_container .content{
+    width: 100%;
+    height: 70px;
+    background: var(--secondary-bg);
+    border: 3px solid var(--primary-bg);
+    color: var(--text-color);
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.input_container .box{
+    margin-bottom: 1.5rem;
+}
+
+.canva_option{
+    display: block;
+    color: var(--text-color);
+    padding: 1rem;
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+
+.color_choice,
+.instruction_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.color_wrapper{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+.background{
+    width: 100%;
+}
+.font_color{
+    width: 100%;
+}
+.display{
+    width: 100%;
+    margin: auto;
+}
+
+.display h5{
+    margin-bottom: 1rem;
+}
+
+.color_display{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 195, 195);
+    border-radius: .2rem;
+}
+
+.color_container{
+    margin-bottom: 1rem;
+}
+
+.color_range{
+    margin-top: .5rem;
+    width: 100%;
+    height: 20px;
+    border-radius: 1rem;
+    background-color: #3F92BD;
+}
+.colors{
+    margin-top: 1rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.color{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: crimson;
+    left: 0;
+    cursor: pointer;
+}
+.color_1{
+    left: 0;
+}
+.color_2{
+    left: 20px;
+    background-color: aqua;
+}
+
+.color_3{
+    left: 50px;
+    background-color: #0579b8;
+}
+
+.color_4{
+    left: 80px;
+    background-color: #3F92BD;
+}
+
+.color_5{
+    left: 110px;
+    background-color:rgba(185, 3, 131, 0.884);
+}
+
+.color_6{
+    left: 140px;
+    background-color:chocolate;
+}
+/* .color_7{
+    left: 170px;
+    background-color:rgb(5, 207, 123);
+}
+.color_8{
+    left: 200px;
+    background-color:rgb(129, 8, 185);
+}
+.color_9{
+    left: 230px;
+    background-color:rgb(30, 210, 141);
+}
+.color_10{
+    left: 260px;
+    background-color:rgb(135, 230, 11);
+}
+.color_11{
+    left: 290px;
+    background-color:rgb(214, 12, 12);
+} */
+
+.instruction{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.instruction_container h2{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.instruction p{
+    line-height: 1.4;
+}
+
+.instruction h4{
+    font-size: 1.5rem;
+}
+
+.text_generator_footer{
+    width: 80%;
+    margin: auto;
+}
+.html_codes{
+    background-color: var(--white-color);
+    color: #000;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.copy_btn{
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--btn-color-main);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.view_input_container{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.canva{
+    width: 60%;
+    height: 350px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: -2px -3px 2px var(--text-color);
+}
+.display_result{
+    width: 160px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: rgb(242, 158, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+
+    position: relative;
+}
+canvas{
+    position: absolute;
+}
+.text_result{
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.canva input{
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    background-color: #caaebd;
+}
+.save_btn,
+.generate_btn{
+    width: 60%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+.save_btn{
+    border: 2px solid var(--btn-color-main);
+    color: var(--btn-color-main);
+}
+.generate_btn{
+    border: none;
+    color: var(--text-color);
+    background-color: var(--btn-color-main);
+}
+.save_btn:hover{
+    border: 4px solid var(--btn-color-main);
+}
+.generate_btn:hover,
+.copy_btn:hover{
+    background-color: var(--profile-color);
+}

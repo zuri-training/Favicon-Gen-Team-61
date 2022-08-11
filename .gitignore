@@ -26,8 +26,7 @@ db.sqlite3-journal
 .Python
 build/
 develop-eggs/
-dist/
-downloads/
+
 eggs/
 .eggs/
 lib/
@@ -54,7 +53,7 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # folders
-Frontend/
+
 img_api
 
 # Unit test / coverage reports
@@ -176,4 +175,3 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
 
-node_modules
