@@ -7,6 +7,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  * 3. Style
  */
+
+ {% load static %}
 html {
   /* 1 */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

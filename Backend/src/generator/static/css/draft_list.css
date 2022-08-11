@@ -1,3 +1,4 @@
+{% load static %}
 :root{
     --primary-bg: #16212A;
     --secondary-bg: #21313F;
@@ -18,6 +19,15 @@
     --btn-color-main: #3F92BD;
     --white-color: #fff;
 }
+.compound_container{
+    width: 100%;
+    background-color: var(--primary-bg);
+    overflow: hidden;
+    padding: .5rem;
+    min-height: 100vh;
+    position: relative;
+}
+
 
 .error_message{
     display: flex;
@@ -335,6 +345,33 @@ body{
 }
 .save_icon_title{
     padding: 0;
+}
+
+
+.grid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-100000000px);
+    transition: transform .3s ease;
+    color: var(--text-color) !important;
+}
+.grid h4{
+    color: var(--text-color);
+}
+
+.list{
+    transform: translateX(0);
+    transition: transform .3s ease;
+
+}
+.grid.show_grid{
+    transform: translateX(0);
+}
+.list.show_grid{
+    transform: translateX(-100000000px);
 }
 
 

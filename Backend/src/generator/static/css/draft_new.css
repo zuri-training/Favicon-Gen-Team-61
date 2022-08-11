@@ -1,3 +1,4 @@
+{% load static %}
 :root{
     --primary-bg: #16212A;
     --secondary-bg: #21313F;

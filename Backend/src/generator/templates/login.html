@@ -89,7 +89,7 @@
      <form action="{% url 'homePage' %}">
         <h2 class="sign">Log In</h2><br><br>  
     <label for="fname">Username</label>
-    <input type="text" id="fname" name="firstname" placeholder=" Peter Grey">
+    <input type="text" id="fname" name="username" placeholder=" Peter Grey">
 
     <label for="Password"> Password</label>
     <input type="password" id="password" name="password" placeholder="******">
@@ -103,9 +103,17 @@
         <hr class="auth-hr">
 
 </div>   
-        <input type="submit" value="Continue with Google" class="continue" >
-
- 
+<a style="color: #fff;" href="{% url 'social:begin' 'google-oauth2' %}">
+  
+  <input type="button"  value="Continue with Google" class="continue" style="padding: 1rem; width: 100%;">
+  
+</a>
+<style>
+  .contiune:hover{
+    background-color: #3f92bd !important;
+    color:#fff;
+  }
+</style>
 
         <p class="dont">Don't have an account? <span> <a href="{% url 'signUp' %} "> Sign Up</a></span> </p>
         

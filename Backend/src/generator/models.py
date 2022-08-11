@@ -22,6 +22,8 @@ class Favicons(models.Model):
 
 class Profile(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    generated_icons = models.ManyToManyField(Favicons)
+    id_user = models.IntegerField()
+    generated_icons = models.ManyToManyField(Favicons, blank=True)
     
-
+    def __str__(self):
+        return self.user.username

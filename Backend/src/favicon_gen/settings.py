@@ -41,7 +41,10 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'livereload',
-        'generator.apps.GeneratorConfig'
+        'generator.apps.GeneratorConfig',
+        
+    'social_django',
+    
 
 ]
 
@@ -54,6 +57,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
         'livereload.middleware.LiveReloadScript',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
+        
 
 ]
 
@@ -70,6 +75,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
             ],
         },
     },
@@ -132,10 +138,29 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+STATIC_URL = 'static/'
+MEDIA_URL = '/media/'
 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
 # BASE_DIR = os.path.dirname(__file__)
 
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# SOCIAL APP CUSTOM SETTINGS
+AUTHENTICATION_BACKENDS = [
+    'social_core.backends.google.GoogleOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_URL = 'logout'
+LOGOUT_REDIRECT_URL = 'login'
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '590907092652-ql58umhte7u9nqn6bavjqb5ekvpm9vmc.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
