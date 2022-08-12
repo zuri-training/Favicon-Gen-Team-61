@@ -10,7 +10,7 @@ urlpatterns = [
     path('register', views.SignUp, name='register'),
     path('login', views.SignIn, name='login'),
     path('setting', views.AccountSetting.as_view(template_name ='AccountSettings.html'), name='setting'), 
-    path('delete', views.DeleteAccount, name='delete'),
+    path('delete', views.DeleteAccount, name='delete-account'),
     path('contact/', views.contact, name='contact'),
     path('privacyPolicy/', views.privacyPolicy, name='privacyPolicy'),
     path('termsOfUse/', views.termsOfUse, name='termsOfUse'),

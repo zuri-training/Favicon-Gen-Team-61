@@ -16,10 +16,10 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   /> -->
-  <link rel="stylesheet" href="{% static 'static/css/mainstyle.css' %}">
+  <link rel="stylesheet" href="{% static 'css/mainstyle.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=DMsans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
    
     <title>Account Setting</title>
 </head>
@@ -94,8 +94,8 @@
             <div class="container">
 
                 <!-- edit account settings form -->
-                <form action="" >
-
+                <form action="" method="POST">
+                    {% csrf_token %}
                     <header class="profile-img">
                           <img src="{% static 'images/healthicons_ui-user-profile (3).png' %}" alt="User Avatar">
                     </header>
@@ -117,17 +117,12 @@
                             <fieldset>
                                 <h2 class="fs-4">Password</h2>
                                 <div class="mb-3">
-                                    <label for="currentpassword" class="form-label">Current Password</label>
-                                    <input type="password" name="" id="currentpassword" class="form-control p-3" placeholder="">
+                                    {% comment %} <label for="currentpassword" class="form-label">Current Password</label>
+                                    <input type="password" name="" id="currentpassword" class="form-control p-3" placeholder=""> {% endcomment %}
+                                    
+                                    {{ form.as_p}}
                                 </div>
-                                <div class="mb-3">
-                                    <label for="newpassword">New password</label>
-                                    <input type="password" name="" id="newpassword" class="form-control p-3" placeholder="">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="confirmpassword">Confirm new password</label>
-                                    <input type="password" name="" id="confirmpassword" class="form-control p-3" placeholder="">
-                                </div>
+                               
                             </fieldset>
                             <div>
                                 <button class="btn btn-primary px-4 text-white" role="button">Update profile</button>
@@ -143,7 +138,9 @@
             <section class="container my-5">
                 <h2 class="fs-4">Delete Account</h2>
                 <p>This will immediately delete all of your data including saved icons and <br> more. This can’t be undone.</p>
+                <a href="{% url 'delete-account' %}"
                 <button class="btn btn-danger px-4 text-white" role="button"> Delete Account</button>
+                </a>
             </section>
 
 
