@@ -1,13 +1,13 @@
-var $4w2f2$swchelpers = require("@swc/helpers");
+var $dGEJx$swchelpers = require("@swc/helpers");
 
 
-var $147f589d770fb746$var$$ab4e1cafa3bfd981$var$CenterJS = /*#__PURE__*/ function() {
+var $7e3c6e63b2002a6e$var$$ab4e1cafa3bfd981$var$CenterJS = /*#__PURE__*/ function() {
     "use strict";
-    function $147f589d770fb746$var$$ab4e1cafa3bfd981$var$CenterJS(canvas) {
-        $4w2f2$swchelpers.classCallCheck(this, $147f589d770fb746$var$$ab4e1cafa3bfd981$var$CenterJS);
+    function $7e3c6e63b2002a6e$var$$ab4e1cafa3bfd981$var$CenterJS(canvas) {
+        $dGEJx$swchelpers.classCallCheck(this, $7e3c6e63b2002a6e$var$$ab4e1cafa3bfd981$var$CenterJS);
         this.canvas = canvas;
     }
-    $4w2f2$swchelpers.createClass($147f589d770fb746$var$$ab4e1cafa3bfd981$var$CenterJS, [
+    $dGEJx$swchelpers.createClass($7e3c6e63b2002a6e$var$$ab4e1cafa3bfd981$var$CenterJS, [
         {
             key: "generate",
             value: function generate(options) {
@@ -196,19 +196,19 @@ var $147f589d770fb746$var$$ab4e1cafa3bfd981$var$CenterJS = /*#__PURE__*/ functio
             }
         }
     ]);
-    return $147f589d770fb746$var$$ab4e1cafa3bfd981$var$CenterJS;
+    return $7e3c6e63b2002a6e$var$$ab4e1cafa3bfd981$var$CenterJS;
 }();
-var $147f589d770fb746$export$2e2bcd8739ae039 = $147f589d770fb746$var$$ab4e1cafa3bfd981$var$CenterJS;
+var $7e3c6e63b2002a6e$export$2e2bcd8739ae039 = $7e3c6e63b2002a6e$var$$ab4e1cafa3bfd981$var$CenterJS;
 
 
 
-var $1e668f9d7388492a$var$$058517cf1355ff1a$var$Resize = /*#__PURE__*/ function() {
+var $984722b8c027dfec$var$$058517cf1355ff1a$var$Resize = /*#__PURE__*/ function() {
     "use strict";
-    function $1e668f9d7388492a$var$$058517cf1355ff1a$var$Resize(canvas) {
-        $4w2f2$swchelpers.classCallCheck(this, $1e668f9d7388492a$var$$058517cf1355ff1a$var$Resize);
+    function $984722b8c027dfec$var$$058517cf1355ff1a$var$Resize(canvas) {
+        $dGEJx$swchelpers.classCallCheck(this, $984722b8c027dfec$var$$058517cf1355ff1a$var$Resize);
         this.canvas = canvas;
     }
-    $4w2f2$swchelpers.createClass($1e668f9d7388492a$var$$058517cf1355ff1a$var$Resize, [
+    $dGEJx$swchelpers.createClass($984722b8c027dfec$var$$058517cf1355ff1a$var$Resize, [
         {
             /**
    * Resize the canvas by halving the width and height. This produces better
@@ -234,16 +234,16 @@ var $1e668f9d7388492a$var$$058517cf1355ff1a$var$Resize = /*#__PURE__*/ function(
             }
         }
     ]);
-    return $1e668f9d7388492a$var$$058517cf1355ff1a$var$Resize;
+    return $984722b8c027dfec$var$$058517cf1355ff1a$var$Resize;
 }();
-var $1e668f9d7388492a$var$$058517cf1355ff1a$export$2e2bcd8739ae039 = $1e668f9d7388492a$var$$058517cf1355ff1a$var$Resize;
-var $1e668f9d7388492a$var$$9b5b47f028ff428c$var$Ico = /*#__PURE__*/ function() {
+var $984722b8c027dfec$var$$058517cf1355ff1a$export$2e2bcd8739ae039 = $984722b8c027dfec$var$$058517cf1355ff1a$var$Resize;
+var $984722b8c027dfec$var$$9b5b47f028ff428c$var$Ico = /*#__PURE__*/ function() {
     "use strict";
-    function $1e668f9d7388492a$var$$9b5b47f028ff428c$var$Ico(canvas) {
-        $4w2f2$swchelpers.classCallCheck(this, $1e668f9d7388492a$var$$9b5b47f028ff428c$var$Ico);
+    function $984722b8c027dfec$var$$9b5b47f028ff428c$var$Ico(canvas) {
+        $dGEJx$swchelpers.classCallCheck(this, $984722b8c027dfec$var$$9b5b47f028ff428c$var$Ico);
         this.canvas = canvas;
     }
-    $4w2f2$swchelpers.createClass($1e668f9d7388492a$var$$9b5b47f028ff428c$var$Ico, [
+    $dGEJx$swchelpers.createClass($984722b8c027dfec$var$$9b5b47f028ff428c$var$Ico, [
         {
             key: "generate",
             value: function generate() {
@@ -252,13 +252,13 @@ var $1e668f9d7388492a$var$$9b5b47f028ff428c$var$Ico = /*#__PURE__*/ function() {
                     32,
                     48
                 ];
-                var canvasMaster = new $1e668f9d7388492a$var$$058517cf1355ff1a$export$2e2bcd8739ae039(this.canvas).generate(128, 128);
+                var canvasMaster = new $984722b8c027dfec$var$$058517cf1355ff1a$export$2e2bcd8739ae039(this.canvas).generate(128, 128);
                 var iconDirectoryHeader = this.createIconDirectoryHeader(sizes.length);
                 var iconDirectoryEntries = "";
                 var bitmapData = "";
                 for(var i = 0; i < sizes.length; i++){
                     var size = sizes[i];
-                    var canvas = new $1e668f9d7388492a$var$$058517cf1355ff1a$export$2e2bcd8739ae039(canvasMaster).generate(size, size);
+                    var canvas = new $984722b8c027dfec$var$$058517cf1355ff1a$export$2e2bcd8739ae039(canvasMaster).generate(size, size);
                     var context = canvas.getContext("2d");
                     var width = canvas.width;
                     var height = canvas.height;
@@ -404,37 +404,37 @@ var $1e668f9d7388492a$var$$9b5b47f028ff428c$var$Ico = /*#__PURE__*/ function() {
             }
         }
     ]);
-    return $1e668f9d7388492a$var$$9b5b47f028ff428c$var$Ico;
+    return $984722b8c027dfec$var$$9b5b47f028ff428c$var$Ico;
 }();
-var $1e668f9d7388492a$var$$9b5b47f028ff428c$export$2e2bcd8739ae039 = $1e668f9d7388492a$var$$9b5b47f028ff428c$var$Ico;
-var $1e668f9d7388492a$var$$faba7f80617af102$export$2e2bcd8739ae039 = /*#__PURE__*/ function() {
+var $984722b8c027dfec$var$$9b5b47f028ff428c$export$2e2bcd8739ae039 = $984722b8c027dfec$var$$9b5b47f028ff428c$var$Ico;
+var $984722b8c027dfec$var$$faba7f80617af102$export$2e2bcd8739ae039 = /*#__PURE__*/ function() {
     "use strict";
-    function $1e668f9d7388492a$var$$faba7f80617af102$export$2e2bcd8739ae039(canvas) {
-        $4w2f2$swchelpers.classCallCheck(this, $1e668f9d7388492a$var$$faba7f80617af102$export$2e2bcd8739ae039);
+    function $984722b8c027dfec$var$$faba7f80617af102$export$2e2bcd8739ae039(canvas) {
+        $dGEJx$swchelpers.classCallCheck(this, $984722b8c027dfec$var$$faba7f80617af102$export$2e2bcd8739ae039);
         this.canvas = canvas;
     }
-    $4w2f2$swchelpers.createClass($1e668f9d7388492a$var$$faba7f80617af102$export$2e2bcd8739ae039, [
+    $dGEJx$swchelpers.createClass($984722b8c027dfec$var$$faba7f80617af102$export$2e2bcd8739ae039, [
         {
             key: "generate",
             value: function generate(size) {
-                return new $1e668f9d7388492a$var$$058517cf1355ff1a$export$2e2bcd8739ae039(this.canvas).generate(size, size).toDataURL();
+                return new $984722b8c027dfec$var$$058517cf1355ff1a$export$2e2bcd8739ae039(this.canvas).generate(size, size).toDataURL();
             }
         }
     ]);
-    return $1e668f9d7388492a$var$$faba7f80617af102$export$2e2bcd8739ae039;
+    return $984722b8c027dfec$var$$faba7f80617af102$export$2e2bcd8739ae039;
 }();
-var $1e668f9d7388492a$var$$4953411d24246927$var$Bundle = /*#__PURE__*/ function() {
+var $984722b8c027dfec$var$$4953411d24246927$var$Bundle = /*#__PURE__*/ function() {
     "use strict";
-    function $1e668f9d7388492a$var$$4953411d24246927$var$Bundle(canvas) {
-        $4w2f2$swchelpers.classCallCheck(this, $1e668f9d7388492a$var$$4953411d24246927$var$Bundle);
+    function $984722b8c027dfec$var$$4953411d24246927$var$Bundle(canvas) {
+        $dGEJx$swchelpers.classCallCheck(this, $984722b8c027dfec$var$$4953411d24246927$var$Bundle);
         this.canvas = canvas;
     }
-    $4w2f2$swchelpers.createClass($1e668f9d7388492a$var$$4953411d24246927$var$Bundle, [
+    $dGEJx$swchelpers.createClass($984722b8c027dfec$var$$4953411d24246927$var$Bundle, [
         {
             key: "generate",
             value: function generate() {
-                var ico = new $1e668f9d7388492a$var$$9b5b47f028ff428c$export$2e2bcd8739ae039(this.canvas);
-                var png = new $1e668f9d7388492a$var$$faba7f80617af102$export$2e2bcd8739ae039(this.canvas);
+                var ico = new $984722b8c027dfec$var$$9b5b47f028ff428c$export$2e2bcd8739ae039(this.canvas);
+                var png = new $984722b8c027dfec$var$$faba7f80617af102$export$2e2bcd8739ae039(this.canvas);
                 return {
                     ico: ico.generate([
                         16,
@@ -451,59 +451,59 @@ var $1e668f9d7388492a$var$$4953411d24246927$var$Bundle = /*#__PURE__*/ function(
             }
         }
     ]);
-    return $1e668f9d7388492a$var$$4953411d24246927$var$Bundle;
+    return $984722b8c027dfec$var$$4953411d24246927$var$Bundle;
 }();
-var $1e668f9d7388492a$var$$4953411d24246927$export$2e2bcd8739ae039 = $1e668f9d7388492a$var$$4953411d24246927$var$Bundle;
-var $1e668f9d7388492a$var$$2361830c7095c6f6$var$FaviconJS = /*#__PURE__*/ function() {
+var $984722b8c027dfec$var$$4953411d24246927$export$2e2bcd8739ae039 = $984722b8c027dfec$var$$4953411d24246927$var$Bundle;
+var $984722b8c027dfec$var$$2361830c7095c6f6$var$FaviconJS = /*#__PURE__*/ function() {
     "use strict";
-    function $1e668f9d7388492a$var$$2361830c7095c6f6$var$FaviconJS(canvas) {
-        $4w2f2$swchelpers.classCallCheck(this, $1e668f9d7388492a$var$$2361830c7095c6f6$var$FaviconJS);
+    function $984722b8c027dfec$var$$2361830c7095c6f6$var$FaviconJS(canvas) {
+        $dGEJx$swchelpers.classCallCheck(this, $984722b8c027dfec$var$$2361830c7095c6f6$var$FaviconJS);
         this.canvas = canvas;
     }
-    $4w2f2$swchelpers.createClass($1e668f9d7388492a$var$$2361830c7095c6f6$var$FaviconJS, [
+    $dGEJx$swchelpers.createClass($984722b8c027dfec$var$$2361830c7095c6f6$var$FaviconJS, [
         {
             key: "bundle",
             value: function bundle() {
-                return new $1e668f9d7388492a$var$$4953411d24246927$export$2e2bcd8739ae039(this.canvas).generate();
+                return new $984722b8c027dfec$var$$4953411d24246927$export$2e2bcd8739ae039(this.canvas).generate();
             }
         },
         {
             key: "ico",
             value: function ico(sizes) {
-                return new $1e668f9d7388492a$var$$9b5b47f028ff428c$export$2e2bcd8739ae039(this.canvas).generate(sizes);
+                return new $984722b8c027dfec$var$$9b5b47f028ff428c$export$2e2bcd8739ae039(this.canvas).generate(sizes);
             }
         },
         {
             key: "png",
             value: function png(size) {
-                return new $1e668f9d7388492a$var$$faba7f80617af102$export$2e2bcd8739ae039(this.canvas).generate(size);
+                return new $984722b8c027dfec$var$$faba7f80617af102$export$2e2bcd8739ae039(this.canvas).generate(size);
             }
         },
         {
             key: "resize",
             value: function resize(size) {
-                return new $1e668f9d7388492a$var$$058517cf1355ff1a$export$2e2bcd8739ae039(this.canvas).generate(size, size);
+                return new $984722b8c027dfec$var$$058517cf1355ff1a$export$2e2bcd8739ae039(this.canvas).generate(size, size);
             }
         }
     ]);
-    return $1e668f9d7388492a$var$$2361830c7095c6f6$var$FaviconJS;
+    return $984722b8c027dfec$var$$2361830c7095c6f6$var$FaviconJS;
 }();
-var $1e668f9d7388492a$export$2e2bcd8739ae039 = $1e668f9d7388492a$var$$2361830c7095c6f6$var$FaviconJS;
+var $984722b8c027dfec$export$2e2bcd8739ae039 = $984722b8c027dfec$var$$2361830c7095c6f6$var$FaviconJS;
 
 
-var $b8a8a03dfeaf28ec$var$selectFrom = document.querySelector('.select_from');
-var $b8a8a03dfeaf28ec$var$inputText = document.querySelector('.icon_text');
-var $b8a8a03dfeaf28ec$var$generateBtn = document.querySelector('.generate_btn');
-var $b8a8a03dfeaf28ec$var$canvas = document.getElementById("rounded");
-var $b8a8a03dfeaf28ec$var$fontContain = document.querySelector('.text_input');
-var $b8a8a03dfeaf28ec$var$bgcolor = document.querySelector('.bg_color');
-var $b8a8a03dfeaf28ec$var$font_color = document.querySelector('.font-color_input');
-var $b8a8a03dfeaf28ec$var$font_size = document.querySelector('.Input-TEXT');
-var $b8a8a03dfeaf28ec$var$download = document.getElementById('download');
-$b8a8a03dfeaf28ec$var$generateBtn.addEventListener('click', $b8a8a03dfeaf28ec$var$generateFavicon);
+var $1fe3ebd50abc42e9$var$selectFrom = document.querySelector('.select_from');
+var $1fe3ebd50abc42e9$var$inputText = document.querySelector('.icon_text');
+var $1fe3ebd50abc42e9$var$generateBtn = document.querySelector('.generate_btn');
+var $1fe3ebd50abc42e9$var$canvas = document.getElementById("rounded");
+var $1fe3ebd50abc42e9$var$fontContain = document.querySelector('.text_input');
+var $1fe3ebd50abc42e9$var$bgcolor = document.querySelector('.bg_color');
+var $1fe3ebd50abc42e9$var$font_color = document.querySelector('.font-color_input');
+var $1fe3ebd50abc42e9$var$font_size = document.querySelector('.Input-TEXT');
+var $1fe3ebd50abc42e9$var$download = document.getElementById('download');
+$1fe3ebd50abc42e9$var$generateBtn.addEventListener('click', $1fe3ebd50abc42e9$var$generateFavicon);
 // Generate Icon Function
-function $b8a8a03dfeaf28ec$var$generateFavicon() {
-    var favicon = new $1e668f9d7388492a$export$2e2bcd8739ae039($b8a8a03dfeaf28ec$var$canvas);
+function $1fe3ebd50abc42e9$var$generateFavicon() {
+    var favicon = new $984722b8c027dfec$export$2e2bcd8739ae039($1fe3ebd50abc42e9$var$canvas);
     var packages = favicon.bundle();
     var files = [
         packages.ico,
@@ -516,18 +516,18 @@ function $b8a8a03dfeaf28ec$var$generateFavicon() {
     ];
     console.log(packages);
     document.querySelector('.generated').src = packages.png150;
-    $b8a8a03dfeaf28ec$var$download.href = packages;
-    $b8a8a03dfeaf28ec$var$download.setAttribute("download", 'packages.png150');
+    $1fe3ebd50abc42e9$var$download.href = packages;
+    $1fe3ebd50abc42e9$var$download.setAttribute("download", 'packages.png150');
 }
 // Google Fonts code 
-var $b8a8a03dfeaf28ec$var$json = $.getJSON('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBwIX97bVWr3-6AIUvGkcNnmFgirefZ6Sw', function(data) {
+var $1fe3ebd50abc42e9$var$json = $.getJSON('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBwIX97bVWr3-6AIUvGkcNnmFgirefZ6Sw', function(data) {
     $.each(data.items, function(index, font) {
         $('.combobox').append($('<option></option>').attr('value', font.family).text(font.family));
     });
 });
-var $b8a8a03dfeaf28ec$var$fonn = document.querySelector('.combobox');
-$b8a8a03dfeaf28ec$var$fonn.addEventListener('change', $b8a8a03dfeaf28ec$var$selectOption);
-function $b8a8a03dfeaf28ec$var$selectOption(e1) {
+var $1fe3ebd50abc42e9$var$fonn = document.querySelector('.combobox');
+$1fe3ebd50abc42e9$var$fonn.addEventListener('change', $1fe3ebd50abc42e9$var$selectOption);
+function $1fe3ebd50abc42e9$var$selectOption(e1) {
     var font = e1.target.value;
     WebFont.load({
         google: {
@@ -536,18 +536,18 @@ function $b8a8a03dfeaf28ec$var$selectOption(e1) {
             ]
         },
         active: function active() {
-            $b8a8a03dfeaf28ec$var$selectFrom.addEventListener('change', function(e) {
+            $1fe3ebd50abc42e9$var$selectFrom.addEventListener('change', function(e) {
                 var shape = e.target.value;
-                var sizeVal = $b8a8a03dfeaf28ec$var$font_size.value;
-                var bgColor = $b8a8a03dfeaf28ec$var$bgcolor.value;
-                var fontColor = $b8a8a03dfeaf28ec$var$font_color.value;
+                var sizeVal = $1fe3ebd50abc42e9$var$font_size.value;
+                var bgColor = $1fe3ebd50abc42e9$var$bgcolor.value;
+                var fontColor = $1fe3ebd50abc42e9$var$font_color.value;
                 console.log(bgColor, fontColor);
                 if (sizeVal === "" || !parseInt(sizeVal)) sizeVal = 47;
-                else sizeVal = parseInt($b8a8a03dfeaf28ec$var$font_size.value);
-                $b8a8a03dfeaf28ec$var$inputText.addEventListener('change', function() {
-                    var textvalue = $b8a8a03dfeaf28ec$var$inputText.value.toUpperCase();
-                    if (textvalue === "") $b8a8a03dfeaf28ec$var$createCanva("C", shape, sizeVal, fontColor, bgColor, font);
-                    else $b8a8a03dfeaf28ec$var$createCanva(textvalue, shape, sizeVal, fontColor, bgColor, font);
+                else sizeVal = parseInt($1fe3ebd50abc42e9$var$font_size.value);
+                $1fe3ebd50abc42e9$var$inputText.addEventListener('change', function() {
+                    var textvalue = $1fe3ebd50abc42e9$var$inputText.value.toUpperCase();
+                    if (textvalue === "") $1fe3ebd50abc42e9$var$createCanva("C", shape, sizeVal, fontColor, bgColor, font);
+                    else $1fe3ebd50abc42e9$var$createCanva(textvalue, shape, sizeVal, fontColor, bgColor, font);
                 });
             });
         }
@@ -562,8 +562,8 @@ function $b8a8a03dfeaf28ec$var$selectOption(e1) {
 //     })          
 // })
 // Create Canva Function
-function $b8a8a03dfeaf28ec$var$createCanva(txt, shape, size, fontcolor, bgcolor, fontfam) {
-    new $147f589d770fb746$export$2e2bcd8739ae039($b8a8a03dfeaf28ec$var$canvas).generate({
+function $1fe3ebd50abc42e9$var$createCanva(txt, shape, size, fontcolor, bgcolor, fontfam) {
+    new $7e3c6e63b2002a6e$export$2e2bcd8739ae039($1fe3ebd50abc42e9$var$canvas).generate({
         width: 64,
         height: 64,
         shape: shape,
