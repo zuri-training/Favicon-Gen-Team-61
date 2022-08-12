@@ -39,15 +39,15 @@
                     <div class="desktop_align">
                         <div class="profile_info">
                             <div class="uk-inline">
-                                <h5 class="username">John Doe</h5>
+                                <h5 class="username">{{user.username}}</h5>
                                 <ul class="uk-card uk-card-body uk-card-default" id="drop" uk-drop="mode: hover">
                                     <li>
                                         <i class="fa-solid fa-gear"></i>
-                                        <a href="#">Settings</a>
+                                        <a href="{% url 'settings' %}">Settings</a>
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                        <a href="#">Logout</a>
+                                        <a href="{% url 'logout' %}">Logout</a>
                                     </li>
                                 </ul>
                             </div>

@@ -92,7 +92,10 @@ def signUp(request):
     return render(request, 'signUp.html')    
 
 def forgetPassword(request):
+    
+    
     return render(request, 'forgetPassword.html')
+
 
 
 #  Restricted Pages
@@ -126,7 +129,16 @@ def generatorByUpload(request):
 
 @login_required(login_url='login')
 def generateByText(request):
-    return render(request, 'generateByText.html')
+    
+    return render(request, 'generatebytext.html')
 
 
 
+@login_required(login_url='generator:login')
+def DeleteAccount(request):
+    # user_model = get_object_or_404(User, id=id)
+    user = User.objects.filter(username=request.user.username)
+    if user.exists():
+        user.delete()
+        return redirect('login')
+ 

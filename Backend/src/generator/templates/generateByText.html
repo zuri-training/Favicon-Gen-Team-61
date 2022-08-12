@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/huebee@2/dist/huebee.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'dist/css/text.css' %}"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://unpkg.com/huebee@2/dist/huebee.pkgd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="module" src="{% static 'dist/textgenerator.mjs' %}"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="sidebar">
+          <div style="display: none" id="mySidebar">
+            <button onclick="fav_close()">&times;</button>
+            <a href="#" class="bar-item">Settings</a>
+            <a href="#" class="bar-item">Logout</a>
+          </div>
+          <div class="bars">
+            <button id="threeBars" onclick="fav_open()">&#9776;</button>
+          </div>
+        </div>
+        <div class="logo" style="display: block; text-align: left">
+          <svg
+            style="padding-right: 5px"
+            width="48px"
+            height="48px"
+            width="30"
+            height="31"
+            viewBox="0 0 30 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6.47473 3.13216C5.40866 3.87759 4.44464 4.75893 3.60779 5.75106C7.02756 5.43357 11.3723 5.95199 16.4164 8.47409C21.8029 11.1673 26.1403 11.2583 29.159 10.676C28.885 9.84675 28.5402 9.04972 28.1318 8.29204C24.6762 8.6565 20.2462 8.17408 15.0835 5.59277C11.805 3.95356 8.91516 3.27832 6.47473 3.13216ZM26.1132 5.4189C23.3843 2.36996 19.4187 0.451172 15.0048 0.451172C13.7086 0.451172 12.4509 0.616678 11.2519 0.927688C12.8758 1.37076 14.6008 2.01898 16.4164 2.9268C20.1963 4.81672 23.4597 5.42524 26.1132 5.4189ZM29.8043 13.5869C26.1575 14.3071 21.1217 14.1591 15.0835 11.1401C9.43841 8.31753 4.94543 8.35307 1.91521 9.02647C1.7588 9.0612 1.60607 9.09771 1.45703 9.13572C1.0603 9.99854 0.743619 10.9058 0.516396 11.848C0.759083 11.7832 1.00986 11.7216 1.26861 11.664C4.94479 10.8471 10.1389 10.8826 16.4164 14.0214C22.0615 16.8439 26.5545 16.8083 29.5848 16.1349C29.6886 16.1119 29.7909 16.0881 29.8915 16.0635C29.9025 15.8285 29.908 15.5921 29.908 15.3544C29.908 14.7564 29.8728 14.1666 29.8043 13.5869ZM29.4049 19.2086C25.7934 19.84 20.9042 19.5976 15.0835 16.6873C9.43841 13.8648 4.94543 13.9004 1.91521 14.5738C1.24259 14.7232 0.637512 14.9052 0.103746 15.0974C0.102291 15.1829 0.101562 15.2685 0.101562 15.3544C0.101562 23.5852 6.77396 30.2576 15.0048 30.2576C21.9028 30.2576 27.7063 25.5712 29.4049 19.2086Z"
+              fill="#3F92BD"
+            />
+          </svg>
+
+          <p style="float: right"><b>FaviconGen</b></p>
+        </div>
+        <div id="profiler">
+          <label
+            class="switch"
+            for="darkmode"
+            style="float: left; margin-top: 6px"
+          >
+            <input type="checkbox" id="darkmode" onclick="function()" />
+            <span class="slider round"></span>
+          </label>
+          <p>John Doe</p>
+          <img
+            src="https://autorescuesolutions.com/about-us/img/about/position1.png"
+            alt="profile_pic"
+            id="profile"
+            style="
+              height: 35px;
+              width: 50px;
+              padding-left: 10px;
+              margin-right: 25px;
+            "
+          />
+        </div>
+      </div>
+      <div class="click">
+        <a href="#" class="bar-item">Settings</a>
+        <a href="#" class="bar-item">Logout</a>
+      </div>
+    </header>
+    <main id="main">
+      <div class="generator_container">
+        <div class="wrapper">
+          <div class="navigation_links">
+            <a href="#">Generate From Upload</a>
+            <a href="#">Generate From Text</a>
+          </div>
+          <fieldset>
+            <legend>Generate From Text</legend>
+            <div class="text_container">
+              <div class="main_wrapper">
+                <div class="text_input_container">
+                  <div class="input_container">
+                    <div class="font box">
+                      <div class="main-content">
+                        <small>Font</small>
+                        <select name="combobox" class="combobox content">
+                          <!-- <option value="fonts">Select A Font</option> -->
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="font_variant box">
+                      <div class="main-content">
+                        <small>Font Variant</small>
+                        <select name="" class="content" id="varcon">
+                          <option value="Regular Normal" class="font_variant">
+                            Regular Normal
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="shape box">
+                      <div class="main-content">
+                        <small>Shape</small>
+                        <select class="content select_from" plac>
+                          <option value="">click to choose</option>
+                          <option class="canva_option round">rounded</option>
+                          <option class="canva_option square">square</option>
+                          <option class="canva_option circle">circle</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="text_input box" id="sizcon">
+                      <label><small>Text Size</small></label>
+                      <input
+                        type="text"
+                        placeholder="enter size"
+                        class="content Input-TEXT"
+                        id="size"
+                      />
+                    </div>
+                  </div>
+                  <div class="color_choice">
+                    <div class="color_wrapper">
+                      <div class="background color_style">
+                        <div class="display">
+                          <h5>Background</h5>
+                          <input
+                            class="color-input bg_color color_display background_color_display"
+                            data-huebee
+                            placeholder="Choose a background color"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="font_color color_style">
+                      <div class="display">
+                        <h5>Font Color</h5>
+                        <input
+                          class="color-input color_display font_color_display font-color_input"
+                          data-huebee
+                          placeholder="Choose your font color"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="instruction_container">
+                  <div class="instruction_wrapper">
+                    <h2>How to install</h2>
+                    <div class="instruction instruct_1">
+                      <h4>Step 1</h4>
+                      <p class="instruct">
+                        Upload the image you want to use as your favicon, then
+                        click on 'Generate'.
+                      </p>
+                    </div>
+                    <div class="instruction instruct_2">
+                      <h4>Step 2</h4>
+                      <p class="instruct">
+                        After the favicon has been converted, you can Save and
+                        then download, place downloaded files in root directory.
+                      </p>
+                    </div>
+                    <div class="instruction insruct_3">
+                      <h4>Step 3</h4>
+                      <p class="instruct">
+                        Next, copy the following link tags and paste them into
+                        the head of your html
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="text_generator_footer">
+                  <div class="html_codes">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Cupiditateperferendis dolores, dolorem minima reiciendis
+                      alias? Doloribus voluptateminventore ipsam rem!
+                    </p>
+                  </div>
+                  <button class="copy_btn">Copy</button>
+                </div>
+              </div>
+              <div class="view_input_container">
+                <div class="canva">
+                  <div class="display_result">
+                    <canvas id="circle" data-id="circle"></canvas>
+                    <canvas id="square" data-id="square"></canvas>
+                    <canvas id="rounded" data-id="rounded"></canvas>
+                    <!-- <div class="text_result">ZU</div> -->
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Write your text here to generate"
+                    class="icon_text"
+                  />
+                </div>
+                <button class="save_btn">
+                  <a id="download">Save</a>
+                </button>
+                <button class="generate_btn">Generate</button>
+                <img src="" class="generated" alt="" />
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script>
+      //# mobile view side bar
+      function fav_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("threeBars").style.display = "none";
+      }
+      function fav_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("threeBars").style.display = "inline-block";
+      }
+    </scrip>
+
+    <script>
+      var darkmode = document.getElementById("darkmode");
+      darkmode.onclick = function () {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+          var circle1 = document.getElementById("svgheader");
+          circle1.style.fill = "white";
+        } else {
+          var circle1 = document.getElementById("svgheader");
+          circle1.style.fill = "rgba(48, 51, 53, 1)";
+        }
+      };
+    </script>
+  </body>
+</html>

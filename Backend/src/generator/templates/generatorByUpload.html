@@ -20,9 +20,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   /> -->
 
-    <link rel="stylesheet" href="../static/css/mainstyle.css">
+    <link rel="stylesheet" href="{% static 'css/mainstyle.css' %}">
 
-    <link rel="stylesheet" href="../static/css/upload.css">
+    <link rel="stylesheet" href="{% static 'css/upload.css' %}">
 
     <link href="https://fonts.googleapis.com/css2?family=DMsans&display=swap" rel="stylesheet">
    
@@ -63,7 +63,7 @@
 </label>
           
           <div class="user">
-            <p class="nav-link nav-text-bg"> John Doe</p>
+            <p class="nav-link nav-text-bg">{{user.username}}</p>
           </div>
 
         <div class="dropdown">
@@ -73,7 +73,7 @@
   </a>    
      <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="{% url 'settings' %}">Settings</a></li>
-    <li><a class="dropdown-item" href="{% url 'home' %}">Log Out</a></li>
+    <li><a class="dropdown-item" href="{% url 'logout' %}">Log Out</a></li>
   </ul>
 
 </div>
