@@ -54,8 +54,7 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # folders
-Frontend/
-img_api
+
 
 # Unit test / coverage reports
 htmlcov/
