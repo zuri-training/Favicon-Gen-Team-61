@@ -54,7 +54,10 @@ pip-delete-this-directory.txt
 
 # folders
 
+<<<<<<< HEAD
+=======
 img_api
+>>>>>>> a52ebb4f338fb4d268f2b9217ced5cb7d15b092e
 
 # Unit test / coverage reports
 htmlcov/
