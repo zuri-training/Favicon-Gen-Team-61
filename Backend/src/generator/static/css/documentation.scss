@@ -7,6 +7,47 @@ $lightBlue: #6ABCE8;
 $darkmode: #16212A;
 $darkgrad: linear-gradient(180deg, #21313F 0%, rgba(33, 49, 63, 0.95) 59.26%);
 
+
+
+//darkmode
+.dark-mode .heading p,
+.dark-mode ul li,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode ol,
+.dark-mode .document-links a,
+.dark-mode .introduction h2,
+.dark-mode .WhFa h2,
+.dark-mode .ForDown h2,
+.dark-mode .How2Use h2,
+.dark-mode .Features h2,
+.dark-mode .Generator h2,
+.dark-mode .ForDev h2,
+.dark-mode .Drafts h2,
+.dark-mode .introduction li,
+.dark-mode .WhFa li,
+.dark-mode .ForDown li,
+.dark-mode .How2Use li,
+.dark-mode .Features li,
+.dark-mode .ForDev li,
+.dark-mode .Drafts li {
+    color: white !important;
+}
+
+.dark-mode .dark-mode .introduction h2,
+.dark-mode .WhFa h2,
+.dark-mode .ForDown h2, 
+.dark-mode .How2Use h2,
+.dark-mode .Features h2,
+.dark-mode .Generator h2,
+.dark-mode .ForDev h2,
+.dark-mode .Drafts h2 {
+ 
+    color: #ffffff !important; 
+}
+
+
+//darkmode
 body {
     font-family: $font;
 }

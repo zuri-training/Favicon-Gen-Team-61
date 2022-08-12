@@ -1,5 +1,3 @@
-{% load static %}
-
 .dark-mode {
   background-image: url(../images/HIFI\ Sign\ in\ desktop\ \(Light\ mode\).png);
   color: white !important;
