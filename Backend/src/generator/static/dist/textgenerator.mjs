@@ -385,11 +385,9 @@ const $4f25f79d22c7c45d$var$selectFrom = document.querySelector('.select_from');
 let $4f25f79d22c7c45d$var$inputText = document.querySelector('.icon_text');
 let $4f25f79d22c7c45d$var$generateBtn = document.querySelector('.generate_btn');
 let $4f25f79d22c7c45d$var$canvas = document.getElementById("rounded");
-let $4f25f79d22c7c45d$var$fontContain = document.querySelector('.text_input');
 let $4f25f79d22c7c45d$var$bgcolor = document.querySelector('.bg_color');
 let $4f25f79d22c7c45d$var$font_color = document.querySelector('.font-color_input');
 let $4f25f79d22c7c45d$var$font_size = document.querySelector('.Input-TEXT');
-let $4f25f79d22c7c45d$var$download = document.getElementById('download');
 // Create Canva Function
 function $4f25f79d22c7c45d$var$createCanva(txt, shape, size, fontcolor, bgcolor, fontfam) {
     new $b205ed3ec4c82e08$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas).generate({
@@ -406,7 +404,7 @@ function $4f25f79d22c7c45d$var$createCanva(txt, shape, size, fontcolor, bgcolor,
 $4f25f79d22c7c45d$var$inputText.addEventListener('change', ()=>{
     let textvalue = $4f25f79d22c7c45d$var$inputText.value.toUpperCase();
     if (textvalue === "") $4f25f79d22c7c45d$var$createCanva("C", 'rounded', 47, "#fff", "#f3de", "Helvatica");
-    else $4f25f79d22c7c45d$var$createCanva(textvalue, 'rounded', 47, "#fff", "#f3de", "Helvatica");
+    else $4f25f79d22c7c45d$var$createCanva(textvalue, 'rounded', 47, "#f45", "#4ff", "Helvatica");
 });
 // Google Fonts code 
 var $4f25f79d22c7c45d$var$json = $.getJSON('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBwIX97bVWr3-6AIUvGkcNnmFgirefZ6Sw', function(data) {
@@ -416,8 +414,9 @@ var $4f25f79d22c7c45d$var$json = $.getJSON('https://www.googleapis.com/webfonts/
 });
 let $4f25f79d22c7c45d$var$fonn = document.querySelector('.combobox');
 $4f25f79d22c7c45d$var$fonn.addEventListener('change', $4f25f79d22c7c45d$var$selectOption);
-function $4f25f79d22c7c45d$var$selectOption(e1) {
-    let font = e1.target.value;
+// Font Selection
+function $4f25f79d22c7c45d$var$selectOption(e) {
+    let font = e.target.value;
     WebFont.load({
         google: {
             families: [
@@ -425,70 +424,89 @@ function $4f25f79d22c7c45d$var$selectOption(e1) {
             ]
         },
         active: function() {
-            $4f25f79d22c7c45d$var$selectFrom.addEventListener('change', (e)=>{
-                let shape = e.target.value;
-                let sizeVal = $4f25f79d22c7c45d$var$font_size.value;
-                let bgColor = $4f25f79d22c7c45d$var$bgcolor.value;
-                let fontColor = $4f25f79d22c7c45d$var$font_color.value;
-                // if (bgColor === ""){
-                //     bgColor = "#f3e"
-                // } else if (fontColor === "") {
-                //     fontColor = "#fff"
-                // } else {
-                //     bgColor = bgcolor.value
-                //     fontColor = font_color.value
-                // }
-                console.log(bgColor, fontColor);
-                if (sizeVal === "" || !parseInt(sizeVal)) sizeVal = 47;
-                else sizeVal = parseInt($4f25f79d22c7c45d$var$font_size.value);
-                $4f25f79d22c7c45d$var$inputText.addEventListener('change', ()=>{
-                    let textvalue = $4f25f79d22c7c45d$var$inputText.value.toUpperCase();
-                    if (textvalue === "") // createCanva("C", shape, sizeVal, fontColor, bgColor, font) 
-                    new $b205ed3ec4c82e08$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas).generate({
-                        width: 64,
-                        height: 64,
-                        shape: shape,
-                        fontColor: fontColor,
-                        backgroundColor: bgColor,
-                        text: "C",
-                        fontFamily: font,
-                        fontSize: sizeVal
-                    });
-                    else // createCanva(textvalue, shape, sizeVal, fontColor, bgColor, font)            
-                    // createCanva(textvalue, shape, sizeVal, fontColor, bgColor, font)
-                    new $b205ed3ec4c82e08$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas).generate({
-                        width: 64,
-                        height: 64,
-                        shape: shape,
-                        fontColor: fontColor,
-                        backgroundColor: bgColor,
-                        text: textvalue,
-                        fontFamily: font,
-                        fontSize: sizeVal
-                    });
-                });
+            new $b205ed3ec4c82e08$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas).generate({
+                width: 80,
+                height: 80,
+                shape: "rounded",
+                fontColor: "#3ff",
+                backgroundColor: "#f3e",
+                text: "C",
+                fontFamily: font,
+                fontSize: 47
             });
         }
     });
 }
+// Shape Selection
+$4f25f79d22c7c45d$var$selectFrom.addEventListener('change', (e)=>{
+    let shape = e.target.value;
+    new $b205ed3ec4c82e08$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas).generate({
+        width: 80,
+        height: 80,
+        shape: shape,
+        fontColor: "#fff",
+        backgroundColor: "#56f",
+        text: "W",
+        fontFamily: "Helvatica",
+        fontSize: 47
+    });
+});
+// Size 
+$4f25f79d22c7c45d$var$font_size.addEventListener('change', (e)=>{
+    let size = e.target.value;
+    if (size === "" || !parseInt(size)) size = 47;
+    else size = e.target.value;
+    new $b205ed3ec4c82e08$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas).generate({
+        width: 80,
+        height: 80,
+        shape: "square",
+        fontColor: "#fff",
+        backgroundColor: "#45f",
+        text: "C",
+        fontFamily: "Helvatica",
+        fontSize: size
+    });
+});
+// Colors
+$4f25f79d22c7c45d$var$bgcolor.addEventListener('click', (e)=>{
+    let bgColor = e.target.value;
+    if (bgColor === "") bgColor = "#f3e";
+    else bgColor = e.target.value;
+    new $b205ed3ec4c82e08$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas).generate({
+        width: 80,
+        height: 80,
+        shape: "circle",
+        fontColor: "#fec",
+        backgroundColor: bgColor,
+        text: "C",
+        fontFamily: "Helvatica",
+        fontSize: 47
+    });
+});
+// Font Color
+$4f25f79d22c7c45d$var$font_color.addEventListener('change', (e)=>{
+    let fontColor = e.target.value;
+    new $b205ed3ec4c82e08$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas).generate({
+        width: 80,
+        height: 80,
+        shape: "rounded",
+        fontColor: fontColor,
+        backgroundColor: "#f3e",
+        text: "C",
+        fontFamily: "Helvatica",
+        fontSize: 47
+    });
+});
 $4f25f79d22c7c45d$var$generateBtn.addEventListener('click', $4f25f79d22c7c45d$var$generateFavicon);
 // Generate Icon Function
 function $4f25f79d22c7c45d$var$generateFavicon() {
     const favicon = new $b68853d6b0a9ca38$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas);
     const packages = favicon.bundle();
-    let files = [
-        packages.ico,
-        packages.png150,
-        packages.png16,
-        packages.png180,
-        packages.png32,
-        packages.png512,
-        packages.png192
-    ];
     console.log(packages);
     document.querySelector('.generated').src = packages.png150;
-    $4f25f79d22c7c45d$var$download.href = packages;
-    $4f25f79d22c7c45d$var$download.setAttribute("download", 'packages.png150');
+    let download = document.getElementById('download');
+    download.href = packages;
+    download.setAttribute("download", 'packages.zip');
 }
 
 
