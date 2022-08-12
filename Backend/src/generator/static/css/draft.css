@@ -1,5 +1,7 @@
 /* RESET RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+{% load static %}
 :root {
   --black: #1a1a1a;
   --white: #fff;

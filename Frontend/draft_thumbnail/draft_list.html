@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./uikit.css">
+    <link rel="stylesheet" href="./draft_list.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./uikit.js"></script>
+    <script defer src="./draft_list.js"></script>
+    <title>Draft-list</title>
+</head>
+<body class="body">
+    <header class="profile_header ">
+        <div class="header_wrapper container">
+            <div class="hambuger_icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="./assets/images/main-header_icon.svg" >
+                <span style="font-size: 1.5rem; font-weight: 600">FaviconGen</span> 
+            </div>
+
+            <div class="profile_con">
+                <div class="toggle_wrapper">
+                    <div class="color_toggle_container">
+                        <div class="toggle">
+            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile_detail">
+                    <div class="desktop_align">
+                        <div class="profile_info">
+                            <div class="uk-inline">
+                                <h5 class="username">John Doe</h5>
+                                <ul class="uk-card uk-card-body uk-card-default" id="drop" uk-drop="mode: hover">
+                                    <li>
+                                        <i class="fa-solid fa-gear"></i>
+                                        <a href="#">Settings</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="profile_img desktop">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>  
+                    <div class="mobile_col">
+                        <div class="close_menu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="mobile_profile_con">
+                            <div class="image_rapper">
+                                <div class="profile_img mobile">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <h5 class="username">John Doe</h5>
+                            </div>
+                            
+                            <ul class="profile_setting">
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </header>   
+    <div class="compound_container">
+    <main class="container main_container list">
+        <div class="top">
+            <h5>Draft</h5>
+            <div class="search">
+                <div class="search_icon">
+                    <input type="text" class="search_save_icons" placeholder="Search">
+                </div>
+                
+                <div class="bar">
+                    <div class="uk-inline">
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                            
+                        <ul class="uk-card uk-card-body uk-card-default " id="drop" uk-drop="mode: hover; pos: right">
+            
+                            <li>
+                                <i class="fa-solid fa-trash-can"></i>
+                                <a href="#" class="delete_btn">delete selected</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-braille list_icon_view"></i>
+                </div>
+            </div>
+
+        </div>
+        <ul class="list-group save_icons">
+          
+            <li class="list-group-item list-group-item-secondary mb-3">
+                <div class="icon_name">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                    <p class="save_icon_title">Name of Icon</p>
+                </div>
+                <div class="left_items">
+                    <p class="date_created">02:04:2022</p>
+                    <div class="uk-inline">
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                            
+                        <ul class="uk-card uk-card-body uk-card-default " id="drop" uk-drop="mode: hover; pos: right">
+                            <li>
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <a href="#">Edit</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fa-solid fa-pencil"></i>
+                                <a href="#">Rename</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-trash-can"></i>
+                                <a href="#" class="delete_btn">Delete</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="radio" name="" id="select_item" unchecked>
+                </div>
+            </li>
+            <li class="list-group-item list-group-item-secondary mb-3">
+                <div class="icon_name">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                    <p class="save_icon_title">Name of Icon</p>
+                </div>
+                <div class="left_items">
+                    <p class="date_created">02:04:2022</p>
+                    <div class="uk-inline">
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                            
+                        <ul class="uk-card uk-card-body uk-card-default " id="drop" uk-drop="mode: hover; pos: right">
+                            <li>
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <a href="#">Edit</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fa-solid fa-pencil"></i>
+                                <a href="#">Rename</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-trash-can"></i>
+                                <a href="#" class="delete_btn">Delete</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="radio" name="" id="select_item" unchecked>
+                </div>
+            </li>
+            <li class="list-group-item list-group-item-secondary mb-3">
+                <div class="icon_name">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                    <p class="save_icon_title">Name of Icon</p>
+                </div>
+                <div class="left_items">
+                    <p class="date_created">02:04:2022</p>
+                    <div class="uk-inline">
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                            
+                        <ul class="uk-card uk-card-body uk-card-default " id="drop" uk-drop="mode: hover; pos: right">
+                            <li>
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <a href="#">Edit</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fa-solid fa-pencil"></i>
+                                <a href="#">Rename</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-trash-can"></i>
+                                <a href="#" class="delete_btn">Delete</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="radio" name="" id="select_item" unchecked>
+                </div>
+            </li>
+            <li class="list-group-item list-group-item-secondary mb-3">
+                <div class="icon_name">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                    <p class="save_icon_title">Name of Icon</p>
+                </div>
+                <div class="left_items">
+                    <p class="date_created">02:04:2022</p>
+                    <div class="uk-inline">
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                            
+                        <ul class="uk-card uk-card-body uk-card-default " id="drop" uk-drop="mode: hover; pos: right">
+                            <li>
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <a href="#">Edit</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fa-solid fa-pencil"></i>
+                                <a href="#">Rename</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-trash-can"></i>
+                                <a href="#" class="delete_btn">Delete</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="radio" name="" id="select_item" unchecked>     
+                    
+                </div>
+            </li>
+
+    
+            <a href="#" class="new_icon_btn">
+                New
+                <i class="fa-thin fa-plus"></i>
+            </a>
+        </ul>
+            
+        <div class="pop-up-delete hide">
+            <div class="pop_up_wrapper">
+                <div class="error_message">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Are you sure you want to delete this, you can't recover deleted files</p>
+                </div>
+                <div class="btn_con">
+                    <button class="btn delete_none">No</button>
+                    <button class="btn delete_complete">Yes delete file</button>
+                </div>
+            </div>  
+        </div>
+    </main>
+
+    <main class="container main_container grid" id="grid_container">
+        <div class="top">
+          <h5 style="color: black; font-size: 40px;">Draft</h5>
+          <div class="search">
+            <div class="search_icon">
+              <input type="text" class="search_save_icons" placeholder="Search" />
+            </div>
+  
+            <div class="bar" style="margin: 20px 50px 0px 0px;">
+              <div class="uk-inline">
+                <i class="fa-solid fa-ellipsis-vertical" style="color: gray"></i>
+              </div>
+              <i class="fa-solid fa-braille grid_icon_view" style="color: gray"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row" style="padding: 40px 50px 40px 50px;">
+            <div class="col-md-3 col-sm-4">
+              <div class="wrimagecard wrimagecard-topimage">
+                
+                  <div
+                    class="wrimagecard-topimage_header"
+              
+                  >
+                  <input type="radio" name="" id="select_item" checked/>
+                    <center>
+                      <i class="fa fa-home" style="color: white; background-color: black; padding: 10px; border-radius: 10px;" ></i>
+                    </center>
+                  </div>
+                  <div class="wrimagecard-topimage_title">
+                    <h4 style="font-weight: bold;">
+                      Untitled
+                      <div>
+                        <div>
+                          <div class="pull-right">
+                            <i
+                            class="fa-solid fa-ellipsis-vertical"
+                            style=" padding: 0px 0px; margin: 0%"
+                          ></i>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </h4>
+                    <p style="padding-right: 100px; margin-bottom: 20px;">10/20/2022</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <div class="wrimagecard wrimagecard-topimage">
+               
+                  <div
+                    class="wrimagecard-topimage_header"            
+                  >
+                  <input type="radio" name="" id="select_item" checked/>
+                    <center>
+                      <i class="fa fa-home" style="color: white; background-color: black; padding: 10px; border-radius: 10px;" ></i>
+                    </center>
+                  </div>
+                  <div class="wrimagecard-topimage_title">
+                    <h4 style="font-weight: bold;">
+                      Untitled
+                      <div>
+                        <div>
+                          <div class="pull-right">
+                            <i
+                            class="fa-solid fa-ellipsis-vertical"
+                            style=" padding: 0px 0px; margin: 0%"
+                          ></i>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </h4>
+                    <p style="padding-right: 100px; margin-bottom: 20px;">10/20/2022</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <div class="wrimagecard wrimagecard-topimage">
+               
+                  <div
+                    class="wrimagecard-topimage_header"
+              
+                  >
+                  <input type="radio" name="" id="select_item" checked/>
+                    <center>
+                      <i class="fa fa-home" style="color: white; background-color: black; padding: 10px; border-radius: 10px;" ></i>
+                    </center>
+                  </div>
+                  <div class="wrimagecard-topimage_title">
+                    <h4 style="font-weight: bold;">
+                      Untitled
+                      <div>
+                        <div>
+                          <div class="pull-right">
+                            <i
+                            class="fa-solid fa-ellipsis-vertical"
+                            style=" padding: 0px 0px; margin: 0%"
+                          ></i>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </h4>
+                    <p style="padding-right: 100px; margin-bottom: 20px;">10/20/2022</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <div class="wrimagecard wrimagecard-topimage">
+               
+                  <div
+                    class="wrimagecard-topimage_header"
+              
+                  >
+                  <input type="radio" name="" id="select_item" checked/>
+                    <center>
+                      <i class="fa fa-home" style="color: white; background-color: black; padding: 10px; border-radius: 10px;" ></i>
+                    </center>
+                  </div>
+                  <div class="wrimagecard-topimage_title">
+                    <h4 style="font-weight: bold;">
+                      Untitled
+                      <div>
+                        <div>
+                          <div class="pull-right">
+                            <i
+                            class="fa-solid fa-ellipsis-vertical"
+                            style=" padding: 0px 0px; margin: 0%"
+                          ></i>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </h4>
+                    <p style="padding-right: 100px; margin-bottom: 20px;">10/20/2022</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <div class="wrimagecard wrimagecard-topimage">
+                
+                  <div
+                    class="wrimagecard-topimage_header"
+                  >
+                    <input type="radio" name="" id="select_item" checked/>
+                    <center>
+                      <i class="fa fa-home" style="color: white; background-color: black; padding: 10px; border-radius: 10px;" ></i>
+                    </center>
+                  </div>
+                  <div class="wrimagecard-topimage_title">
+                    <h4 style="font-weight: bold;">
+                      Untitled 
+                      <div>
+                        <div>
+                          <div class="pull-right">
+                            <i
+                            class="fa-solid fa-ellipsis-vertical"
+                            style=" padding: 0px 0px; margin: 0%"
+                          ></i>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </h4>
+                    <p style="padding-right: 100px; margin-bottom: 20px;">10/20/2022</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <div class="wrimagecard wrimagecard-topimage">
+                
+                  <div
+                    class="wrimagecard-topimage_header"          
+                  >
+                  <input type="radio" name="" id="select_item" checked/>
+                    <center>
+                      <i class="fa fa-home" style="color: white; background-color: black; padding: 10px; border-radius: 10px;" ></i>
+                    </center>
+                  </div>
+                  <div class="wrimagecard-topimage_title">
+                    <h4 style="font-weight: bold;">
+                      Untitled
+                      <div>
+                        <div>
+                          <div class="pull-right">
+                            <i
+                            class="fa-solid fa-ellipsis-vertical"
+                            style=" padding: 0px 0px; margin: 0%"
+                          ></i>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </h4>
+                    <p style="padding-right: 100px; margin-bottom: 20px;">10/20/2022</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <div class="wrimagecard wrimagecard-topimage">
+                
+                  <div
+                    class="wrimagecard-topimage_header"
+                  >
+                  <input type="radio" name="" id="select_item" checked/>
+                    <center>
+                      <i class="fa fa-home" style="color: white; background-color: black; padding: 10px; border-radius: 10px;" ></i>
+                    </center>
+                  </div>
+                  <div class="wrimagecard-topimage_title">
+                    <h4 style="font-weight: bold;">
+                      Untitled
+                      <div>
+                        <div class="pull-right">
+                          <i
+                          class="fa-solid fa-ellipsis-vertical"
+                          style=" padding: 0px 0px; margin: 0%"
+                        ></i>
+                          
+                        </div>
+                      </div>
+                      
+                    </h4>
+                    <p style="padding-right: 100px; margin-bottom: 20px;">10/20/2022</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <div class="wrimagecard wrimagecard-topimage">
+                
+                  <div
+                    class="wrimagecard-topimage_header"
+                  >
+                  <input type="radio" name="" id="select_item" unchecked/>
+                    <center>
+                      <i class="fa fa-home" style="color: white; background-color: black; padding: 10px; border-radius: 10px;" ></i>
+                    </center>
+                  </div>
+                  <div class="wrimagecard-topimage_title">
+                    <h4 style="font-weight: bold;">
+                      Untitled
+                      <div>
+                        <div class="pull-right">
+                          <i
+                          class="fa-solid fa-ellipsis-vertical"
+                          style=" padding: 0px 0px; margin: 0%"
+                        ></i>
+                          
+                        </div>
+                      </div>
+                      
+                    </h4>
+                    
+                    <p style="padding-right: 100px; margin-bottom: 20px;">10/20/2022</p>
+                   
+                  </div>
+                  
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="new_icon_btn" style="padding: 15px 15px 15px 15px; border-radius: 10px; margin-bottom: 50px; margin-right: 30px; text-decoration: none;">
+              New
+              <i class="fa fa-plus" ></i>
+          </a>
+      </ul>      
+      </main>
+    </div>
+</body>
+</html>

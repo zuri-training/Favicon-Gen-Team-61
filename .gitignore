@@ -26,8 +26,7 @@ db.sqlite3-journal
 .Python
 build/
 develop-eggs/
-dist/
-downloads/
+
 eggs/
 .eggs/
 lib/
@@ -55,6 +54,10 @@ pip-delete-this-directory.txt
 
 # folders
 
+<<<<<<< HEAD
+=======
+img_api
+>>>>>>> a52ebb4f338fb4d268f2b9217ced5cb7d15b092e
 
 # Unit test / coverage reports
 htmlcov/
@@ -166,7 +169,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore

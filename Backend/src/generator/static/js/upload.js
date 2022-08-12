@@ -1,3 +1,4 @@
+
 const fileInput = document.querySelector(".file-input"); 
 previewImg = document.querySelector(".preview-img img");
 const chooseImg = document.querySelector(".btn3");

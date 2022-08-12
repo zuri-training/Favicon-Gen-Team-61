@@ -9,39 +9,7 @@
     --white-color: #fff;
 
 }
-/* dark mode */
 
-.dark-mode body {
-    color: #000000;
-    border: solid rgba(255, 255, 255, 0);
-    border-width: 1px;
-}
-.dark-mode h5 {
-    color: #ffffff !important;
-    border: solid rgba(255, 255, 255, 0);
-    border-width: 1px;
-}
-
-.dark-mode .draft {
-    color: #000000;
-    border: solid rgba(255, 255, 255, 0);
-    border-width: 1px;
-}
-.dark-mode h4{
-    color: #000000;
-    border: solid rgba(255, 255, 255, 0);
-    border-width: 1px;
-}
-
-.dark-mode  p {
-    color:black !important;
-    border-width: 1px;
-}
-.draft{
-    padding: 33px 0;
-}
-
-/* dark mode */
 .light-mode{
     --primary-bg: #fff;
     --secondary-bg: rgba(106, 188, 232, 0.1);
@@ -51,6 +19,15 @@
     --btn-color-main: #3F92BD;
     --white-color: #fff;
 }
+.compound_container{
+    width: 100%;
+    background-color: var(--primary-bg);
+    overflow: hidden;
+    padding: .5rem;
+    min-height: 100vh;
+    position: relative;
+}
+
 
 .error_message{
     display: flex;
@@ -128,8 +105,15 @@
     padding: 3rem 0;
 }
 
+ul{
+    list-style-type: none;
+}
 
+body{
+    background-color: var(--primary-bg);
+    position: relative;
 
+}
 
 
 #drop{
@@ -364,6 +348,33 @@
 }
 
 
+.grid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-100000000px);
+    transition: transform .3s ease;
+    color: var(--text-color) !important;
+}
+.grid h4{
+    color: var(--text-color);
+}
+
+.list{
+    transform: translateX(0);
+    transition: transform .3s ease;
+
+}
+.grid.show_grid{
+    transform: translateX(0);
+}
+.list.show_grid{
+    transform: translateX(-100000000px);
+}
+
+
 
 
 /* Profile Responsiveness */
@@ -529,47 +540,3 @@
         display: none;
     }
 }
-
-.wrimagecard{	
-	margin-top: 0;
-    margin-bottom: 2rem;
-    text-align: left;
-    position: relative;
-    background: #F0F8FD;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    padding: 10px;
-}
-
-.wrimagecard .fa{
-	position: relative;
-    font-size: 70px;
-    
-}
-.wrimagecard-topimage_header{
-padding: 10px;
-}
-
-
-.wrimagecard-topimage a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    
-}
-.wrimagecard-topimage_title {
-    padding: 20px 24px;
-    height: 80px;
-    padding-bottom: 0.75rem;
-    position: relative;
-    
-}
-.wrimagecard-topimage a {
-    border-bottom: none;
-    text-decoration: none;
-    color: #525c65;
-    transition: color 0.3s ease;
-
-}
-
-
