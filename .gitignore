@@ -145,6 +145,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+metro-venv
 
 # Spyder project settings
 .spyderproject
