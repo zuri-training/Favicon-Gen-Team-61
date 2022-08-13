@@ -130,7 +130,7 @@ def generatorByUpload(request):
 @login_required(login_url='login')
 def generateByText(request):
     
-    return render(request, 'generatebytext.html')
+    return render(request, 'generateByText.html')
 
 
 
