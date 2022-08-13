@@ -22,6 +22,7 @@ urlpatterns = [
                          path('signUp/', views.signUp, name='signUp'),
                                 path('documentation/', views.documentation, name='documentation'),
                                   #restricted
+                                  path('generate/', views.generate, name='generate'),
                                      path('homePage/', views.homePage, name='homePage'),
                                             path('settings/', views.Setting.as_view(template_name ='AccountSettings.html'), name='settings'),
                                                 path('generatorByUpload/', views.generatorByUpload, name='generatorByUpload'),

@@ -12,7 +12,7 @@
 
     <!-- <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="accountsettings.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="accountsettings.css"> -->
-                    <link rel="icon" type="image/x-icon" href="../static/images/favicon.png">
+                    <link rel="icon" type="image/x-icon" href="{% static 'static/images/favicon.png' %}">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- <link
@@ -101,19 +101,23 @@
         <div class="container">
         <div class="left col50">
             <div class="inside">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
                 <div class="bigbox">
                     <div class="preview-img">
                         <img src="Vector-1.png" alt="preview-img" id="canvas">
                     </div>
                     <p class="upico">(Upload png,svg,gif,ico to convert to ico)</p>
-                    <input type="file" class="file-input" accept="image/*" hidden >
+                    <input type="file" name="upload" class="file-input" accept="image/*" >
                     <button class="btn3">Upload </button>
                 </div>
-                <div class="buttons disable">
+                <div class="buttons">
+                    <a href="{% url 'generate' %}">
                     <button class="btn1">Save</button>
-                    <button class="btn2" id="download">Generate</button>
+                    </a>
+                    <button type="submit" class="btn2" id="download">Generate</button>
                 </div>
-                
+            </form>
             </div>
             
 
@@ -138,7 +142,12 @@
                     of your html
                 </p>
             </div>
-                <textarea name="" id="embed" cols="30" rows="10"></textarea>
+                <textarea name="" id="embed" cols="50" rows="15">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest"> 
+                </textarea>
                 <button class="btn4">Download</button>
             </div>
            

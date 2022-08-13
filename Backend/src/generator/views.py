@@ -2,14 +2,14 @@ from django.template import loader
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages, auth
 from django.contrib.auth.models import User 
-from .models import Profile, Favicons
-from .forms import UpdatePassword, EditProfileForm
+from .models import Profile, Favicons, upload
+from .forms import UpdatePassword, EditProfileForm, UploadIcon
 from django.views.generic import UpdateView
 from django.urls import reverse_lazy
 from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-
+from favicons import Favicons
 
 
 def home(request):
@@ -118,15 +118,33 @@ class Setting(LoginRequiredMixin, PasswordChangeView):
 
 @login_required(login_url='login')
 def generatorByUpload(request):
+    if request.method == 'POST':
+        title=  request.user.username      
+        upload1=    request.FILES.get('upload')
+        object  =     upload.objects.create(title=title, upload=upload1)        
+        object.save() 
+         
+         
+         # Generate the icons
+        YOUR_ICON = ""
+        WEB_SERVER_ROOT = "http://localhost:8000/generatorByUpload"
+        with Favicons(YOUR_ICON, WEB_SERVER_ROOT) as favicons:
+            favicons.generate()
+            for icon in favicons.filenames():
+                print(icon) 
+           
+                
+        return redirect('generatorByUpload')
     return render(request, 'generatorByUpload.html')
+
+def generate(request):
+    image = upload.objects.get(upload=request.user.username)
+     
+
+
 def generatorByUpload1(request):
-    if request.method=='POST':
-        title=request.POST['title']       
-        upload1=request.FILES['upload']
-        object=upload.objects.create(title=title,upload=upload1)
-        object.save()  
-    context=upload.objects.all()
-    return render(request,'generatorByUpload1.html',{'context':context})
+  
+    return render(request,'generatorByUpload1.html')
 
 
 @login_required(login_url='login')

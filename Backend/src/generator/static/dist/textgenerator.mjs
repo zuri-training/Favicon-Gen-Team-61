@@ -388,6 +388,7 @@ let $4f25f79d22c7c45d$var$canvas = document.getElementById("rounded");
 let $4f25f79d22c7c45d$var$bgcolor = document.querySelector('.bg_color');
 let $4f25f79d22c7c45d$var$font_color = document.querySelector('.font-color_input');
 let $4f25f79d22c7c45d$var$font_size = document.querySelector('.Input-TEXT');
+let $4f25f79d22c7c45d$var$saveBtn = document.querySelector('.save_btn');
 // Create Canva Function
 function $4f25f79d22c7c45d$var$createCanva(txt, shape, size, fontcolor, bgcolor, fontfam) {
     new $b205ed3ec4c82e08$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas).generate({
@@ -497,16 +498,20 @@ $4f25f79d22c7c45d$var$font_color.addEventListener('change', (e)=>{
         fontSize: 47
     });
 });
+// var hueb = new Huebee( )
+// console.log(hueb)
 $4f25f79d22c7c45d$var$generateBtn.addEventListener('click', $4f25f79d22c7c45d$var$generateFavicon);
 // Generate Icon Function
 function $4f25f79d22c7c45d$var$generateFavicon() {
     const favicon = new $b68853d6b0a9ca38$export$2e2bcd8739ae039($4f25f79d22c7c45d$var$canvas);
-    const packages = favicon.bundle();
-    console.log(packages);
-    document.querySelector('.generated').src = packages.png150;
-    let download = document.getElementById('download');
-    download.href = packages;
-    download.setAttribute("download", 'packages.zip');
+    const icon = favicon.ico();
+    console.log(icon);
+    document.querySelector('.generated').src = icon;
+    $4f25f79d22c7c45d$var$saveBtn.addEventListener('click', ()=>{
+        let download = document.getElementById('download');
+        download.href = icon;
+        download.setAttribute("download", 'favicon');
+    });
 }
 
 

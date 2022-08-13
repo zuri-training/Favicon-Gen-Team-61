@@ -498,6 +498,7 @@ var $b8a8a03dfeaf28ec$var$canvas = document.getElementById("rounded");
 var $b8a8a03dfeaf28ec$var$bgcolor = document.querySelector('.bg_color');
 var $b8a8a03dfeaf28ec$var$font_color = document.querySelector('.font-color_input');
 var $b8a8a03dfeaf28ec$var$font_size = document.querySelector('.Input-TEXT');
+var $b8a8a03dfeaf28ec$var$saveBtn = document.querySelector('.save_btn');
 // Create Canva Function
 function $b8a8a03dfeaf28ec$var$createCanva(txt, shape, size, fontcolor, bgcolor, fontfam) {
     new $147f589d770fb746$export$2e2bcd8739ae039($b8a8a03dfeaf28ec$var$canvas).generate({
@@ -607,16 +608,20 @@ $b8a8a03dfeaf28ec$var$font_color.addEventListener('change', function(e) {
         fontSize: 47
     });
 });
+// var hueb = new Huebee( )
+// console.log(hueb)
 $b8a8a03dfeaf28ec$var$generateBtn.addEventListener('click', $b8a8a03dfeaf28ec$var$generateFavicon);
 // Generate Icon Function
 function $b8a8a03dfeaf28ec$var$generateFavicon() {
     var favicon = new $1e668f9d7388492a$export$2e2bcd8739ae039($b8a8a03dfeaf28ec$var$canvas);
-    var packages = favicon.bundle();
-    console.log(packages);
-    document.querySelector('.generated').src = packages.png150;
-    var download = document.getElementById('download');
-    download.href = packages;
-    download.setAttribute("download", 'packages.zip');
+    var icon = favicon.ico();
+    console.log(icon);
+    document.querySelector('.generated').src = icon;
+    $b8a8a03dfeaf28ec$var$saveBtn.addEventListener('click', function() {
+        var download = document.getElementById('download');
+        download.href = icon;
+        download.setAttribute("download", 'favicon');
+    });
 }
 
 
