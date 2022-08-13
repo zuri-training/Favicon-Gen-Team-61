@@ -119,6 +119,14 @@ class Setting(LoginRequiredMixin, PasswordChangeView):
 @login_required(login_url='login')
 def generatorByUpload(request):
     return render(request, 'generatorByUpload.html')
+def generatorByUpload1(request):
+    if request.method=='POST':
+        title=request.POST['title']       
+        upload1=request.FILES['upload']
+        object=upload.objects.create(title=title,upload=upload1)
+        object.save()  
+    context=upload.objects.all()
+    return render(request,'generatorByUpload1.html',{'context':context})
 
 
 @login_required(login_url='login')

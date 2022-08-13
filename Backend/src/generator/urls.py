@@ -1,10 +1,11 @@
 from re import template
-from django.urls import path
-
+from django.urls import path,include
 from . import views
 from django.contrib.auth import views as auth_views
+from django.conf import settings
+from django.contrib import admin
 
-
+from django.conf.urls.static import static
 
 
 urlpatterns = [
@@ -24,7 +25,8 @@ urlpatterns = [
                                      path('homePage/', views.homePage, name='homePage'),
                                             path('settings/', views.Setting.as_view(template_name ='AccountSettings.html'), name='settings'),
                                                 path('generatorByUpload/', views.generatorByUpload, name='generatorByUpload'),
-                                                    path('generateByText/', views.generateByText, name='generateByText'),
+                                                    path("generatorByUpload1",views.generatorByUpload1,name="generatorByUpload1"), #img
+                                                        path('generateByText/', views.generateByText, name='generateByText'),
 
 
 
@@ -51,3 +53,4 @@ urlpatterns = [
 
 
 ]
+urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -5,6 +5,12 @@ User = get_user_model()
 
 # Create your models here.
 
+# Create your models here. img
+class upload(models.Model): #img
+    title=models.CharField(max_length=50) #img
+    upload=models.FileField(upload_to="media")#img
+
+
 class ImgFavicons(models.Model):
     icon_title = models.CharField(max_length=500)
     icon = models.FileField()
