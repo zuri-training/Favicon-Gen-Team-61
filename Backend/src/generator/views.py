@@ -91,10 +91,7 @@ def signUp(request):
 
     return render(request, 'signUp.html')    
 
-def forgetPassword(request):
-    
-    
-    return render(request, 'forgetPassword.html')
+
 
 
 
@@ -109,9 +106,6 @@ def profile(request):
     
     return render(request, 'draft_list.html')
 
-@login_required(login_url='login')
-def drafts(request):
-     return render(request, 'drafts.html')  
 
 
 
@@ -130,11 +124,11 @@ def generatorByUpload(request):
 @login_required(login_url='login')
 def generateByText(request):
     
-    return render(request, 'generatebytext.html')
+    return render(request, 'generateByText.html')
 
 
 
-@login_required(login_url='generator:login')
+@login_required(login_url='login')
 def DeleteAccount(request):
     # user_model = get_object_or_404(User, id=id)
     user = User.objects.filter(username=request.user.username)

@@ -24,8 +24,8 @@
         <div class="sidebar">
           <div style="display: none" id="mySidebar">
             <button onclick="fav_close()">&times;</button>
-            <a href="#" class="bar-item">Settings</a>
-            <a href="#" class="bar-item">Logout</a>
+            <a href="{% url 'settings' %}" class="bar-item">Settings</a>
+            <a href="{% url 'logout' %}" class="bar-item">Logout</a>
           </div>
           <div class="bars">
             <button id="threeBars" onclick="fav_open()">&#9776;</button>
@@ -61,7 +61,7 @@
             <input type="checkbox" id="darkmode" onclick="function()" />
             <span class="slider round"></span>
           </label>
-          <p>John Doe</p>
+          <p>{{user.username}}</p>
           <img
             src="https://autorescuesolutions.com/about-us/img/about/position1.png"
             alt="profile_pic"
@@ -234,7 +234,7 @@
         document.getElementById("mySidebar").style.display = "none";
         document.getElementById("threeBars").style.display = "inline-block";
       }
-    </scrip>
+    </script>
 
     <script>
       var darkmode = document.getElementById("darkmode");
