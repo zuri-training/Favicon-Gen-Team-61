@@ -69,17 +69,25 @@ This will be a proof that everything is working well
 
 ## Author's :page_with_curl:
 
-DESIGNERS
+| DESIGNERS                           | DEVELOPERS                                                                                               |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+|  <a href="#" target="_blank">ISIBOR OSASUMWEN PRECIOUS (TEAM LEAD) </a>    | <a href="#" target="_blank">AGINHAM ABRAHAM SOMTOCHUKWU (ASS. TEAM LEAD) </a> 
+|  <a href="#" target="_blank">VICTOR AKO-ATULOMAH</a>  | <a href="#" target="_blank">HASHIM HIKMAH</a> |
+| <a href="#" target="_blank">CHUKWUDIRE PRINCES</a> | <a href="#" target="_blank">ARMSTRONG</a> 
+|  <a href="#" target="_blank">ADEDFOLAHAN OMOLOJU</a>   | <a href="#" target="_blank">OLALEKAN N. ASAAJU</a>
+|  <a href="#" target="_blank">PHILIP OLUWA TIMILEYIN</a>   | <a href="#" target="_blank">TOBILOBA LAWAL</a>
+|  <a href="#" target="_blank">MMENIM MATHIAS</a> | <a href="#" target="_blank">JOSHUA EMMANUEL</a>
+| <a href="#" target="_blank">ELIZABETH SILAS</a>  | <a href="#" target="_blank">PRINCE OSIOHWO</a>
+|  <a href="#" target="_blank">ADEBAYO SOLOMON</a>  | <a href="#" target="_blank">CHARLES YOMI</a>
+|  <a href="#" target="_blank">OLOWA TOMIWA ADE-OLUNUSI</a>  | <a href="#" target="_blank">OJE DOMINION</a>
+|  <a href="#" target="_blank">ANIELILA INETIMI</a>  | <a href="https://www.github.com/Izimartin/" target="_blank">MARTINS AKHIVBAREME</a>
+|  <a href="#" target="_blank">CYNTHIA KELECHI ONWUJEKWE</a>  | <a href="#" target="_blank">GEORGE EKEKWE</a>
+|  <a href="#" target="_blank">OLOYEDE OYINDASOLA</a>  | <a href="#" target="_blank"></a>
+|  <a href="#" target="_blank">OSATUYI FLORA</a>  | <a href="#" target="_blank"></a>
+|  <a href="#" target="_blank">OJO HAPPINESS TAIWO</a>  | <a href="#" target="_blank"></a>
+|  <a href="#" target="_blank">JACKBOY</a>  | <a href="#" target="_blank"></a>
 
-![image](https://user-images.githubusercontent.com/105444870/183971978-960746ad-af8b-4f37-86fd-39f4bd699341.png)
-
-DEVELOPERS
-
-![image](https://user-images.githubusercontent.com/105444870/183972273-70b883c3-b8db-4ad9-ae99-83de57dd3387.png)
-
-
-
-<p align="left">
+<p align="center">
 <img src="https://github.com/Izimartin/Zuriboard_Internship/blob/main/favicon-logo-removebg-preview.png?raw=true"
        alt="Favicon-Gen Logo"
   >
