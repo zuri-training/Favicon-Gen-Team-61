@@ -104,11 +104,11 @@
                 <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                 <div class="bigbox">
-                    <div class="preview-img">
+                    <div class="preview-img" id="preview_img" >
                         <img src="Vector-1.png" alt="preview-img" id="canvas">
                     </div>
                     <p class="upico">(Upload png,svg,gif,ico to convert to ico)</p>
-                    <input type="file" name="upload" class="file-input" accept="image/*" >
+                    <input type="file" name="upload" class="file-input" id="file_input" accept="image/*" >
                     <button class="btn3">Upload </button>
                 </div>
                 <div class="buttons">
@@ -168,7 +168,19 @@
 
 
 
+<script>
+    const file_input = document.querySelector("#file_input")
+    var uploaded_image = "";
 
+    file_input.addEventListener("change", function(){
+	    const reader = new FileReader();
+	    reader.addEventListener("load", () =>{
+		    uploaded_image = reader.result;
+		    document.querySelector("#preview_img").style.backgroundImage = `url(${uploaded_image})`;
+	    });
+	    reader.readAsDataURL(this.files[0]);
+    })
+</script>
 
 
     
