@@ -56,6 +56,7 @@ Links to research documentation used in this project:
 |  <a href="https://docs.google.com/document/d/1MY5n5dAGVdFSj9oF6cmsuklzIqamOuMOgozWDF0N4Ok/edit?usp=sharing" target="_blank">Tasks Assigned </a> | `Google Doc`
 |  <a href="https://drive.google.com/file/d/1EHw0ChnoGrhGo51LGniFGDzbhbM3v28K/view?usp=sharing" target="_blank">First Presentation Slides </a>         | `Google Drive`
 |  <a href="https://drive.google.com/file/d/1oJzJf6lRNcGvbvgNWwDg2kLB0uYJw-l0/view?usp=sharing" target="_blank">First Presentation Video </a>         | `Google Drive`
+|  <a href="https://drive.google.com/file/d/1uIcIrn82d_eMra2pkdgGZn7wAGHZ5W5Z/view?usp=sharing" target="_blank">Final Presentation Video </a>         | `Google Drive`
 
 
 #To-do list for frontend dev: Fork the repo and save a copy to your personal repo and them clone it to your local machine. Thereafter, open up a new terminal in the project directory and #Run: npm run dev to be sure that everything is working fine. Make changes and create a new branch develop. Commit changes and make  pull requests and push. Open your github account, find the project and compere for a pull.
