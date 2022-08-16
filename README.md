@@ -86,7 +86,7 @@ This will be a proof that everything is working well
 |  <a href="#" target="_blank">OLOYEDE OYINDASOLA</a>  | <a href="#" target="_blank"></a>
 |  <a href="#" target="_blank">OSATUYI FLORA</a>  | <a href="#" target="_blank"></a>
 |  <a href="#" target="_blank">OJO HAPPINESS TAIWO</a>  | <a href="#" target="_blank"></a>
-|  <a href="#" target="_blank">JACKBOY</a>  | <a href="#" target="_blank"></a>
+|  <a href="#" target="_blank">FAVOUR TITUS</a>  | <a href="#" target="_blank"></a>
 
 <p align="center">
 <img src="https://github.com/Izimartin/Zuriboard_Internship/blob/main/favicon-logo-removebg-preview.png?raw=true"
